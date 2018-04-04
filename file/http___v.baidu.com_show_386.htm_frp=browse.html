@@ -99,7 +99,7 @@
 </li>
 <li >
 <a href="http://zhibo.v.baidu.com/6rooms?pagetab=daohangzb">
-<span>美女直播</span>
+<span>秀场</span>
 </a>
 </li>
 <li class="btn_more">
@@ -190,7 +190,7 @@
 </ul>
 </div>
 <input type="hidden" class="j_tmp_data_input mgtv__com" style="display:none" value="20180331">
-<input type="hidden" class="j_tmp_data_input tudou__com" style="display:none" value="20121229">
+<input type="hidden" class="j_tmp_data_input tudou__com" style="display:none" value="20121201">
 <div class="intro-last-news">
 <p><span class="time"><a id="time-title" target="_blank" href="javascript:void(0);"><span class="j_episode_num"></span></a></span>&nbsp;&nbsp;本期看点：</p>
 <a href="javascript:void(0);" static="bl=spa&amp;blname=%E7%AE%80%E4%BB%8B&amp;ext=last" target="_blank" class="title" title=""></a>
@@ -499,7 +499,7 @@
 </a>
 </li>
 <li class="">
-<a href="http://v.baidu.com/infoindex/" target="_blank" title="资讯">资讯
+<a href="http://v.baidu.com/channel/short/vshenghuo" target="_blank" title="生活">生活
 </a>
 </li>
 <li class="item_3 no-margin">
@@ -650,6 +650,28 @@
 	});
 }();
 !function(){        require("common:widget/video/liveSubTips/liveSubTips.js")('#liveSubTips');
+    }();
+!function(){     var url = window.location.href;
+     var $ip = url.match(/ip=.*[0-9]$/)
+     $.ajax({
+         url: "http://v.baidu.com/kan/api/ipLocation?" + $ip,
+         dataType: 'jsonp',
+         success: function (data) {
+             var $c = data.data.province;
+             console.log($c)
+             if ($c != '北京') {
+                 var $li = $('#navMainMenu li');
+                 for (var i = 0; i < $li.length; i++ ) {
+                     console.log($($li[i]).children().children('span').text().match(/[\u4E00-\u9FA5]{2}/g)[0] === '秀场')
+                   if ($($li[i]).children('a').children('span').text().match(/[\u4E00-\u9FA5]{2}/g)[0] === '秀场') {
+                     $($li[i]).children('a').children('span').html('美女直播')
+                   }
+                 }
+             } else {
+                 return;
+             }
+         }
+     })
     }();
 !function(){            	   require('common:widget/video/navGuider/navGuider.js');
                 if (window.devicePixelRatio && window.devicePixelRatio > 1) {

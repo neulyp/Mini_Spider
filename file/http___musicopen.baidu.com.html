@@ -1,0 +1,151 @@
+ï»¿
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>ç¾åº¦é³ä¹èµæºåä½å¼æ¾å¹³å°</title>
+<link rel="stylesheet" type="text/css" href="/static/css/base.css?v0807" />
+<script src="/static/js/jquery/jquery-1.8.3.js" type="text/javascript" charset="utf-8"></script>
+<script src="/static/js/common/json2.js" type="text/javascript" charset="utf-8"></script>
+<script src="/static/js/common/common.js" type="text/javascript" charset="utf-8"></script>
+
+
+	<link rel="stylesheet" type="text/css" href="/static/css/p_index.css">
+	<!-- <link rel="stylesheet" type="text/css" href="/static/css/login.css"> -->
+
+
+
+		<script type="text/javascript" src="http://passport.bdimg.com/passApi/js/wrapper.js?cdnversion=20180404"></script>
+	
+</head>
+
+<body>
+	<script type="text/javascript">
+		var html = '<div style="text-align:center;height:40px;line-height:40px;background:#ffffcc;border:1px #cccccc solid;font-size:14px;"><b>å¾æ±æ­ï¼ç®åæ¯æä»¥ä¸æµè§å¨</b><i>:<a href="http://www.google.cn/intl/zh-CN/chrome/" target="_blank" style="color:#000000;text-decoration:none">  chrome </a>ãIE8</i>ï¼</div>'
+		var Sys = {}; 
+		var ua = navigator.userAgent.toLowerCase(); 
+		var s; 
+		(s = ua.match(/msie ([\d.]+)/)) ? Sys.ie = s[1] : 
+		(s = ua.match(/firefox\/([\d.]+)/)) ? Sys.firefox = s[1] : 
+		(s = ua.match(/chrome\/([\d.]+)/)) ? Sys.chrome = s[1] : 
+		(s = ua.match(/opera.([\d.]+)/)) ? Sys.opera = s[1] : 
+		(s = ua.match(/version\/([\d.]+).*safari/)) ? Sys.safari = s[1] : 0; 
+		// //ä»¥ä¸è¿è¡æµè¯ 
+		if (Sys.ie){
+			if(!(Sys.ie>=8)){
+				$("body").prepend(html);
+			}
+		}
+		if (Sys.opera){
+			$("body").prepend(html);
+		}
+		if(Sys.chrome){
+			if(!(parseInt(Sys.chrome)>26)){
+				$("body").prepend(html);
+			}
+		}
+	</script>
+
+	<div class="wrapper">	
+		<div class="header">
+			<a href="/">
+	<img src="/static/img/logo.png">
+</a>			
+	 
+
+		</div>
+		<div class="main">
+			
+	<i class="main-bg"></i> 
+	<i class="section-bg"></i>
+
+			<div class="container">
+				
+	<i class="banner-bg"></i>
+	<div class="section-banner">
+		<div class="mod-userinfo">
+													<div id="tabs_login" class="pass_login_box">
+<!-- <ul class="login-tab">
+     <li class="tab-item tab-item-left tab-selected">
+         <a href="#" onclick="return false;" hidefocus="true">æ®éç»å½</a>
+     </li>
+     <li class="tab-item tab-item-right">
+         <a href="#" onclick="return false;" hidefocus="true">ææºç»å½</a>
+     </li>
+</ul> -->
+<div id="music_pass_login_form" class="tang-pass-login"></div>
+</div>	
+				<i class="divide"></i>
+				<a href="?c=index&m=welcome&tn=openuser_step1" class="btn btn-join-step1"><span class="inner">å å¥èµæºåä½å¼æ¾å¹³å°</span></a>		
+					</div>
+	</div>
+	<div class="section-intro">
+		<div class="feature-intro">
+			<i class="divide"></i>
+			<ul>
+				<li class="ft-1">
+					<i class="ft-ico"></i>
+					<h4>æ½å¨åä½ä¼ä¼´å¼æ¾è®¤è¯</h4>
+					<p>å¥½é³ä¹é¾æ¥å¤§å¹³å°ï¼å¼æ¾å±èµ¢ï¼é ç¦è³æµã</p>
+				</li>				
+				<li class="ft-2">
+					<i class="ft-ico"></i>
+					<h4>ç»å½æéåºåç®¡ç</h4>
+					<p>å¬å¸ãå·¥ä½å®¤ãç¬ç«é³ä¹äººãæéåºåæ ååãçµæ´»åå®å¨ã</p>
+				</li>				
+				<li class="ft-3">
+					<i class="ft-ico"></i>
+					<h4>ç©æä¸ç«å¼ä¾¿æ·æäº¤</h4>
+					<p>æä½ä¾¿æ·ï¼ä¸ä¸é«æï¼çæ¶çå¿ã</p>
+				</li>				
+				<li class="ft-4">
+					<i class="ft-ico"></i>
+					<h4>åä½å¢å¼æå¡</h4>
+					<p>åä½èµæºåè´¨è¯ä»·ä½ç³»ä¿è¯å¥½èµæºæå¤§åæ¥ã</p>
+				</li>
+			</ul>
+		</div>	
+		<div class="mod-board">
+			<h4>å¬åç</h4>
+			<div class="board-content ui-scroll-bar" style="overflow-x:hidden;">
+				<ol id="board_content">
+					<li>1ãå¼æ¾å¹³å°æ­£å¼å¼æ¾å¬æµï¼æ¬¢è¿å±çå¬å¸ãç¬ç«é³ä¹äººè¸è·è¯ç¨ãä½¿ç¨è¿ç¨ä¸­å¦æä»»ä½é®é¢åå»ºè®®ï¼è¯·åé®ä»¶è³th_musicopen@taihe.comã</li>
+					<li>2ãè¯·æ¨å¡å¿å®æ´çå®å°å¡«åè®¤è¯ææï¼ç¾åº¦é³ä¹å°ä¼å®¡æ ¸è´µå¸çèµè´¨ï¼å®¡æ ¸éè¿ä¹åå¯ç»äºè®¤è¯æéã</li>
+					<li>3ãç¨äºè®¤è¯æéçç¾åº¦è´¦å·æ¯ç»å½æ¬å¹³å°çå¯ä¸å¸å·ï¼æ³¨åæååå°æ æ³æ´æ¢ï¼åä¸å¬å¸ä¸è½éå¤æ³¨åï¼</li>
+					<li>4ãå¦æ¨å·²ç³è¯·å¥é©»ç¾åº¦é³ä¹äººï¼ä¹å¯ä»¥éè¿å¼æ¾å¹³å°ä¸ä¼ èµæºï¼åªè¦æä¾è¶³ä»¥è¯ææ¨èº«ä»½ä¸èµæºçæçææï¼å¹¶éè¿æä»¬çå®¡æ ¸ã</li>
+				</ol>
+			</div>
+		</div>
+	</div>
+	<div class="section-coperator">
+		<h4>åä½ä¼ä¼´</h4>
+		<div class="coperator-img">
+		</div>
+	</div>
+
+			</div>
+		</div>
+		<div class="footer">
+			åæé¾æ¥ï¼<a href="http://music.baidu.com" title="ç¾åº¦é³ä¹-é³ä¹æ å¤ä¸å¨">http://music.baidu.com</a>
+èç³»æä»¬ï¼<a href="mailto:th_musicopen@taihe.com">th_musicopen@taihe.com</a>
+<span class="copy">&copy;2018 Baidu<a href="http://www.baidu.com/duty/" target="_blank" class="reader" rel="nofollow">ä½¿ç¨ç¾åº¦åå¿è¯»</a>æç½æ[2010]197å·</span>
+		</div>
+	</div>
+	
+	
+	
+	
+	
+		<script type="text/javascript">
+		var config_login = {
+			handler_ready : function(form){
+				$(form).find('#pass_login_username_0').attr('placeholder','è¯·ç¨ç¾åº¦è´¦å·ç»å½');
+				$(form).append('<p class="err-msg"></p>');
+			}
+		}
+	</script>
+	<script src="/static/js/common/pass_login.js" type="text/javascript" charset="utf-8"></script>
+	
+	
+</body>
+</html>

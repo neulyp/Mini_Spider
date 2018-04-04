@@ -175,13 +175,8 @@
 </li>
 <li>
 <a href="http://zhibo.v.baidu.com/6rooms?pagetab=daohangzb">
-美女直播
-<img src="http://b.hiphotos.baidu.com/video/pic/item/18d8bc3eb13533fa2dc95eb1a0d3fd1f41345b36.png" style="bottom:26px;left:63px">
-</a>
-</li>
-<li>
-<a href="http://v.baidu.com/channel/short/vzixun">
-新闻
+秀场
+<img src="http://b.hiphotos.baidu.com/video/pic/item/18d8bc3eb13533fa2dc95eb1a0d3fd1f41345b36.png" style="bottom:26px;left:34px">
 </a>
 </li>
 <li>
@@ -214,16 +209,16 @@
 看世界
 </a>
 </li>
+<li>
+<a href="http://v.baidu.com/channel/short/lieqi">
+猎奇
+</a>
+</li>
 <li class="btn_more">
 <a class='a-more-btn'>
 更多<img src="http://vs6.bdstatic.com/browse_static/v3/common/widget/video/nav/caret_ecc6b8d7.png" alt="">
 </a>
 <ul class="box_more_items">
-<li class="item_2_byte ">
-<a href="http://v.baidu.com/channel/short/lieqi" target="_blank">
-<span>猎奇</span>
-</a>
-</li>
 <li class="item_2_byte ">
 <a href="http://v.baidu.com/channel/short/music" target="_blank">
 <span>音乐</span>
@@ -468,6 +463,27 @@
 }();
 !function(){        require("common:widget/video/liveSubTips/liveSubTips.js")('#liveSubTips');
     }();
+!function(){ var url = window.location.href;
+ var $ip = url.match(/ip=.*[0-9]$/)
+ $.ajax({
+     url: "http://v.baidu.com/kan/api/ipLocation?" + $ip,
+     dataType: 'jsonp',
+     success: function (data) {
+         var $c = data.data.province;
+         var $city = false;
+         if ($c != '北京') {
+             var $li = $('#nav .nav-inner .menu-main li');
+             for (var i = 0; i < $li.length; i++ ) {
+               if ($($li[i]).children().text().match(/[\u4E00-\u9FA5]{2}/g)[0] === '秀场') {
+                 $($li[i]).children().html('美女直播<img src="http://b.hiphotos.baidu.com/video/pic/item/18d8bc3eb13533fa2dc95eb1a0d3fd1f41345b36.png" style="bottom:26px;left:63px">')
+               }
+             }
+         } else {
+             return;
+         }
+     }
+ })
+ }();
 !function(){  require('common:widget/video/nav/nav.js')('vlvyou300','1');
 }();
 !function(){	require('shortChannel:widget/adtop/adtop.js');

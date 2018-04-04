@@ -1,0 +1,1305 @@
+<!DOCTYPE html>
+<html lang="zh-cn" prefix="og: http://ogp.me/ns#">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    
+<meta name="web-experience-app/config/environment" content="%7B%22appVersion%22%3A1%2C%22modulePrefix%22%3A%22web-experience-app%22%2C%22environment%22%3A%22production%22%2C%22rootURL%22%3A%22%2F%22%2C%22locationType%22%3A%22history-hash-router-scroll%22%2C%22historySupportMiddleware%22%3Atrue%2C%22contentSecurityPolicyMeta%22%3Atrue%2C%22contentSecurityPolicy%22%3A%7B%22default-src%22%3A%5B%22'none'%22%5D%2C%22img-src%22%3A%5B%22'self'%22%2C%22*.mzstatic.com%22%2C%22*.apple.com%22%2C%22data%3A%22%5D%2C%22style-src%22%3A%5B%22'self'%22%2C%22'unsafe-inline'%22%2C%22*.apple.com%22%5D%2C%22font-src%22%3A%5B%22'self'%22%2C%22http%3A%2F%2F*.apple.com%22%2C%22https%3A%2F%2F*.apple.com%22%5D%2C%22media-src%22%3A%5B%22'self'%22%2C%22http%3A%2F%2F*.apple.com%22%2C%22*.apple.com%22%2C%22http%3A%2F%2F*.akamaihd.net%22%2C%22*.akamaihd.net%22%5D%2C%22connect-src%22%3A%5B%22'self'%22%2C%22*.apple.com%22%5D%2C%22script-src%22%3A%5B%22'self'%22%2C%22*.apple.com%22%5D%2C%22frame-src%22%3A%5B%22'self'%22%2C%22*.apple.com%22%2C%22itmss%3A%22%2C%22itms-appss%3A%22%2C%22itms-bookss%3A%22%2C%22itms-itunesus%3A%22%2C%22itms-messagess%3A%22%2C%22itms-podcasts%3A%22%2C%22itms-watchs%3A%22%2C%22macappstores%3A%22%2C%22musics%3A%22%2C%22apple-musics%3A%22%5D%7D%2C%22EmberENV%22%3A%7B%22FEATURES%22%3A%7B%7D%2C%22EXTEND_PROTOTYPES%22%3A%7B%22Date%22%3Afalse%7D%7D%2C%22APP%22%3A%7B%22PROGRESS_BAR_DELAY%22%3A3000%2C%22name%22%3A%22web-experience-app%22%2C%22version%22%3A%221812.19.0%2B707da9f8%22%7D%2C%22defaultLocale%22%3A%22en-gb%22%2C%22moment%22%3A%7B%22includeLocales%22%3Atrue%7D%2C%22browserify%22%3A%7B%22transform%22%3A%5B%5B%22babelify%22%2C%7B%22presets%22%3A%5B%22es2015%22%5D%2C%22global%22%3Atrue%2C%22only%22%3A%7B%7D%7D%5D%5D%7D%2C%22API%22%3A%7B%22MZStore%22%3A%22https%3A%2F%2Fitunes.apple.com%22%2C%22StorePlatform%22%3A%22https%3A%2F%2Fuclient-api.itunes.apple.com%2FWebObjects%2FMZStorePlatform.woa%2Fwa%22%2C%22globalElements%22%3A%22https%3A%2F%2Fweb-experience.itunes.apple.com%2Fglobal-elements%22%7D%2C%22ember-a11y-testing%22%3A%7B%22componentOptions%22%3A%7B%22turnAuditOff%22%3Atrue%2C%22axeOptions%22%3A%7B%22rules%22%3A%7B%22color-contrast%22%3A%7B%22enabled%22%3Afalse%7D%7D%7D%7D%7D%2C%22assetHost%22%3A%22https%3A%2F%2Fweb-experience.itunes.apple.com%22%2C%22contentSecurityPolicyHeader%22%3A%22Content-Security-Policy-Report-Only%22%2C%22exportApplicationGlobal%22%3Afalse%7D" />
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; img-src 'self' *.mzstatic.com *.apple.com data:; style-src 'self' 'unsafe-inline' *.apple.com; font-src 'self' http://*.apple.com https://*.apple.com; media-src 'self' http://*.apple.com *.apple.com http://*.akamaihd.net *.akamaihd.net; connect-src 'self' *.apple.com; script-src 'self' *.apple.com; frame-src 'self' *.apple.com itmss: itms-appss: itms-bookss: itms-itunesus: itms-messagess: itms-podcasts: itms-watchs: macappstores: musics: apple-musics:; ">
+<!-- EMBER_CLI_FASTBOOT_TITLE --><link rel="stylesheet" href="//www.apple.com/wss/fonts?families=SF+Pro,v1|SF+Pro+SC,v1|SF+Pro+Icons,v1" name="fonts"><link rel="stylesheet" href="//www.apple.com/wss/fonts?families=SF+Pro,v1|SF+Pro+SC,v1|SF+Pro+Icons,v1" name="fonts"><meta name="ember-cli-head-start"><title>App Store 上的“百度音乐-青春版”</title>
+<link rel="canonical" href="https://itunes.apple.com/cn/app/%E7%99%BE%E5%BA%A6%E9%9F%B3%E4%B9%90-%E9%9D%92%E6%98%A5%E7%89%88/id1208946007?mt=8">
+<link rel="manifest" href="https://apps.mzstatic.com/content/static-config/android/manifest.json">
+  <meta name="description" content="阅读评论、比较用户评分、查看屏幕快照并进一步了解“百度音乐-青春版”。下载“百度音乐-青春版”并在您的 Apple TV 上尽享其功能。" id="ember129802760" class="ember-view">
+
+  <meta name="keywords" content="百度音乐-青春版, 北京音之邦文化科技有限公司, 音乐, 娱乐, ios apps, app, appstore, app store, iphone, ipad, ipod touch, itouch, itunes" id="ember129802762" class="ember-view">
+
+  <meta property="og:title" content="App Store 上的“百度音乐-青春版”" id="ember129802764" class="ember-view">
+
+  <meta property="og:description" content="阅读评论、比较用户评分、查看屏幕快照并进一步了解“百度音乐-青春版”。下载“百度音乐-青春版”并在您的 Apple TV 上尽享其功能。" id="ember129802766" class="ember-view">
+
+  <meta property="og:site_name" content="App Store" id="ember129802768" class="ember-view">
+
+  <meta property="og:url" content="https://itunes.apple.com/cn/app/%E7%99%BE%E5%BA%A6%E9%9F%B3%E4%B9%90-%E9%9D%92%E6%98%A5%E7%89%88/id1208946007?mt=8" id="ember129802770" class="ember-view">
+
+  <meta property="og:image" content="https://is5-ssl.mzstatic.com/image/thumb/Purple128/v4/0e/0d/90/0e0d90e7-757b-7ed8-3e2c-fa3a008e9d57/pr_source.png/1200x630bb.jpg" id="ember129802772" class="ember-view">
+
+  <meta property="og:image:secure_url" content="https://is5-ssl.mzstatic.com/image/thumb/Purple128/v4/0e/0d/90/0e0d90e7-757b-7ed8-3e2c-fa3a008e9d57/pr_source.png/1200x630bb.jpg" id="ember129802774" class="ember-view">
+
+  <meta property="og:image:type" content="image/jpg" id="ember129802776" class="ember-view">
+
+  <meta property="og:image:width" content="1200" id="ember129802778" class="ember-view">
+
+  <meta property="og:image:height" content="630" id="ember129802780" class="ember-view">
+
+  <meta property="og:locale" content="zh_CN" id="ember129802782" class="ember-view">
+
+  <meta property="fb:app_id" content="116556461780510" id="ember129802784" class="ember-view">
+
+  <meta name="twitter:title" content="App Store 上的“百度音乐-青春版”" id="ember129802786" class="ember-view">
+
+  <meta name="twitter:description" content="阅读评论、比较用户评分、查看屏幕快照并进一步了解“百度音乐-青春版”。下载“百度音乐-青春版”并在您的 Apple TV 上尽享其功能。" id="ember129802788" class="ember-view">
+
+  <meta name="twitter:site" content="@AppStore" id="ember129802790" class="ember-view">
+
+  <meta name="twitter:domain" content="AppStore" id="ember129802792" class="ember-view">
+
+  <meta name="twitter:image" content="https://is5-ssl.mzstatic.com/image/thumb/Purple128/v4/0e/0d/90/0e0d90e7-757b-7ed8-3e2c-fa3a008e9d57/pr_source.png/600x600bf.jpg" id="ember129802794" class="ember-view">
+
+  <meta name="twitter:card" content="summary" id="ember129802796" class="ember-view">
+
+  <meta name="apple:content_id" content="1208946007" id="ember129802798" class="ember-view">
+
+  <meta property="og:type" content="website" id="ember129802800" class="ember-view">
+
+  <script name="schema:software-application" type="application/ld+json" id="ember129802802" class="ember-view">{"@context":"http://schema.org","@type":"SoftwareApplication","name":"百度音乐-青春版","description":"千万高品质音乐，四亿用户共同的选择！\n音乐社交、丰富乐评、场景电台、高清视频MV、权威榜单、精彩音乐直播、专利音效、智能搜索…百度音乐，极致的音乐娱乐APP！\n \n1. 千万曲库：热门歌手、影视原声、怀旧金曲，都在这里；\n2. 音乐社交：从陌生到老铁，只一首歌的距离；\n3. 丰富乐评：撒花or吐槽、你说了算；\n4. 场景电台：自动匹配你的音乐品味；\n5. 高清视频MV：360°高清视听感受；\n6. 权威榜单：为爱豆音乐打榜冲人气，彰显粉丝力量；\n7. 精彩音乐直播：围观大咖明星show，直击热门娱乐活动；\n8. 专利音效：享受极致的音效品质；\n9. 智能搜索：源于百度，精于体验；\n10.尊享会员服务：覆盖音视频、演出、应援、周边的四维音乐会员服务；\n11. 音乐商城： 一站式音乐消费平台！\n \n翻牌百度音乐，走起！\n \n如您在使用过程中有任何意见或问题，都可以通过以下方式联系我们哦：\n官方微博：@百度音乐\n官方反馈邮箱：userfeedback@baidu.com，我们期待您的宝贵意见；\n官方QQ群：198081821 \n欢迎加入，与音乐达人们一起交流。","screenshot":["https://is4-ssl.mzstatic.com/image/thumb/Purple117/v4/00/c5/c7/00c5c79b-0543-a011-b979-94221ad93cbb/pr_source.jpg/300x0w.jpg","https://is1-ssl.mzstatic.com/image/thumb/Purple127/v4/a3/a3/47/a3a34798-0a55-49d8-0e2c-dfa580373fd6/pr_source.jpg/300x0w.jpg","https://is5-ssl.mzstatic.com/image/thumb/Purple127/v4/ab/4d/65/ab4d657f-c838-5b47-d618-61242f87b01e/pr_source.jpg/300x0w.jpg","https://is1-ssl.mzstatic.com/image/thumb/Purple127/v4/43/fb/e8/43fbe826-f7b3-2a29-90fe-041288332a1c/pr_source.jpg/300x0w.jpg","https://is2-ssl.mzstatic.com/image/thumb/Purple127/v4/a6/2e/ec/a62eec61-eb9a-7ca7-8809-42fc7db1ce2c/pr_source.jpg/300x0w.jpg"],"image":"https://is5-ssl.mzstatic.com/image/thumb/Purple128/v4/0e/0d/90/0e0d90e7-757b-7ed8-3e2c-fa3a008e9d57/pr_source.png/1200x630bb.jpg","applicationCategory":"音乐","datePublished":"2017-04-04","operatingSystem":"需要 iOS 8.0 或更高版本。与 iPhone、iPad 和 iPod touch 兼容。","author":{"@type":"Person","name":"北京音之邦文化科技有限公司","url":"https://itunes.apple.com/cn/developer/%E5%8C%97%E4%BA%AC%E9%9F%B3%E4%B9%8B%E9%82%A6%E6%96%87%E5%8C%96%E7%A7%91%E6%8A%80%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8/id1089036107?mt=8"},"aggregateRating":{"@type":"AggregateRating","ratingValue":4.3,"reviewCount":7},"offers":{"@type":"Offer","category":"free","price":0}}
+</script>
+
+<meta name="ember-cli-head-end">
+
+    <meta name="version" content="1812.19.0">
+
+    <link integrity="" rel="stylesheet" href="https://web-experience.itunes.apple.com/assets/web-experience-app-216d671f5b6a21738851e02d1ef987eb.css">
+
+    
+  </head>
+  <body class="no-js">
+    <script type="x/boundary" id="fastboot-body-start"></script><link rel="stylesheet" type="text/css" href="https://www.apple.com/ac/globalnav/3/zh_CN/styles/ac-globalnav.built.css">
+<aside id="ac-gn-segmentbar" class="ac-gn-segmentbar" lang="zh-CN" dir="ltr" data-strings="{ 'exit': '退出商店', 'view': '{%STOREFRONT%}商店首页', 'segments': { 'smb': '企业商店首页', 'eduInd': '教育商店首页', 'other': '商店首页' } }">
+</aside>
+<input type="checkbox" id="ac-gn-menustate" class="ac-gn-menustate" />
+<nav id="ac-globalnav" class="no-js" role="navigation" aria-label="全站导航" data-hires="false" data-analytics-region="global nav" lang="zh-CN" dir="ltr" data-store-locale="cn" data-store-api="//www.apple.com/[storefront]/shop/bag/status" data-search-locale="zh_CN" data-search-api="//www.apple.com/search-services/suggestions/">
+	<div class="ac-gn-content">
+		<ul class="ac-gn-header">
+			<li class="ac-gn-item ac-gn-menuicon">
+				<label class="ac-gn-menuicon-label" for="ac-gn-menustate" aria-hidden="true">
+					<span class="ac-gn-menuicon-bread ac-gn-menuicon-bread-top">
+						<span class="ac-gn-menuicon-bread-crust ac-gn-menuicon-bread-crust-top"></span>
+					</span>
+					<span class="ac-gn-menuicon-bread ac-gn-menuicon-bread-bottom">
+						<span class="ac-gn-menuicon-bread-crust ac-gn-menuicon-bread-crust-bottom"></span>
+					</span>
+				</label>
+				<a href="#ac-gn-menustate" class="ac-gn-menuanchor ac-gn-menuanchor-open" id="ac-gn-menuanchor-open">
+					<span class="ac-gn-menuanchor-label">打开菜单</span>
+				</a>
+				<a href="#" class="ac-gn-menuanchor ac-gn-menuanchor-close" id="ac-gn-menuanchor-close">
+					<span class="ac-gn-menuanchor-label">关闭菜单</span>
+				</a>
+			</li>
+			<li class="ac-gn-item ac-gn-apple">
+				<a class="ac-gn-link ac-gn-link-apple" href="//www.apple.com/cn/" data-analytics-title="apple home" id="ac-gn-firstfocus-small">
+					<span class="ac-gn-link-text">Apple</span>
+				</a>
+			</li>
+			<li class="ac-gn-item ac-gn-bag ac-gn-bag-small" id="ac-gn-bag-small">
+				<a class="ac-gn-link ac-gn-link-bag" href="//www.apple.com/cn/shop/goto/bag" data-analytics-title="bag" data-analytics-click="bag" aria-label="购物袋" data-string-badge="含商品的购物袋">
+					<span class="ac-gn-link-text">购物袋</span>
+					<span class="ac-gn-bag-badge"></span>
+				</a>
+				<span class="ac-gn-bagview-caret ac-gn-bagview-caret-large"></span>
+			</li>
+		</ul>
+		<ul class="ac-gn-list">
+			<li class="ac-gn-item ac-gn-apple">
+				<a class="ac-gn-link ac-gn-link-apple" href="//www.apple.com/cn/" data-analytics-title="apple home" id="ac-gn-firstfocus">
+					<span class="ac-gn-link-text">Apple</span>
+				</a>
+			</li>
+			<li class="ac-gn-item ac-gn-item-menu ac-gn-mac">
+				<a class="ac-gn-link ac-gn-link-mac" href="//www.apple.com/cn/mac/" data-analytics-title="mac">
+					<span class="ac-gn-link-text">Mac</span>
+				</a>
+			</li>
+			<li class="ac-gn-item ac-gn-item-menu ac-gn-ipad">
+				<a class="ac-gn-link ac-gn-link-ipad" href="//www.apple.com/cn/ipad/" data-analytics-title="ipad">
+					<span class="ac-gn-link-text">iPad</span>
+				</a>
+			</li>
+			<li class="ac-gn-item ac-gn-item-menu ac-gn-iphone">
+				<a class="ac-gn-link ac-gn-link-iphone" href="//www.apple.com/cn/iphone/" data-analytics-title="iphone">
+					<span class="ac-gn-link-text">iPhone</span>
+				</a>
+			</li>
+			<li class="ac-gn-item ac-gn-item-menu ac-gn-watch">
+				<a class="ac-gn-link ac-gn-link-watch" href="//www.apple.com/cn/watch/" data-analytics-title="watch">
+					<span class="ac-gn-link-text">Watch</span>
+				</a>
+			</li>
+			<li class="ac-gn-item ac-gn-item-menu ac-gn-music">
+				<a class="ac-gn-link ac-gn-link-music" href="//www.apple.com/cn/music/" data-analytics-title="music">
+					<span class="ac-gn-link-text">Music</span>
+				</a>
+			</li>
+			<li class="ac-gn-item ac-gn-item-menu ac-gn-support">
+				<a class="ac-gn-link ac-gn-link-support" href="https://support.apple.com/zh-cn" data-analytics-title="support">
+					<span class="ac-gn-link-text">技术支持</span>
+				</a>
+			</li>
+			<li class="ac-gn-item ac-gn-item-menu ac-gn-search" role="search">
+				<a class="ac-gn-link ac-gn-link-search" href="//www.apple.com/cn/search" data-analytics-title="search" data-analytics-click="search" aria-label="搜索 apple.com">
+					<span class="ac-gn-search-placeholder" aria-hidden="true">搜索 apple.com</span>
+				</a>
+			</li>
+			<li class="ac-gn-item ac-gn-bag" id="ac-gn-bag">
+				<a class="ac-gn-link ac-gn-link-bag" href="//www.apple.com/cn/shop/goto/bag" data-analytics-title="bag" data-analytics-click="bag" aria-label="购物袋" data-string-badge="含商品的购物袋">
+					<span class="ac-gn-link-text">购物袋</span>
+					<span class="ac-gn-bag-badge" aria-hidden="true"></span>
+				</a>
+				<span class="ac-gn-bagview-caret ac-gn-bagview-caret-large"></span>
+			</li>
+		</ul>
+		<aside id="ac-gn-searchview" class="ac-gn-searchview" role="search" data-analytics-region="search">
+			<div class="ac-gn-searchview-content">
+				<form id="ac-gn-searchform" class="ac-gn-searchform" action="//www.apple.com/cn/search" method="get">
+					<div class="ac-gn-searchform-wrapper">
+						<input id="ac-gn-searchform-input" class="ac-gn-searchform-input" type="text" aria-label="搜索 apple.com" placeholder="搜索 apple.com" autocorrect="off" autocapitalize="off" autocomplete="off" spellcheck="false" />
+						<input id="ac-gn-searchform-src" type="hidden" name="src" value="globalnav" />
+						<button id="ac-gn-searchform-submit" class="ac-gn-searchform-submit" type="submit" disabled aria-label="提交"></button>
+						<button id="ac-gn-searchform-reset" class="ac-gn-searchform-reset" type="reset" disabled aria-label="清除搜索"></button>
+					</div>
+				</form>
+				<aside id="ac-gn-searchresults" class="ac-gn-searchresults" data-string-quicklinks="快速链接" data-string-suggestions="搜索结果建议" data-string-noresults=""></aside>
+			</div>
+			<button id="ac-gn-searchview-close" class="ac-gn-searchview-close" aria-label="关闭搜索">
+					<span class="ac-gn-searchview-close-wrapper">
+						<span class="ac-gn-searchview-close-left"></span>
+						<span class="ac-gn-searchview-close-right"></span>
+					</span>
+				</button>
+		</aside>
+		<aside class="ac-gn-bagview" data-analytics-region="bag">
+			<div class="ac-gn-bagview-scrim">
+				<span class="ac-gn-bagview-caret ac-gn-bagview-caret-small"></span>
+			</div>
+			<div class="ac-gn-bagview-content" id="ac-gn-bagview-content">
+			</div>
+		</aside>
+	</div>
+</nav>
+<div id="ac-gn-curtain" class="ac-gn-curtain"></div>
+<div id="ac-gn-placeholder" class="ac-nav-placeholder"></div>
+<script type="text/javascript" src="https://www.apple.com/ac/globalnav/3/zh_CN/scripts/ac-globalnav.built.js" async></script>
+<div id="ember129802803" class="ember-view"><main class="is-app-theme">
+  <style id="ember129802805" class="ember-view"><!----></style>
+  <!---->
+  <div id="ember129802808" class="focusing-outlet ember-view"><div id="ember129802809" class="ember-view"><div id="ember129802811" class="focusing-outlet ember-view"><div id="ember129802812" class="ember-view">
+  <input type="checkbox" id="localnav-menustate" class="localnav-menustate">
+<nav id="localnav" role="navigation" class="we-localnav localnav css-sticky">
+  <div class="localnav-wrapper">
+    <div class="localnav-background we-localnav__background"></div>
+    <div class="localnav-content">
+      <h2 id="ember129802821" class="localnav-title we-truncate we-truncate--single-line ember-view">  App Store 预览
+</h2>
+      <div class="localnav-menu we-localnav__menu">
+        <div class="localnav-actions localnav-actions-center">
+          <div class="localnav-action localnav-action-button we-localnav__action">
+<!---->          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
+<label id="localnav-curtain" for="localnav-menustate"></label>
+
+
+
+<div id="ember129802822" class="animation-wrapper is-visible ember-view">  <div id="ember129802827" class="ember-view"><div role="alert" class="l-content-width we-banner">
+    <p class="we-banner__copy">只能在 iOS 设备上的 App Store 获取此 App。</p>
+  </div>
+</div>
+
+  <section class="l-content-width section section--hero">
+    <div class="l-row">
+      <div class="product-hero__media l-column small-5 medium-4 large-3 small-valign-top">
+          <picture id="ember129802828" class="product-hero__artwork we-artwork--fullwidth we-artwork--ios-app-icon we-artwork ember-view">      <source srcset="https://is5-ssl.mzstatic.com/image/thumb/Purple128/v4/0e/0d/90/0e0d90e7-757b-7ed8-3e2c-fa3a008e9d57/pr_source.png/230x0w.jpg 1x,https://is5-ssl.mzstatic.com/image/thumb/Purple128/v4/0e/0d/90/0e0d90e7-757b-7ed8-3e2c-fa3a008e9d57/pr_source.png/460x0w.jpg 2x,https://is5-ssl.mzstatic.com/image/thumb/Purple128/v4/0e/0d/90/0e0d90e7-757b-7ed8-3e2c-fa3a008e9d57/pr_source.png/690x0w.jpg 3x" media="(min-width: 1069px)">
+<!---->      <source srcset="https://is5-ssl.mzstatic.com/image/thumb/Purple128/v4/0e/0d/90/0e0d90e7-757b-7ed8-3e2c-fa3a008e9d57/pr_source.png/217x0w.jpg 1x,https://is5-ssl.mzstatic.com/image/thumb/Purple128/v4/0e/0d/90/0e0d90e7-757b-7ed8-3e2c-fa3a008e9d57/pr_source.png/434x0w.jpg 2x,https://is5-ssl.mzstatic.com/image/thumb/Purple128/v4/0e/0d/90/0e0d90e7-757b-7ed8-3e2c-fa3a008e9d57/pr_source.png/651x0w.jpg 3x" media="(min-width: 736px)">
+<!---->      <source srcset="https://is5-ssl.mzstatic.com/image/thumb/Purple128/v4/0e/0d/90/0e0d90e7-757b-7ed8-3e2c-fa3a008e9d57/pr_source.png/246x0w.jpg 1x,https://is5-ssl.mzstatic.com/image/thumb/Purple128/v4/0e/0d/90/0e0d90e7-757b-7ed8-3e2c-fa3a008e9d57/pr_source.png/492x0w.jpg 2x,https://is5-ssl.mzstatic.com/image/thumb/Purple128/v4/0e/0d/90/0e0d90e7-757b-7ed8-3e2c-fa3a008e9d57/pr_source.png/738x0w.jpg 3x">
+      <img src="https://is5-ssl.mzstatic.com/image/thumb/Purple128/v4/0e/0d/90/0e0d90e7-757b-7ed8-3e2c-fa3a008e9d57/pr_source.png/246x0w.jpg" style="background-color: #05d9c9;" alt class="we-artwork__image ember129802828">
+  <style>
+    .ember129802828, #ember129802828::before {
+        width: 246px;
+        height: 246px;
+      }
+@media (min-width: 736px) {
+          .ember129802828, #ember129802828::before {
+        width: 217px;
+        height: 217px;
+      }
+        }
+@media (min-width: 1069px) {
+          .ember129802828, #ember129802828::before {
+        width: 230px;
+        height: 230px;
+      }
+        }
+  </style>
+</picture>
+      </div>
+
+      <div class="l-column small-7 medium-8 large-9 small-valign-top">
+        <header role="banner" class="product-header product-header--padded-start">
+          <h1 class="product-header__title">
+            百度音乐-青春版
+              <span class="badge badge--product-title">9+</span>
+          </h1>
+<!---->          <h2 class="product-header__identity product-header__identity--app-header product-header__identity--spaced"><a href="https://itunes.apple.com/cn/developer/%E5%8C%97%E4%BA%AC%E9%9F%B3%E4%B9%8B%E9%82%A6%E6%96%87%E5%8C%96%E7%A7%91%E6%8A%80%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8/id1089036107?mt=8" class="link">北京音之邦文化科技有限公司</a></h2>
+          <ul class="product-header__list">
+              <li class="product-header__list__item">
+                <ul class="inline-list">
+                  <li class="inline-list__item">
+                    “音乐”类第 77 名
+                  </li>
+                </ul>
+              </li>
+              <li class="product-header__list__item">
+                <ul class="inline-list">
+                  <li class="inline-list__item">
+                    <figure aria-label="4.3（满分 5 分）" id="ember129802836" class="we-star-rating ember-view"><span class="we-star-rating-stars-outlines">
+  <span class="we-star-rating-stars we-star-rating-stars-4_5"></span>
+</span>
+  <figcaption class="we-rating-count star-rating__count">7 个评分</figcaption>
+</figure>
+                  </li>
+                </ul>
+              </li>
+<!---->            <li class="product-header__list__item">
+              <ul class="inline-list">
+                <li class="inline-list__item inline-list__item--bulleted">免费</li>
+                  <li class="inline-list__item inline-list__item--bulleted">提供 App 内购买项目</li>
+              </ul>
+            </li>
+<!----><!---->          </ul>
+<!----><!---->        </header>
+      </div>
+    </div>
+  </section>
+
+<!---->
+      <section class="l-content-width section section--bordered">
+      <h2 class="section__headline">iPhone 屏幕快照</h2>
+    <div id="ember129802850" class="we-screenshot-viewer ember-view"><div class="we-screenshot-viewer__screenshots">
+  <ul class="l-row l-row--peek">
+        <li class="l-column small-2 medium-3 large-3">
+          <picture id="ember129802852" class="we-artwork--fullwidth we-artwork--screenshot-platform-iphone we-artwork--screenshot-version-iphone6+ we-artwork--screenshot-orientation-portrait we-artwork ember-view">      <source srcset="https://is4-ssl.mzstatic.com/image/thumb/Purple117/v4/00/c5/c7/00c5c79b-0543-a011-b979-94221ad93cbb/pr_source.jpg/230x0w.jpg 1x,https://is4-ssl.mzstatic.com/image/thumb/Purple117/v4/00/c5/c7/00c5c79b-0543-a011-b979-94221ad93cbb/pr_source.jpg/460x0w.jpg 2x,https://is4-ssl.mzstatic.com/image/thumb/Purple117/v4/00/c5/c7/00c5c79b-0543-a011-b979-94221ad93cbb/pr_source.jpg/690x0w.jpg 3x" media="(min-width: 1069px)">
+<!---->      <source srcset="https://is4-ssl.mzstatic.com/image/thumb/Purple117/v4/00/c5/c7/00c5c79b-0543-a011-b979-94221ad93cbb/pr_source.jpg/158x0w.jpg 1x,https://is4-ssl.mzstatic.com/image/thumb/Purple117/v4/00/c5/c7/00c5c79b-0543-a011-b979-94221ad93cbb/pr_source.jpg/316x0w.jpg 2x,https://is4-ssl.mzstatic.com/image/thumb/Purple117/v4/00/c5/c7/00c5c79b-0543-a011-b979-94221ad93cbb/pr_source.jpg/474x0w.jpg 3x" media="(min-width: 736px)">
+<!---->      <source srcset="https://is4-ssl.mzstatic.com/image/thumb/Purple117/v4/00/c5/c7/00c5c79b-0543-a011-b979-94221ad93cbb/pr_source.jpg/300x0w.jpg 1x,https://is4-ssl.mzstatic.com/image/thumb/Purple117/v4/00/c5/c7/00c5c79b-0543-a011-b979-94221ad93cbb/pr_source.jpg/600x0w.jpg 2x,https://is4-ssl.mzstatic.com/image/thumb/Purple117/v4/00/c5/c7/00c5c79b-0543-a011-b979-94221ad93cbb/pr_source.jpg/900x0w.jpg 3x">
+      <img src="https://is4-ssl.mzstatic.com/image/thumb/Purple117/v4/00/c5/c7/00c5c79b-0543-a011-b979-94221ad93cbb/pr_source.jpg/300x0w.jpg" style="background-color: #ffffff;" alt class="we-artwork__image ember129802852">
+  <style>
+    .ember129802852, #ember129802852::before {
+        width: 300px;
+        height: 533px;
+      }
+@media (min-width: 736px) {
+          .ember129802852, #ember129802852::before {
+        width: 158px;
+        height: 280px;
+      }
+        }
+@media (min-width: 1069px) {
+          .ember129802852, #ember129802852::before {
+        width: 230px;
+        height: 408px;
+      }
+        }
+  </style>
+</picture>
+        </li>
+        <li class="l-column small-2 medium-3 large-3">
+          <picture id="ember129802857" class="we-artwork--fullwidth we-artwork--screenshot-platform-iphone we-artwork--screenshot-version-iphone6+ we-artwork--screenshot-orientation-portrait we-artwork ember-view">      <source srcset="https://is1-ssl.mzstatic.com/image/thumb/Purple127/v4/a3/a3/47/a3a34798-0a55-49d8-0e2c-dfa580373fd6/pr_source.jpg/230x0w.jpg 1x,https://is1-ssl.mzstatic.com/image/thumb/Purple127/v4/a3/a3/47/a3a34798-0a55-49d8-0e2c-dfa580373fd6/pr_source.jpg/460x0w.jpg 2x,https://is1-ssl.mzstatic.com/image/thumb/Purple127/v4/a3/a3/47/a3a34798-0a55-49d8-0e2c-dfa580373fd6/pr_source.jpg/690x0w.jpg 3x" media="(min-width: 1069px)">
+<!---->      <source srcset="https://is1-ssl.mzstatic.com/image/thumb/Purple127/v4/a3/a3/47/a3a34798-0a55-49d8-0e2c-dfa580373fd6/pr_source.jpg/158x0w.jpg 1x,https://is1-ssl.mzstatic.com/image/thumb/Purple127/v4/a3/a3/47/a3a34798-0a55-49d8-0e2c-dfa580373fd6/pr_source.jpg/316x0w.jpg 2x,https://is1-ssl.mzstatic.com/image/thumb/Purple127/v4/a3/a3/47/a3a34798-0a55-49d8-0e2c-dfa580373fd6/pr_source.jpg/474x0w.jpg 3x" media="(min-width: 736px)">
+<!---->      <source srcset="https://is1-ssl.mzstatic.com/image/thumb/Purple127/v4/a3/a3/47/a3a34798-0a55-49d8-0e2c-dfa580373fd6/pr_source.jpg/300x0w.jpg 1x,https://is1-ssl.mzstatic.com/image/thumb/Purple127/v4/a3/a3/47/a3a34798-0a55-49d8-0e2c-dfa580373fd6/pr_source.jpg/600x0w.jpg 2x,https://is1-ssl.mzstatic.com/image/thumb/Purple127/v4/a3/a3/47/a3a34798-0a55-49d8-0e2c-dfa580373fd6/pr_source.jpg/900x0w.jpg 3x">
+      <img src="https://is1-ssl.mzstatic.com/image/thumb/Purple127/v4/a3/a3/47/a3a34798-0a55-49d8-0e2c-dfa580373fd6/pr_source.jpg/300x0w.jpg" style="background-color: #ffffff;" alt class="we-artwork__image ember129802857">
+  <style>
+    .ember129802857, #ember129802857::before {
+        width: 300px;
+        height: 533px;
+      }
+@media (min-width: 736px) {
+          .ember129802857, #ember129802857::before {
+        width: 158px;
+        height: 280px;
+      }
+        }
+@media (min-width: 1069px) {
+          .ember129802857, #ember129802857::before {
+        width: 230px;
+        height: 408px;
+      }
+        }
+  </style>
+</picture>
+        </li>
+        <li class="l-column small-2 medium-3 large-3">
+          <picture id="ember129802862" class="we-artwork--fullwidth we-artwork--screenshot-platform-iphone we-artwork--screenshot-version-iphone6+ we-artwork--screenshot-orientation-portrait we-artwork ember-view">      <source srcset="https://is5-ssl.mzstatic.com/image/thumb/Purple127/v4/ab/4d/65/ab4d657f-c838-5b47-d618-61242f87b01e/pr_source.jpg/230x0w.jpg 1x,https://is5-ssl.mzstatic.com/image/thumb/Purple127/v4/ab/4d/65/ab4d657f-c838-5b47-d618-61242f87b01e/pr_source.jpg/460x0w.jpg 2x,https://is5-ssl.mzstatic.com/image/thumb/Purple127/v4/ab/4d/65/ab4d657f-c838-5b47-d618-61242f87b01e/pr_source.jpg/690x0w.jpg 3x" media="(min-width: 1069px)">
+<!---->      <source srcset="https://is5-ssl.mzstatic.com/image/thumb/Purple127/v4/ab/4d/65/ab4d657f-c838-5b47-d618-61242f87b01e/pr_source.jpg/158x0w.jpg 1x,https://is5-ssl.mzstatic.com/image/thumb/Purple127/v4/ab/4d/65/ab4d657f-c838-5b47-d618-61242f87b01e/pr_source.jpg/316x0w.jpg 2x,https://is5-ssl.mzstatic.com/image/thumb/Purple127/v4/ab/4d/65/ab4d657f-c838-5b47-d618-61242f87b01e/pr_source.jpg/474x0w.jpg 3x" media="(min-width: 736px)">
+<!---->      <source srcset="https://is5-ssl.mzstatic.com/image/thumb/Purple127/v4/ab/4d/65/ab4d657f-c838-5b47-d618-61242f87b01e/pr_source.jpg/300x0w.jpg 1x,https://is5-ssl.mzstatic.com/image/thumb/Purple127/v4/ab/4d/65/ab4d657f-c838-5b47-d618-61242f87b01e/pr_source.jpg/600x0w.jpg 2x,https://is5-ssl.mzstatic.com/image/thumb/Purple127/v4/ab/4d/65/ab4d657f-c838-5b47-d618-61242f87b01e/pr_source.jpg/900x0w.jpg 3x">
+      <img src="https://is5-ssl.mzstatic.com/image/thumb/Purple127/v4/ab/4d/65/ab4d657f-c838-5b47-d618-61242f87b01e/pr_source.jpg/300x0w.jpg" style="background-color: #ffffff;" alt class="we-artwork__image ember129802862">
+  <style>
+    .ember129802862, #ember129802862::before {
+        width: 300px;
+        height: 533px;
+      }
+@media (min-width: 736px) {
+          .ember129802862, #ember129802862::before {
+        width: 158px;
+        height: 280px;
+      }
+        }
+@media (min-width: 1069px) {
+          .ember129802862, #ember129802862::before {
+        width: 230px;
+        height: 408px;
+      }
+        }
+  </style>
+</picture>
+        </li>
+        <li class="l-column small-2 medium-3 large-3">
+          <picture id="ember129802867" class="we-artwork--fullwidth we-artwork--screenshot-platform-iphone we-artwork--screenshot-version-iphone6+ we-artwork--screenshot-orientation-portrait we-artwork ember-view">      <source srcset="https://is1-ssl.mzstatic.com/image/thumb/Purple127/v4/43/fb/e8/43fbe826-f7b3-2a29-90fe-041288332a1c/pr_source.jpg/230x0w.jpg 1x,https://is1-ssl.mzstatic.com/image/thumb/Purple127/v4/43/fb/e8/43fbe826-f7b3-2a29-90fe-041288332a1c/pr_source.jpg/460x0w.jpg 2x,https://is1-ssl.mzstatic.com/image/thumb/Purple127/v4/43/fb/e8/43fbe826-f7b3-2a29-90fe-041288332a1c/pr_source.jpg/690x0w.jpg 3x" media="(min-width: 1069px)">
+<!---->      <source srcset="https://is1-ssl.mzstatic.com/image/thumb/Purple127/v4/43/fb/e8/43fbe826-f7b3-2a29-90fe-041288332a1c/pr_source.jpg/158x0w.jpg 1x,https://is1-ssl.mzstatic.com/image/thumb/Purple127/v4/43/fb/e8/43fbe826-f7b3-2a29-90fe-041288332a1c/pr_source.jpg/316x0w.jpg 2x,https://is1-ssl.mzstatic.com/image/thumb/Purple127/v4/43/fb/e8/43fbe826-f7b3-2a29-90fe-041288332a1c/pr_source.jpg/474x0w.jpg 3x" media="(min-width: 736px)">
+<!---->      <source srcset="https://is1-ssl.mzstatic.com/image/thumb/Purple127/v4/43/fb/e8/43fbe826-f7b3-2a29-90fe-041288332a1c/pr_source.jpg/300x0w.jpg 1x,https://is1-ssl.mzstatic.com/image/thumb/Purple127/v4/43/fb/e8/43fbe826-f7b3-2a29-90fe-041288332a1c/pr_source.jpg/600x0w.jpg 2x,https://is1-ssl.mzstatic.com/image/thumb/Purple127/v4/43/fb/e8/43fbe826-f7b3-2a29-90fe-041288332a1c/pr_source.jpg/900x0w.jpg 3x">
+      <img src="https://is1-ssl.mzstatic.com/image/thumb/Purple127/v4/43/fb/e8/43fbe826-f7b3-2a29-90fe-041288332a1c/pr_source.jpg/300x0w.jpg" style="background-color: #ffffff;" alt class="we-artwork__image ember129802867">
+  <style>
+    .ember129802867, #ember129802867::before {
+        width: 300px;
+        height: 533px;
+      }
+@media (min-width: 736px) {
+          .ember129802867, #ember129802867::before {
+        width: 158px;
+        height: 280px;
+      }
+        }
+@media (min-width: 1069px) {
+          .ember129802867, #ember129802867::before {
+        width: 230px;
+        height: 408px;
+      }
+        }
+  </style>
+</picture>
+        </li>
+        <li class="l-column small-2 medium-3 large-3">
+          <picture id="ember129802872" class="we-artwork--fullwidth we-artwork--screenshot-platform-iphone we-artwork--screenshot-version-iphone6+ we-artwork--screenshot-orientation-portrait we-artwork ember-view">      <source srcset="https://is2-ssl.mzstatic.com/image/thumb/Purple127/v4/a6/2e/ec/a62eec61-eb9a-7ca7-8809-42fc7db1ce2c/pr_source.jpg/230x0w.jpg 1x,https://is2-ssl.mzstatic.com/image/thumb/Purple127/v4/a6/2e/ec/a62eec61-eb9a-7ca7-8809-42fc7db1ce2c/pr_source.jpg/460x0w.jpg 2x,https://is2-ssl.mzstatic.com/image/thumb/Purple127/v4/a6/2e/ec/a62eec61-eb9a-7ca7-8809-42fc7db1ce2c/pr_source.jpg/690x0w.jpg 3x" media="(min-width: 1069px)">
+<!---->      <source srcset="https://is2-ssl.mzstatic.com/image/thumb/Purple127/v4/a6/2e/ec/a62eec61-eb9a-7ca7-8809-42fc7db1ce2c/pr_source.jpg/158x0w.jpg 1x,https://is2-ssl.mzstatic.com/image/thumb/Purple127/v4/a6/2e/ec/a62eec61-eb9a-7ca7-8809-42fc7db1ce2c/pr_source.jpg/316x0w.jpg 2x,https://is2-ssl.mzstatic.com/image/thumb/Purple127/v4/a6/2e/ec/a62eec61-eb9a-7ca7-8809-42fc7db1ce2c/pr_source.jpg/474x0w.jpg 3x" media="(min-width: 736px)">
+<!---->      <source srcset="https://is2-ssl.mzstatic.com/image/thumb/Purple127/v4/a6/2e/ec/a62eec61-eb9a-7ca7-8809-42fc7db1ce2c/pr_source.jpg/300x0w.jpg 1x,https://is2-ssl.mzstatic.com/image/thumb/Purple127/v4/a6/2e/ec/a62eec61-eb9a-7ca7-8809-42fc7db1ce2c/pr_source.jpg/600x0w.jpg 2x,https://is2-ssl.mzstatic.com/image/thumb/Purple127/v4/a6/2e/ec/a62eec61-eb9a-7ca7-8809-42fc7db1ce2c/pr_source.jpg/900x0w.jpg 3x">
+      <img src="https://is2-ssl.mzstatic.com/image/thumb/Purple127/v4/a6/2e/ec/a62eec61-eb9a-7ca7-8809-42fc7db1ce2c/pr_source.jpg/300x0w.jpg" style="background-color: #ffffff;" alt class="we-artwork__image ember129802872">
+  <style>
+    .ember129802872, #ember129802872::before {
+        width: 300px;
+        height: 533px;
+      }
+@media (min-width: 736px) {
+          .ember129802872, #ember129802872::before {
+        width: 158px;
+        height: 280px;
+      }
+        }
+@media (min-width: 1069px) {
+          .ember129802872, #ember129802872::before {
+        width: 230px;
+        height: 408px;
+      }
+        }
+  </style>
+</picture>
+        </li>
+  </ul>
+<!----></div>
+</div>
+  </section>
+
+
+    <section class="l-content-width section section--bordered">
+      <div class="section__description">
+        <h2 class="section__headline">简介</h2>
+        <p aria-label="千万高品质音乐，四亿用户共同的选择！ 音乐社交、丰富乐评、场景电台、高清视频MV、权威榜单、精彩音乐直播、专利音效、智能搜索…百度音乐，极致的音乐娱乐APP！ 1. 千万曲库：热门歌手、影视原声、怀旧金曲，都在这里； 2. 音乐社交：从陌生到老铁，只一首歌的距离； 3. 丰富乐评：撒花or吐槽、你说了算； 4. 场景电台：自动匹配你的音乐品味； 5. 高清视频MV：360°高清视听感受； 6. 权威榜单：为爱豆音乐打榜冲人气，彰显粉丝力量； 7. 精彩音乐直播：围观大咖明星show，直击热门娱乐活动； 8. 专利音效：享受极致的音效品质； 9. 智能搜索：源于百度，精于体验； 10.尊享会员服务：覆盖音视频、演出、应援、周边的四维音乐会员服务； 11. 音乐商城： 一站式音乐消费平台！ 翻牌百度音乐，走起！ 如您在使用过程中有任何意见或问题，都可以通过以下方式联系我们哦： 官方微博：@百度音乐 官方反馈邮箱：userfeedback@baidu.com，我们期待您的宝贵意见； 官方QQ群：198081821 欢迎加入，与音乐达人们一起交流。" id="ember129802880" class="we-truncate we-truncate--multi-line we-truncate--interactive ember-view">  <div class="we-truncate__child">
+    <div id="ember129802881" class="we-clamp we-clamp--lines-3 ember-view"><span>千万高品质音乐，四亿用户共同的选择！<br />音乐社交、丰富乐评、场景电台、高清视频MV、权威榜单、精彩音乐直播、专利音效、智能搜索…百度音乐，极致的音乐娱乐APP！<br /> <br />1. 千万曲库：热门歌手、影视原声、怀旧金曲，都在这里；<br />2. 音乐社交：从陌生到老铁，只一首歌的距离；<br />3. 丰富乐评：撒花or吐槽、你说了算；<br />4. 场景电台：自动匹配你的音乐品味；<br />5. 高清视频MV：360°高清视听感受；<br />6. 权威榜单：为爱豆音乐打榜冲人气，彰显粉丝力量；<br />7. 精彩音乐直播：围观大咖明星show，直击热门娱乐活动；<br />8. 专利音效：享受极致的音效品质；<br />9. 智能搜索：源于百度，精于体验；<br />10.尊享会员服务：覆盖音视频、演出、应援、周边的四维音乐会员服务；<br />11. 音乐商城： 一站式音乐消费平台！<br /> <br />翻牌百度音乐，走起！<br /> <br />如您在使用过程中有任何意见或问题，都可以通过以下方式联系我们哦：<br />官方微博：@百度音乐<br />官方反馈邮箱：userfeedback@baidu.com，我们期待您的宝贵意见；<br />官方QQ群：198081821 <br />欢迎加入，与音乐达人们一起交流。</span>
+</div>
+  </div>
+<!----></p>
+      </div>
+    </section>
+
+    <section class="l-content-width section section--bordered whats-new">
+      <div class="section__nav section__nav--small">
+        <h2 class="whats-new__headline">新内容</h2>
+<div id="ember129802890" class="version-history ember-view">  <button id="modal-trigger-ember129802890" class="we-modal__show link">版本记录</button>
+<div role="dialog" aria-hidden="true" aria-labelledby="modal-trigger-ember129802890" class="we-modal we-modal--page-overlay ">
+  <div id="modal-content-ember129802890" role="document" tabindex="0" class="we-modal__content large-10 medium-12">
+    <div class="we-modal__content__wrapper">
+                  <h3 class="version-history__headline">版本记录</h3>
+            <ul class="version-history__items">
+                <li class="version-history__item">
+                  <h4 class="version-history__item__version-number">6.2.0</h4>
+                  <time data-test-we-datetime datetime="Mar 26, 2018" aria-label="March 26, 2018" class="version-history__item__release-date">Mar 26, 2018</time>
+                  <div title="1. 个性化资讯推荐上线啦~边听音乐边刷娱乐新鲜事儿~ 2. 登录功能优化，注册、登录更便捷^0^" id="ember129802897" class="version-history__item__release-notes we-truncate we-truncate--multi-line ember-view">  <div class="we-truncate__child">
+    <div id="ember129802898" class="we-clamp we-clamp--lines-5 ember-view"><span>1.    个性化资讯推荐上线啦~边听音乐边刷娱乐新鲜事儿~<br />2.    登录功能优化，注册、登录更便捷^0^</span>
+</div>
+  </div>
+<!----></div>
+                </li>
+                <li class="version-history__item">
+                  <h4 class="version-history__item__version-number">6.1.1</h4>
+                  <time data-test-we-datetime datetime="Feb 8, 2018" aria-label="February 8, 2018" class="version-history__item__release-date">Feb 8, 2018</time>
+                  <div title="新年快乐！百度音乐祝您狗年吉祥，福享新春^-^ -推荐功能优化，内容推荐更精准哦" id="ember129802900" class="version-history__item__release-notes we-truncate we-truncate--multi-line ember-view">  <div class="we-truncate__child">
+    <div id="ember129802901" class="we-clamp we-clamp--lines-5 ember-view"><span>新年快乐！百度音乐祝您狗年吉祥，福享新春^-^<br />-推荐功能优化，内容推荐更精准哦</span>
+</div>
+  </div>
+<!----></div>
+                </li>
+                <li class="version-history__item">
+                  <h4 class="version-history__item__version-number">6.1.0</h4>
+                  <time data-test-we-datetime datetime="Jan 31, 2018" aria-label="January 31, 2018" class="version-history__item__release-date">Jan 31, 2018</time>
+                  <div title="1. “我的音乐”页面升级，新增推荐歌单，每日推荐海量你喜欢的歌单~ 2. 新增口味选择功能，选择口味后推荐内容更精准哦^~^ 3. 页面结构调整，动态收入到侧边栏啦,不要找不到哦~下导航增加视频tab，爱豆的新MV第一时间看到٩(^ε^｡)۶" id="ember129802903" class="version-history__item__release-notes we-truncate we-truncate--multi-line ember-view">  <div class="we-truncate__child">
+    <div id="ember129802904" class="we-clamp we-clamp--lines-5 ember-view"><span>1.    “我的音乐”页面升级，新增推荐歌单，每日推荐海量你喜欢的歌单~<br />2.    新增口味选择功能，选择口味后推荐内容更精准哦^~^<br />3.    页面结构调整，动态收入到侧边栏啦,不要找不到哦~下导航增加视频tab，爱豆的新MV第一时间看到٩(^ε^｡)۶</span>
+</div>
+  </div>
+<!----></div>
+                </li>
+                <li class="version-history__item">
+                  <h4 class="version-history__item__version-number">6.0.7</h4>
+                  <time data-test-we-datetime datetime="Nov 15, 2017" aria-label="November 15, 2017" class="version-history__item__release-date">Nov 15, 2017</time>
+                  <div title="1、代码优化APP运行更流畅 2、修复了一小丢丢大家反馈的bug 本次将在评论中抽取十位幸运用户，赠送一年百度音乐VIP会员； 不要问我为什么，百度音乐小哥哥就是这么任性。 2333" id="ember129802906" class="version-history__item__release-notes we-truncate we-truncate--multi-line ember-view">  <div class="we-truncate__child">
+    <div id="ember129802907" class="we-clamp we-clamp--lines-5 ember-view"><span>1、代码优化APP运行更流畅<br />2、修复了一小丢丢大家反馈的bug<br /><br />本次将在评论中抽取十位幸运用户，赠送一年百度音乐VIP会员；<br />不要问我为什么，百度音乐小哥哥就是这么任性。<br />2333</span>
+</div>
+  </div>
+<!----></div>
+                </li>
+                <li class="version-history__item">
+                  <h4 class="version-history__item__version-number">6.0.6</h4>
+                  <time data-test-we-datetime datetime="Oct 25, 2017" aria-label="October 25, 2017" class="version-history__item__release-date">Oct 25, 2017</time>
+                  <div title="1、新增礼物打赏功能，喜欢TA就送朵玫瑰花吧~ 2、程序猿GG优化了性能，新版用起来更快更流畅！" id="ember129802909" class="version-history__item__release-notes we-truncate we-truncate--multi-line ember-view">  <div class="we-truncate__child">
+    <div id="ember129802910" class="we-clamp we-clamp--lines-5 ember-view"><span>1、新增礼物打赏功能，喜欢TA就送朵玫瑰花吧~<br />2、程序猿GG优化了性能，新版用起来更快更流畅！</span>
+</div>
+  </div>
+<!----></div>
+                </li>
+                <li class="version-history__item">
+                  <h4 class="version-history__item__version-number">6.0.5</h4>
+                  <time data-test-we-datetime datetime="Sep 30, 2017" aria-label="September 30, 2017" class="version-history__item__release-date">Sep 30, 2017</time>
+                  <div title="1.好歌陪你过“十一”！品牌专区即将闪亮登场~ (索尼、滚石、海蝶、贝阁、摩登天空、街声、看见音乐统统呈现~让你的耳朵不放假٩(^_^)۶ ) 2.电信流量包上线~假期听歌不用担心流量啦 3.潜心修炼，消灭bug，老铁我用起来更“稳“了~" id="ember129802912" class="version-history__item__release-notes we-truncate we-truncate--multi-line ember-view">  <div class="we-truncate__child">
+    <div id="ember129802913" class="we-clamp we-clamp--lines-5 ember-view"><span>1.好歌陪你过“十一”！品牌专区即将闪亮登场~<br />(索尼、滚石、海蝶、贝阁、摩登天空、街声、看见音乐统统呈现~让你的耳朵不放假٩(^_^)۶ )<br />2.电信流量包上线~假期听歌不用担心流量啦<br />3.潜心修炼，消灭bug，老铁我用起来更“稳“了~</span>
+</div>
+  </div>
+<!----></div>
+                </li>
+                <li class="version-history__item">
+                  <h4 class="version-history__item__version-number">6.0.4</h4>
+                  <time data-test-we-datetime datetime="Sep 6, 2017" aria-label="September 6, 2017" class="version-history__item__release-date">Sep 6, 2017</time>
+                  <div title="1.MV星人福利！增加一键播放MV按钮，想看就看，敲过瘾~ 2.找不到你想看的那个视频了？现在支持搜索视频啦~搜搜看 3.八卦消息：设计师GG和颜值最高的程序员GG携手完成了这次界面优化。哎？什么搭配干活不累来着？ 4.修复了一堆烦人的bug后，程序员GG们人身安全得到了保障。祭天？不存在的！安心敲代码~" id="ember129802915" class="version-history__item__release-notes we-truncate we-truncate--multi-line ember-view">  <div class="we-truncate__child">
+    <div id="ember129802916" class="we-clamp we-clamp--lines-5 ember-view"><span>1.MV星人福利！增加一键播放MV按钮，想看就看，敲过瘾~<br />2.找不到你想看的那个视频了？现在支持搜索视频啦~搜搜看<br />3.八卦消息：设计师GG和颜值最高的程序员GG携手完成了这次界面优化。哎？什么搭配干活不累来着？<br />4.修复了一堆烦人的bug后，程序员GG们人身安全得到了保障。祭天？不存在的！安心敲代码~</span>
+</div>
+  </div>
+<!----></div>
+                </li>
+                <li class="version-history__item">
+                  <h4 class="version-history__item__version-number">6.0.3</h4>
+                  <time data-test-we-datetime datetime="Sep 3, 2017" aria-label="September 3, 2017" class="version-history__item__release-date">Sep 3, 2017</time>
+                  <div title="1.MV星人福利！增加一键播放MV按钮，想看就看，敲过瘾~ 2.找不到你想看的那个视频了？现在支持搜索视频啦~搜搜看 3.八卦消息：设计师GG和颜值最高的程序员GG携手完成了这次界面优化。哎？什么搭配干活不累来着？ 4.修复了一堆烦人的bug后，程序员GG们人身安全得到了保障。祭天？不存在的！安心敲代码~" id="ember129802918" class="version-history__item__release-notes we-truncate we-truncate--multi-line ember-view">  <div class="we-truncate__child">
+    <div id="ember129802919" class="we-clamp we-clamp--lines-5 ember-view"><span>1.MV星人福利！增加一键播放MV按钮，想看就看，敲过瘾~<br />2.找不到你想看的那个视频了？现在支持搜索视频啦~搜搜看<br />3.八卦消息：设计师GG和颜值最高的程序员GG携手完成了这次界面优化。哎？什么搭配干活不累来着？<br />4.修复了一堆烦人的bug后，程序员GG们人身安全得到了保障。祭天？不存在的！安心敲代码~</span>
+</div>
+  </div>
+<!----></div>
+                </li>
+                <li class="version-history__item">
+                  <h4 class="version-history__item__version-number">6.0.2</h4>
+                  <time data-test-we-datetime datetime="Aug 11, 2017" aria-label="August 11, 2017" class="version-history__item__release-date">Aug 11, 2017</time>
+                  <div title="1.程序猿哥哥优化了一波代码，大幅度提升稳定性 2.添加了加速属性，页面加载起来顺畅多了" id="ember129802921" class="version-history__item__release-notes we-truncate we-truncate--multi-line ember-view">  <div class="we-truncate__child">
+    <div id="ember129802922" class="we-clamp we-clamp--lines-5 ember-view"><span>1.程序猿哥哥优化了一波代码，大幅度提升稳定性<br />2.添加了加速属性，页面加载起来顺畅多了</span>
+</div>
+  </div>
+<!----></div>
+                </li>
+                <li class="version-history__item">
+                  <h4 class="version-history__item__version-number">6.0.0</h4>
+                  <time data-test-we-datetime datetime="Aug 9, 2017" aria-label="August 9, 2017" class="version-history__item__release-date">Aug 9, 2017</time>
+                  <div title="薛之谦演唱会抢票活动火热进行中！ 1.结构优化：栏目模块化，操作更便捷。 2.随心听：听歌随心所欲；听歌时间、流量消耗尽在掌控。 3.视频播放：播放体验升级，支持边看边聊。 4.界面优化：功能更清晰，界面更清爽。 下个版本还会上线什么新功能？在评论区留言，猜中有奖！快来参与吧！" id="ember129802924" class="version-history__item__release-notes we-truncate we-truncate--multi-line ember-view">  <div class="we-truncate__child">
+    <div id="ember129802925" class="we-clamp we-clamp--lines-5 ember-view"><span>薛之谦演唱会抢票活动火热进行中！<br />1.结构优化：栏目模块化，操作更便捷。<br />2.随心听：听歌随心所欲；听歌时间、流量消耗尽在掌控。<br />3.视频播放：播放体验升级，支持边看边聊。<br />4.界面优化：功能更清晰，界面更清爽。<br />下个版本还会上线什么新功能？在评论区留言，猜中有奖！快来参与吧！</span>
+</div>
+  </div>
+<!----></div>
+                </li>
+                <li class="version-history__item">
+                  <h4 class="version-history__item__version-number">5.9.12</h4>
+                  <time data-test-we-datetime datetime="May 25, 2017" aria-label="May 25, 2017" class="version-history__item__release-date">May 25, 2017</time>
+                  <div title="1.这次有一大堆细节优化 2.性能越来越好了" id="ember129802927" class="version-history__item__release-notes we-truncate we-truncate--multi-line ember-view">  <div class="we-truncate__child">
+    <div id="ember129802928" class="we-clamp we-clamp--lines-5 ember-view"><span>1.这次有一大堆细节优化<br />2.性能越来越好了</span>
+</div>
+  </div>
+<!----></div>
+                </li>
+                <li class="version-history__item">
+                  <h4 class="version-history__item__version-number">5.9.11</h4>
+                  <time data-test-we-datetime datetime="Apr 17, 2017" aria-label="April 17, 2017" class="version-history__item__release-date">Apr 17, 2017</time>
+                  <div title="1. 你喜欢的视频可以轻松分享出去啦！快让微博微信的朋友知道你在看什么！ 2. 搜索歌曲后会有“热卖”标识，让你跟音乐趋势保持同步！ 3. 看评论时增加了相关的歌曲信息，支持或反对时更明确目标啦！ 4. 产品哥说，这次有一大堆细节优化，保证再也不痒了！" id="ember129802930" class="version-history__item__release-notes we-truncate we-truncate--multi-line ember-view">  <div class="we-truncate__child">
+    <div id="ember129802931" class="we-clamp we-clamp--lines-5 ember-view"><span>1. 你喜欢的视频可以轻松分享出去啦！快让微博微信的朋友知道你在看什么！<br />2. 搜索歌曲后会有“热卖”标识，让你跟音乐趋势保持同步！<br />3. 看评论时增加了相关的歌曲信息，支持或反对时更明确目标啦！<br />4. 产品哥说，这次有一大堆细节优化，保证再也不痒了！</span>
+</div>
+  </div>
+<!----></div>
+                </li>
+                <li class="version-history__item">
+                  <h4 class="version-history__item__version-number">5.9.10</h4>
+                  <time data-test-we-datetime datetime="Apr 3, 2017" aria-label="April 3, 2017" class="version-history__item__release-date">Apr 3, 2017</time>
+                  <div title id="ember129802933" class="version-history__item__release-notes we-truncate we-truncate--multi-line ember-view">  <div class="we-truncate__child">
+    <div id="ember129802934" class="we-clamp we-clamp--lines-5 ember-view"><span></span>
+</div>
+  </div>
+<!----></div>
+                </li>
+            </ul>
+
+    </div>
+
+    <button aria-label="关闭" class="we-modal__close"></button>
+  </div>
+
+  <button tabindex="-1" aria-label="关闭" class="we-modal__close--overlay"></button>
+</div>
+</div>      </div>
+      <div class="l-row whats-new__content">
+          <div class="l-column small-12 medium-3 large-4 small-valign-top whats-new__latest">
+            <div class="l-row">
+              <time data-test-we-datetime datetime="Mar 26, 2018" aria-label="March 26, 2018" class="">Mar 26, 2018</time>
+              <p class="l-column small-6 medium-12 whats-new__latest__version">版本 6.2.0</p>
+            </div>
+          </div>
+        <div class="l-column small-12 medium-9 large-8 small-valign-top">
+          <p aria-label="1. 个性化资讯推荐上线啦~边听音乐边刷娱乐新鲜事儿~ 2. 登录功能优化，注册、登录更便捷^0^" id="ember129802949" class="we-truncate we-truncate--multi-line we-truncate--interactive ember-view">  <div class="we-truncate__child">
+    <div id="ember129802950" class="we-clamp we-clamp--lines-5 ember-view"><span>1.    个性化资讯推荐上线啦~边听音乐边刷娱乐新鲜事儿~<br />2.    登录功能优化，注册、登录更便捷^0^</span>
+</div>
+  </div>
+<!----></p>
+        </div>
+      </div>
+    </section>
+
+      <section class="l-content-width section section--bordered">
+        <div class="section__nav">
+          <h2 class="section__headline">评分及评论</h2>
+        </div>
+          <div id="ember129802955" class="we-customer-ratings lockup ember-view"><div class="l-row">
+  <div class="we-customer-ratings__stats l-column small-4 medium-6 large-4">
+    <h3 class="we-customer-ratings__averages"><span class="we-customer-ratings__averages__display">4.3</span>（满分 5 分）</h3>
+      <h4 class="we-customer-ratings__count small-hide medium-show">7 个评分</h4>
+  </div>
+  <div class=" l-column small-8 medium-6 large-4">
+    <figure class="we-star-bar-graph">
+        <div class="we-star-bar-graph__row">
+          <span class="we-star-bar-graph__stars we-star-bar-graph__stars--5"></span>
+          <div class="we-star-bar-graph__bar">
+            <div style="width: 71%;" class="we-star-bar-graph__bar__foreground-bar"></div>
+          </div>
+        </div>
+        <div class="we-star-bar-graph__row">
+          <span class="we-star-bar-graph__stars we-star-bar-graph__stars--4"></span>
+          <div class="we-star-bar-graph__bar">
+            <div style="width: 14%;" class="we-star-bar-graph__bar__foreground-bar"></div>
+          </div>
+        </div>
+        <div class="we-star-bar-graph__row">
+          <span class="we-star-bar-graph__stars we-star-bar-graph__stars--3"></span>
+          <div class="we-star-bar-graph__bar">
+            <div style="width: 0%;" class="we-star-bar-graph__bar__foreground-bar"></div>
+          </div>
+        </div>
+        <div class="we-star-bar-graph__row">
+          <span class="we-star-bar-graph__stars we-star-bar-graph__stars--2"></span>
+          <div class="we-star-bar-graph__bar">
+            <div style="width: 0%;" class="we-star-bar-graph__bar__foreground-bar"></div>
+          </div>
+        </div>
+        <div class="we-star-bar-graph__row">
+          <span class="we-star-bar-graph__stars "></span>
+          <div class="we-star-bar-graph__bar">
+            <div style="width: 14%;" class="we-star-bar-graph__bar__foreground-bar"></div>
+          </div>
+        </div>
+    </figure>
+      <h4 class="we-customer-ratings__count medium-hide">7 个评分</h4>
+  </div>
+</div></div>
+        <div class="l-row l-row--peek">
+  <div id="ember129802975" class="small-valign-top l-column--equal-height l-column small-4 medium-6 large-4 ember-view"><div id="ember129802976" class="ember-view"><!----><div role="dialog" aria-hidden="true" aria-labelledby="ember129802975" class="we-modal we-modal--page-overlay ">
+  <div id="modal-content-ember129802976" role="document" tabindex="0" class="we-modal__content large-10 medium-12 we-modal__content--review">
+    <div class="we-modal__content__wrapper">
+                          <div id="ember129802977" class="we-customer-review lockup ember-view"><div class="we-customer-review__header">
+  <h3 id="ember129802978" class="we-customer-review__title we-truncate we-truncate--single-line ember-view">  都叫青春版
+</h3>
+
+  <h4 class="we-customer-review__date">
+    <time data-test-we-datetime datetime="Feb 9, 2018" aria-label="February 9, 2018" class="">Feb 9, 2018</time>
+  </h4>
+</div>
+
+<div class="we-customer-review__subhead">
+  <figure aria-label="5（满分 5 分）" id="ember129802979" class="we-customer-review__rating we-star-rating ember-view"><span class="we-star-rating-stars-outlines">
+  <span class="we-star-rating-stars we-star-rating-stars-5"></span>
+</span>
+<!----></figure>
+  <div id="ember129802980" class="we-customer-review__user we-truncate we-truncate--single-line ember-view">  411611500
+</div>
+</div>
+  小米也有青春版，华为也有青春版。
+
+<!----></div>
+
+
+    </div>
+
+    <button aria-label="关闭" class="we-modal__close"></button>
+  </div>
+
+  <button tabindex="-1" aria-label="关闭" class="we-modal__close--overlay"></button>
+</div>
+</div>                  <div id="ember129802991" class="we-customer-review lockup ember-view"><div class="we-customer-review__header">
+  <h3 id="ember129802992" class="we-customer-review__title we-truncate we-truncate--single-line ember-view">  都叫青春版
+</h3>
+
+  <h4 class="we-customer-review__date">
+    <time data-test-we-datetime datetime="Feb 9, 2018" aria-label="February 9, 2018" class="">Feb 9, 2018</time>
+  </h4>
+</div>
+
+<div class="we-customer-review__subhead">
+  <figure aria-label="5（满分 5 分）" id="ember129802993" class="we-customer-review__rating we-star-rating ember-view"><span class="we-star-rating-stars-outlines">
+  <span class="we-star-rating-stars we-star-rating-stars-5"></span>
+</span>
+<!----></figure>
+  <div id="ember129802994" class="we-customer-review__user we-truncate we-truncate--single-line ember-view">  411611500
+</div>
+</div>
+  <p aria-label="小米也有青春版，华为也有青春版。" id="ember129802995" class="we-customer-review__body we-truncate we-truncate--multi-line we-truncate--interactive ember-view">  <div class="we-truncate__child">
+    <div id="ember129802996" class="we-clamp we-clamp--lines-6 ember-view"><span>小米也有青春版，华为也有青春版。</span>
+</div>
+  </div>
+<!----></p>
+<!----></div>
+
+</div>
+  <div id="ember129802998" class="small-valign-top l-column--equal-height l-column small-4 medium-6 large-4 ember-view"><div id="ember129802999" class="ember-view"><!----><div role="dialog" aria-hidden="true" aria-labelledby="ember129802998" class="we-modal we-modal--page-overlay ">
+  <div id="modal-content-ember129802999" role="document" tabindex="0" class="we-modal__content large-10 medium-12 we-modal__content--review">
+    <div class="we-modal__content__wrapper">
+                          <div id="ember129803000" class="we-customer-review lockup ember-view"><div class="we-customer-review__header">
+  <h3 id="ember129803001" class="we-customer-review__title we-truncate we-truncate--single-line ember-view">  青春版，怀旧情怀又来了
+</h3>
+
+  <h4 class="we-customer-review__date">
+    <time data-test-we-datetime datetime="Feb 8, 2018" aria-label="February 8, 2018" class="">Feb 8, 2018</time>
+  </h4>
+</div>
+
+<div class="we-customer-review__subhead">
+  <figure aria-label="5（满分 5 分）" id="ember129803002" class="we-customer-review__rating we-star-rating ember-view"><span class="we-star-rating-stars-outlines">
+  <span class="we-star-rating-stars we-star-rating-stars-5"></span>
+</span>
+<!----></figure>
+  <div id="ember129803003" class="we-customer-review__user we-truncate we-truncate--single-line ember-view">  junxing
+</div>
+</div>
+  很好，又有怀旧的感觉了，给个👍
+
+<!----></div>
+
+
+    </div>
+
+    <button aria-label="关闭" class="we-modal__close"></button>
+  </div>
+
+  <button tabindex="-1" aria-label="关闭" class="we-modal__close--overlay"></button>
+</div>
+</div>                  <div id="ember129803014" class="we-customer-review lockup ember-view"><div class="we-customer-review__header">
+  <h3 id="ember129803015" class="we-customer-review__title we-truncate we-truncate--single-line ember-view">  青春版，怀旧情怀又来了
+</h3>
+
+  <h4 class="we-customer-review__date">
+    <time data-test-we-datetime datetime="Feb 8, 2018" aria-label="February 8, 2018" class="">Feb 8, 2018</time>
+  </h4>
+</div>
+
+<div class="we-customer-review__subhead">
+  <figure aria-label="5（满分 5 分）" id="ember129803016" class="we-customer-review__rating we-star-rating ember-view"><span class="we-star-rating-stars-outlines">
+  <span class="we-star-rating-stars we-star-rating-stars-5"></span>
+</span>
+<!----></figure>
+  <div id="ember129803017" class="we-customer-review__user we-truncate we-truncate--single-line ember-view">  junxing
+</div>
+</div>
+  <p aria-label="很好，又有怀旧的感觉了，给个👍" id="ember129803018" class="we-customer-review__body we-truncate we-truncate--multi-line we-truncate--interactive ember-view">  <div class="we-truncate__child">
+    <div id="ember129803019" class="we-clamp we-clamp--lines-6 ember-view"><span>很好，又有怀旧的感觉了，给个👍</span>
+</div>
+  </div>
+<!----></p>
+<!----></div>
+
+</div>
+  <div id="ember129803021" class="small-valign-top l-column--equal-height l-column small-4 medium-6 large-4 ember-view"><div id="ember129803022" class="ember-view"><!----><div role="dialog" aria-hidden="true" aria-labelledby="ember129803021" class="we-modal we-modal--page-overlay ">
+  <div id="modal-content-ember129803022" role="document" tabindex="0" class="we-modal__content large-10 medium-12 we-modal__content--review">
+    <div class="we-modal__content__wrapper">
+                          <div id="ember129803023" class="we-customer-review lockup ember-view"><div class="we-customer-review__header">
+  <h3 id="ember129803024" class="we-customer-review__title we-truncate we-truncate--single-line ember-view">  下到ipad里图标是蓝色的，而且没有K歌功能了，怎么办？
+</h3>
+
+  <h4 class="we-customer-review__date">
+    <time data-test-we-datetime datetime="Feb 28, 2018" aria-label="February 28, 2018" class="">Feb 28, 2018</time>
+  </h4>
+</div>
+
+<div class="we-customer-review__subhead">
+  <figure aria-label="1（满分 5 分）" id="ember129803025" class="we-customer-review__rating we-star-rating ember-view"><span class="we-star-rating-stars-outlines">
+  <span class="we-star-rating-stars we-star-rating-stars-1"></span>
+</span>
+<!----></figure>
+  <div id="ember129803026" class="we-customer-review__user we-truncate we-truncate--single-line ember-view">  helen666helen
+</div>
+</div>
+  下到ipad里图标是蓝色的，而且没有K歌功能了，怎么办？
+
+<!----></div>
+
+
+    </div>
+
+    <button aria-label="关闭" class="we-modal__close"></button>
+  </div>
+
+  <button tabindex="-1" aria-label="关闭" class="we-modal__close--overlay"></button>
+</div>
+</div>                  <div id="ember129803037" class="we-customer-review lockup ember-view"><div class="we-customer-review__header">
+  <h3 id="ember129803038" class="we-customer-review__title we-truncate we-truncate--single-line ember-view">  下到ipad里图标是蓝色的，而且没有K歌功能了，怎么办？
+</h3>
+
+  <h4 class="we-customer-review__date">
+    <time data-test-we-datetime datetime="Feb 28, 2018" aria-label="February 28, 2018" class="">Feb 28, 2018</time>
+  </h4>
+</div>
+
+<div class="we-customer-review__subhead">
+  <figure aria-label="1（满分 5 分）" id="ember129803039" class="we-customer-review__rating we-star-rating ember-view"><span class="we-star-rating-stars-outlines">
+  <span class="we-star-rating-stars we-star-rating-stars-1"></span>
+</span>
+<!----></figure>
+  <div id="ember129803040" class="we-customer-review__user we-truncate we-truncate--single-line ember-view">  helen666helen
+</div>
+</div>
+  <p aria-label="下到ipad里图标是蓝色的，而且没有K歌功能了，怎么办？" id="ember129803041" class="we-customer-review__body we-truncate we-truncate--multi-line we-truncate--interactive ember-view">  <div class="we-truncate__child">
+    <div id="ember129803042" class="we-clamp we-clamp--lines-6 ember-view"><span>下到ipad里图标是蓝色的，而且没有K歌功能了，怎么办？</span>
+</div>
+  </div>
+<!----></p>
+<!----></div>
+
+</div>
+        </div>
+      </section>
+
+<!---->
+<!---->
+  <section class="l-content-width section section--bordered">
+    <div class="l-row">
+      <div class="l-column small-12">
+        <h2 class="section__headline">信息</h2>
+        <dl class="information-list information-list--app medium-columns">
+          <div class="information-list__item l-row">
+            <dt class="information-list__item__term medium-valign-top l-column medium-3 large-2">销售商</dt>
+            <dd class="information-list__item__definition l-column medium-9 large-10">
+              Beijing yinzhibang Technology Co., LTD
+            </dd>
+          </div>
+          <div class="information-list__item l-row">
+            <dt class="information-list__item__term medium-valign-top l-column medium-3 large-2">大小</dt>
+            <dd aria-label="109.5 MB" class="information-list__item__definition l-column medium-9 large-10">109.5 MB</dd>
+          </div>
+            <div class="information-list__item l-row">
+              <dt class="information-list__item__term medium-valign-top l-column medium-3 large-2">类別</dt>
+              <dd class="information-list__item__definition l-column medium-9 large-10">
+                  <a href="https://itunes.apple.com/cn/genre/id6011" class="link">音乐</a>
+              </dd>
+            </div>
+          <div class="information-list__item l-row">
+            <dt class="information-list__item__term medium-valign-top l-column medium-3 large-2">兼容性</dt>
+            <dd aria-label="需要 iOS 8.0 或更高版本。与 iPhone、iPad 和 iPod touch 兼容。" id="ember129803063" class="information-list__item__definition l-column medium-9 large-10 we-truncate we-truncate--multi-line we-truncate--interactive ember-view">  <div class="we-truncate__child">
+    <div id="ember129803064" class="we-clamp we-clamp--lines-5 ember-view"><span>需要 iOS 8.0 或更高版本。与 iPhone、iPad 和 iPod touch 兼容。</span>
+</div>
+  </div>
+<!----></dd>
+          </div>
+<!---->          <div class="information-list__item l-row">
+            <dt class="information-list__item__term medium-valign-top l-column medium-3 large-2">语言</dt>
+            <dd aria-label="简体中文" id="ember129803069" class="information-list__item__definition l-column medium-9 large-10 we-truncate we-truncate--multi-line we-truncate--interactive ember-view">  <div class="we-truncate__child">
+    <div id="ember129803070" class="we-clamp we-clamp--lines-5 ember-view"><span>简体中文</span>
+</div>
+  </div>
+<!----></dd>
+          </div>
+          <div class="information-list__item l-row">
+            <dt class="information-list__item__term medium-valign-top l-column medium-3 large-2">年龄分级</dt>
+            <dd class="information-list__item__definition l-column medium-9 large-10">因含有以下内容而被评级为 9+：</dd>
+          </div>
+              <div class="information-list__item l-row">
+                <dt aria-hidden="true" class="information-list__item__term medium-valign-top l-column medium-3 large-2"></dt>
+                <dd class="information-list__item__definition l-column medium-9 large-10">偶尔/轻微的亵渎或低俗幽默</dd>
+              </div>
+              <div class="information-list__item l-row">
+                <dt aria-hidden="true" class="information-list__item__term medium-valign-top l-column medium-3 large-2"></dt>
+                <dd class="information-list__item__definition l-column medium-9 large-10">偶尔/轻微的成人/性暗示题材</dd>
+              </div>
+<!---->          <div class="information-list__item l-row">
+            <dt class="information-list__item__term medium-valign-top l-column medium-3 large-2">Copyright</dt>
+            <dd class="information-list__item__definition l-column medium-9 large-10">© 2015 Baidu Inc</dd>
+          </div>
+          <div class="information-list__item l-row">
+            <dt class="information-list__item__term medium-valign-top l-column medium-3 large-2">价格</dt>
+            <dd class="information-list__item__definition l-column medium-9 large-10">免费</dd>
+          </div>
+            <div class="information-list__item l-row">
+              <dt class="information-list__item__term medium-valign-top l-column medium-3 large-2">App 内购买项目</dt>
+              <dd class="information-list__item__definition l-column medium-9 large-10">
+                <ol role="table" class="list-with-numbers">
+<div id="ember129803087" class="ember-view">                      <li class="list-with-numbers__item">
+                      <span class="list-with-numbers__item__title">百度音乐白金VIP会员（一个月）</span>
+                      <span class="list-with-numbers__item__price small-hide medium-show-tablecell">¥12.00</span>
+                    </li>
+
+                      <li class="list-with-numbers__item">
+                      <span class="list-with-numbers__item__title">百度音乐白金VIP会员（一年）</span>
+                      <span class="list-with-numbers__item__price small-hide medium-show-tablecell">¥98.00</span>
+                    </li>
+
+                      <li class="list-with-numbers__item">
+                      <span class="list-with-numbers__item__title">百度音乐白金VIP会员（三个月）</span>
+                      <span class="list-with-numbers__item__price small-hide medium-show-tablecell">¥30.00</span>
+                    </li>
+
+  <button aria-expanded="false" class="we-truncate__button link">
+    更多
+  </button>
+</div>                </ol>
+              </dd>
+            </div>
+
+        </dl>
+      </div>
+      <div class="l-column small-hide medium-show medium-9 medium-offset-3 large-10 large-offset-2">
+        <ul class="inline-list inline-list--app-extensions">
+<!---->            <li class="inline-list__item inline-list__item--spaced">
+              <a href="http://tieba.baidu.com/f?kw=%E7%99%BE%E5%BA%A6%E9%9F%B3%E4%B9%90&amp;ie=utf-8" class="targeted-link link icon icon-after icon-external">App 支持</a>
+            </li>
+<!---->            <li class="inline-list__item inline-list__item--spaced">
+              <a href="http://wappass.baidu.com/passport/agreement" class="targeted-link link icon icon-after icon-external">隐私政策</a>
+            </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section l-content-width small-show medium-hide">
+    <ul class="link-list link-list--a">
+<!---->        <li class="link-list__item link-list__item--a">
+          <a href="http://tieba.baidu.com/f?kw=%E7%99%BE%E5%BA%A6%E9%9F%B3%E4%B9%90&amp;ie=utf-8" class="targeted-link link icon icon-after icon-external">App 支持</a>
+        </li>
+<!---->        <li class="link-list__item link-list__item--a">
+          <a href="http://wappass.baidu.com/passport/agreement" class="targeted-link link icon icon-after icon-external">隐私政策</a>
+        </li>
+    </ul>
+  </section>
+
+    <section class="l-content-width section section--bordered">
+      <div class="section__nav">
+        <h2 class="section__headline">支持</h2>
+      </div>
+      <ul class="supports-list l-row">
+          <li class="supports-list__item l-column l-column--grid small-12 medium-6 large-4">
+            <img src="https://web-experience.itunes.apple.com/assets/images/supports/supports-FamilySharing@2x-f58f31bc78fe9fe7be3565abccbecb34.png" alt class="supports-list__item__artwork">
+            <div class="supports-list__item__copy">
+              <h3 id="ember129803120" class="supports-list__item__copy__heading we-truncate we-truncate--single-line ember-view">  家人共享
+</h3>
+              <h4 aria-label="启用“家人共享”后，此 App 最多可供 6 名家庭成员使用。" id="ember129803125" class="supports-list__item__copy__description we-truncate we-truncate--multi-line we-truncate--interactive ember-view">  <div class="we-truncate__child">
+    <div id="ember129803126" class="we-clamp we-clamp--lines-2 ember-view"><span>启用“家人共享”后，此 App 最多可供 6 名家庭成员使用。</span>
+</div>
+  </div>
+<!----></h4>
+            </div>
+          </li>
+      </ul>
+    </section>
+
+      <section class="l-content-width section section--bordered">
+        <div class="section__nav">
+          <h2 class="section__headline">
+            更多来自此开发人员的 App
+          </h2>
+          <a rel="nofollow" href="/cn/app/true/id1208946007/see-all/more-by-this-developer" id="ember129803131" style="display: none;" class="link section__nav__see-all-link ember-view">查看全部</a>
+        </div>
+
+        <div class="l-row l-row--peek">
+  
+                <a href="https://itunes.apple.com/cn/app/%E5%A3%B0%E8%89%B2/id855064798?mt=8" data-test-we-lockup-kind="iosSoftware" id="ember129803135" class="we-lockup targeted-link l-column small-2 medium-3 large-2 ember-view">    <picture id="ember129803136" class="we-lockup__artwork we-artwork--lockup we-artwork--fullwidth we-artwork--ios-app-icon we-artwork ember-view">      <source srcset="https://is5-ssl.mzstatic.com/image/thumb/Purple4/v4/63/35/b9/6335b958-ef49-1b85-b7e5-477828c54fab/mzl.cutyufsr.png/146x0w.jpg 1x,https://is5-ssl.mzstatic.com/image/thumb/Purple4/v4/63/35/b9/6335b958-ef49-1b85-b7e5-477828c54fab/mzl.cutyufsr.png/292x0w.jpg 2x,https://is5-ssl.mzstatic.com/image/thumb/Purple4/v4/63/35/b9/6335b958-ef49-1b85-b7e5-477828c54fab/mzl.cutyufsr.png/438x0w.jpg 3x" media="(min-width: 1069px)">
+<!---->      <source srcset="https://is5-ssl.mzstatic.com/image/thumb/Purple4/v4/63/35/b9/6335b958-ef49-1b85-b7e5-477828c54fab/mzl.cutyufsr.png/158x0w.jpg 1x,https://is5-ssl.mzstatic.com/image/thumb/Purple4/v4/63/35/b9/6335b958-ef49-1b85-b7e5-477828c54fab/mzl.cutyufsr.png/316x0w.jpg 2x,https://is5-ssl.mzstatic.com/image/thumb/Purple4/v4/63/35/b9/6335b958-ef49-1b85-b7e5-477828c54fab/mzl.cutyufsr.png/474x0w.jpg 3x" media="(min-width: 736px)">
+<!---->      <source srcset="https://is5-ssl.mzstatic.com/image/thumb/Purple4/v4/63/35/b9/6335b958-ef49-1b85-b7e5-477828c54fab/mzl.cutyufsr.png/200x0w.jpg 1x,https://is5-ssl.mzstatic.com/image/thumb/Purple4/v4/63/35/b9/6335b958-ef49-1b85-b7e5-477828c54fab/mzl.cutyufsr.png/400x0w.jpg 2x,https://is5-ssl.mzstatic.com/image/thumb/Purple4/v4/63/35/b9/6335b958-ef49-1b85-b7e5-477828c54fab/mzl.cutyufsr.png/600x0w.jpg 3x">
+      <img src="https://is5-ssl.mzstatic.com/image/thumb/Purple4/v4/63/35/b9/6335b958-ef49-1b85-b7e5-477828c54fab/mzl.cutyufsr.png/200x0w.jpg" alt class="we-artwork__image ember129803136">
+  <style>
+    .ember129803136, #ember129803136::before {
+        width: 200px;
+        height: 200px;
+      }
+@media (min-width: 736px) {
+          .ember129803136, #ember129803136::before {
+        width: 158px;
+        height: 158px;
+      }
+        }
+@media (min-width: 1069px) {
+          .ember129803136, #ember129803136::before {
+        width: 146px;
+        height: 146px;
+      }
+        }
+  </style>
+</picture>
+
+<!---->
+    <h3 class="we-lockup__title targeted-link__target we-truncate we-truncate--single-line">声色</h3>
+
+  <h4 class="we-truncate we-truncate--single-line we-lockup__subtitle targeted-link__target">音乐</h4>
+<!----></a>
+
+
+  
+                <a href="https://itunes.apple.com/cn/app/%E4%B9%90%E6%92%AD-%E6%83%B3%E4%B9%90%E4%BD%A0%E5%B0%B1%E6%9D%A5%E6%92%AD/id956391561?mt=8" data-test-we-lockup-kind="iosSoftware" id="ember129803141" class="we-lockup targeted-link l-column small-2 medium-3 large-2 ember-view">    <picture id="ember129803142" class="we-lockup__artwork we-artwork--lockup we-artwork--fullwidth we-artwork--ios-app-icon we-artwork ember-view">      <source srcset="https://is4-ssl.mzstatic.com/image/thumb/Purple128/v4/9a/1e/3b/9a1e3b08-2944-c380-978e-749b31fa7da5/mzl.kqccfqrm.png/146x0w.jpg 1x,https://is4-ssl.mzstatic.com/image/thumb/Purple128/v4/9a/1e/3b/9a1e3b08-2944-c380-978e-749b31fa7da5/mzl.kqccfqrm.png/292x0w.jpg 2x,https://is4-ssl.mzstatic.com/image/thumb/Purple128/v4/9a/1e/3b/9a1e3b08-2944-c380-978e-749b31fa7da5/mzl.kqccfqrm.png/438x0w.jpg 3x" media="(min-width: 1069px)">
+<!---->      <source srcset="https://is4-ssl.mzstatic.com/image/thumb/Purple128/v4/9a/1e/3b/9a1e3b08-2944-c380-978e-749b31fa7da5/mzl.kqccfqrm.png/158x0w.jpg 1x,https://is4-ssl.mzstatic.com/image/thumb/Purple128/v4/9a/1e/3b/9a1e3b08-2944-c380-978e-749b31fa7da5/mzl.kqccfqrm.png/316x0w.jpg 2x,https://is4-ssl.mzstatic.com/image/thumb/Purple128/v4/9a/1e/3b/9a1e3b08-2944-c380-978e-749b31fa7da5/mzl.kqccfqrm.png/474x0w.jpg 3x" media="(min-width: 736px)">
+<!---->      <source srcset="https://is4-ssl.mzstatic.com/image/thumb/Purple128/v4/9a/1e/3b/9a1e3b08-2944-c380-978e-749b31fa7da5/mzl.kqccfqrm.png/200x0w.jpg 1x,https://is4-ssl.mzstatic.com/image/thumb/Purple128/v4/9a/1e/3b/9a1e3b08-2944-c380-978e-749b31fa7da5/mzl.kqccfqrm.png/400x0w.jpg 2x,https://is4-ssl.mzstatic.com/image/thumb/Purple128/v4/9a/1e/3b/9a1e3b08-2944-c380-978e-749b31fa7da5/mzl.kqccfqrm.png/600x0w.jpg 3x">
+      <img src="https://is4-ssl.mzstatic.com/image/thumb/Purple128/v4/9a/1e/3b/9a1e3b08-2944-c380-978e-749b31fa7da5/mzl.kqccfqrm.png/200x0w.jpg" style="background-color: #ff8800;" alt class="we-artwork__image ember129803142">
+  <style>
+    .ember129803142, #ember129803142::before {
+        width: 200px;
+        height: 200px;
+      }
+@media (min-width: 736px) {
+          .ember129803142, #ember129803142::before {
+        width: 158px;
+        height: 158px;
+      }
+        }
+@media (min-width: 1069px) {
+          .ember129803142, #ember129803142::before {
+        width: 146px;
+        height: 146px;
+      }
+        }
+  </style>
+</picture>
+
+<!---->
+    <h3 class="we-lockup__title targeted-link__target we-truncate we-truncate--single-line">乐播 - 想乐你就来播</h3>
+
+  <h4 class="we-truncate we-truncate--single-line we-lockup__subtitle targeted-link__target">音乐</h4>
+<!----></a>
+
+
+  
+                <a href="https://itunes.apple.com/cn/app/%E7%99%BE%E5%BA%A6%E9%9F%B3%E4%B9%90%E4%BA%BA/id1158760325?mt=8" data-test-we-lockup-kind="iosSoftware" id="ember129803147" class="we-lockup targeted-link l-column small-2 medium-3 large-2 ember-view">    <picture id="ember129803148" class="we-lockup__artwork we-artwork--lockup we-artwork--fullwidth we-artwork--ios-app-icon we-artwork ember-view">      <source srcset="https://is1-ssl.mzstatic.com/image/thumb/Purple128/v4/43/e3/35/43e33556-c90d-9afa-7fb4-3ca7dfbab530/AppIcon-1x_U007emarketing-85-220-4.png/146x0w.jpg 1x,https://is1-ssl.mzstatic.com/image/thumb/Purple128/v4/43/e3/35/43e33556-c90d-9afa-7fb4-3ca7dfbab530/AppIcon-1x_U007emarketing-85-220-4.png/292x0w.jpg 2x,https://is1-ssl.mzstatic.com/image/thumb/Purple128/v4/43/e3/35/43e33556-c90d-9afa-7fb4-3ca7dfbab530/AppIcon-1x_U007emarketing-85-220-4.png/438x0w.jpg 3x" media="(min-width: 1069px)">
+<!---->      <source srcset="https://is1-ssl.mzstatic.com/image/thumb/Purple128/v4/43/e3/35/43e33556-c90d-9afa-7fb4-3ca7dfbab530/AppIcon-1x_U007emarketing-85-220-4.png/158x0w.jpg 1x,https://is1-ssl.mzstatic.com/image/thumb/Purple128/v4/43/e3/35/43e33556-c90d-9afa-7fb4-3ca7dfbab530/AppIcon-1x_U007emarketing-85-220-4.png/316x0w.jpg 2x,https://is1-ssl.mzstatic.com/image/thumb/Purple128/v4/43/e3/35/43e33556-c90d-9afa-7fb4-3ca7dfbab530/AppIcon-1x_U007emarketing-85-220-4.png/474x0w.jpg 3x" media="(min-width: 736px)">
+<!---->      <source srcset="https://is1-ssl.mzstatic.com/image/thumb/Purple128/v4/43/e3/35/43e33556-c90d-9afa-7fb4-3ca7dfbab530/AppIcon-1x_U007emarketing-85-220-4.png/200x0w.jpg 1x,https://is1-ssl.mzstatic.com/image/thumb/Purple128/v4/43/e3/35/43e33556-c90d-9afa-7fb4-3ca7dfbab530/AppIcon-1x_U007emarketing-85-220-4.png/400x0w.jpg 2x,https://is1-ssl.mzstatic.com/image/thumb/Purple128/v4/43/e3/35/43e33556-c90d-9afa-7fb4-3ca7dfbab530/AppIcon-1x_U007emarketing-85-220-4.png/600x0w.jpg 3x">
+      <img src="https://is1-ssl.mzstatic.com/image/thumb/Purple128/v4/43/e3/35/43e33556-c90d-9afa-7fb4-3ca7dfbab530/AppIcon-1x_U007emarketing-85-220-4.png/200x0w.jpg" style="background-color: #ffffff;" alt class="we-artwork__image ember129803148">
+  <style>
+    .ember129803148, #ember129803148::before {
+        width: 200px;
+        height: 200px;
+      }
+@media (min-width: 736px) {
+          .ember129803148, #ember129803148::before {
+        width: 158px;
+        height: 158px;
+      }
+        }
+@media (min-width: 1069px) {
+          .ember129803148, #ember129803148::before {
+        width: 146px;
+        height: 146px;
+      }
+        }
+  </style>
+</picture>
+
+<!---->
+    <h3 class="we-lockup__title targeted-link__target we-truncate we-truncate--single-line">百度音乐人</h3>
+
+  <h4 class="we-truncate we-truncate--single-line we-lockup__subtitle targeted-link__target">音乐</h4>
+<!----></a>
+
+
+  
+                <a href="https://itunes.apple.com/cn/app/%E8%B0%A6%E4%B8%87%E5%88%AB%E5%96%8A-%E8%96%9B%E4%B9%8B%E8%B0%A6%E7%9A%84%E5%85%AB%E5%88%86%E9%9F%B3%E7%AC%A6%E6%B8%B8%E6%88%8F/id1230799204?mt=8" data-test-we-lockup-kind="iosSoftware" id="ember129803153" class="we-lockup targeted-link l-column small-2 medium-3 large-2 ember-view">    <picture id="ember129803154" class="we-lockup__artwork we-artwork--lockup we-artwork--fullwidth we-artwork--ios-app-icon we-artwork ember-view">      <source srcset="https://is3-ssl.mzstatic.com/image/thumb/Purple127/v4/2c/36/70/2c36709a-0451-78bc-d363-aee6df1c9404/mzl.tmegyqlo.jpg/146x0w.jpg 1x,https://is3-ssl.mzstatic.com/image/thumb/Purple127/v4/2c/36/70/2c36709a-0451-78bc-d363-aee6df1c9404/mzl.tmegyqlo.jpg/292x0w.jpg 2x,https://is3-ssl.mzstatic.com/image/thumb/Purple127/v4/2c/36/70/2c36709a-0451-78bc-d363-aee6df1c9404/mzl.tmegyqlo.jpg/438x0w.jpg 3x" media="(min-width: 1069px)">
+<!---->      <source srcset="https://is3-ssl.mzstatic.com/image/thumb/Purple127/v4/2c/36/70/2c36709a-0451-78bc-d363-aee6df1c9404/mzl.tmegyqlo.jpg/158x0w.jpg 1x,https://is3-ssl.mzstatic.com/image/thumb/Purple127/v4/2c/36/70/2c36709a-0451-78bc-d363-aee6df1c9404/mzl.tmegyqlo.jpg/316x0w.jpg 2x,https://is3-ssl.mzstatic.com/image/thumb/Purple127/v4/2c/36/70/2c36709a-0451-78bc-d363-aee6df1c9404/mzl.tmegyqlo.jpg/474x0w.jpg 3x" media="(min-width: 736px)">
+<!---->      <source srcset="https://is3-ssl.mzstatic.com/image/thumb/Purple127/v4/2c/36/70/2c36709a-0451-78bc-d363-aee6df1c9404/mzl.tmegyqlo.jpg/200x0w.jpg 1x,https://is3-ssl.mzstatic.com/image/thumb/Purple127/v4/2c/36/70/2c36709a-0451-78bc-d363-aee6df1c9404/mzl.tmegyqlo.jpg/400x0w.jpg 2x,https://is3-ssl.mzstatic.com/image/thumb/Purple127/v4/2c/36/70/2c36709a-0451-78bc-d363-aee6df1c9404/mzl.tmegyqlo.jpg/600x0w.jpg 3x">
+      <img src="https://is3-ssl.mzstatic.com/image/thumb/Purple127/v4/2c/36/70/2c36709a-0451-78bc-d363-aee6df1c9404/mzl.tmegyqlo.jpg/200x0w.jpg" style="background-color: #2c0003;" alt class="we-artwork__image ember129803154">
+  <style>
+    .ember129803154, #ember129803154::before {
+        width: 200px;
+        height: 200px;
+      }
+@media (min-width: 736px) {
+          .ember129803154, #ember129803154::before {
+        width: 158px;
+        height: 158px;
+      }
+        }
+@media (min-width: 1069px) {
+          .ember129803154, #ember129803154::before {
+        width: 146px;
+        height: 146px;
+      }
+        }
+  </style>
+</picture>
+
+<!---->
+    <h3 class="we-lockup__title targeted-link__target we-truncate we-truncate--single-line">谦万别喊-薛之谦的八分音符游戏</h3>
+
+  <h4 class="we-truncate we-truncate--single-line we-lockup__subtitle targeted-link__target">游戏</h4>
+<!----></a>
+
+
+        </div>
+      </section>
+
+      <section class="l-content-width section section--bordered">
+        <div class="section__nav">
+          <h2 class="section__headline">
+            您可能也会喜欢
+          </h2>
+          <a rel="nofollow" href="/cn/app/true/id1208946007/see-all/customers-also-bought-apps" id="ember129803162" style="display: none;" class="link section__nav__see-all-link ember-view">查看全部</a>
+        </div>
+
+        <div class="l-row l-row--peek">
+  
+                <a href="https://itunes.apple.com/cn/app/hifi%E9%9F%B3%E4%B9%90pro/id1117636837?mt=8" data-test-we-lockup-kind="iosSoftware" id="ember129803166" class="we-lockup targeted-link l-column small-2 medium-3 large-2 ember-view">    <picture id="ember129803167" class="we-lockup__artwork we-artwork--lockup we-artwork--fullwidth we-artwork--ios-app-icon we-artwork ember-view">      <source srcset="https://is2-ssl.mzstatic.com/image/thumb/Purple118/v4/7f/7e/6d/7f7e6d90-bba6-94a1-518a-da291bd22361/AppIcon-1x_U007emarketing-85-220-1.png/146x0w.jpg 1x,https://is2-ssl.mzstatic.com/image/thumb/Purple118/v4/7f/7e/6d/7f7e6d90-bba6-94a1-518a-da291bd22361/AppIcon-1x_U007emarketing-85-220-1.png/292x0w.jpg 2x,https://is2-ssl.mzstatic.com/image/thumb/Purple118/v4/7f/7e/6d/7f7e6d90-bba6-94a1-518a-da291bd22361/AppIcon-1x_U007emarketing-85-220-1.png/438x0w.jpg 3x" media="(min-width: 1069px)">
+<!---->      <source srcset="https://is2-ssl.mzstatic.com/image/thumb/Purple118/v4/7f/7e/6d/7f7e6d90-bba6-94a1-518a-da291bd22361/AppIcon-1x_U007emarketing-85-220-1.png/158x0w.jpg 1x,https://is2-ssl.mzstatic.com/image/thumb/Purple118/v4/7f/7e/6d/7f7e6d90-bba6-94a1-518a-da291bd22361/AppIcon-1x_U007emarketing-85-220-1.png/316x0w.jpg 2x,https://is2-ssl.mzstatic.com/image/thumb/Purple118/v4/7f/7e/6d/7f7e6d90-bba6-94a1-518a-da291bd22361/AppIcon-1x_U007emarketing-85-220-1.png/474x0w.jpg 3x" media="(min-width: 736px)">
+<!---->      <source srcset="https://is2-ssl.mzstatic.com/image/thumb/Purple118/v4/7f/7e/6d/7f7e6d90-bba6-94a1-518a-da291bd22361/AppIcon-1x_U007emarketing-85-220-1.png/200x0w.jpg 1x,https://is2-ssl.mzstatic.com/image/thumb/Purple118/v4/7f/7e/6d/7f7e6d90-bba6-94a1-518a-da291bd22361/AppIcon-1x_U007emarketing-85-220-1.png/400x0w.jpg 2x,https://is2-ssl.mzstatic.com/image/thumb/Purple118/v4/7f/7e/6d/7f7e6d90-bba6-94a1-518a-da291bd22361/AppIcon-1x_U007emarketing-85-220-1.png/600x0w.jpg 3x">
+      <img src="https://is2-ssl.mzstatic.com/image/thumb/Purple118/v4/7f/7e/6d/7f7e6d90-bba6-94a1-518a-da291bd22361/AppIcon-1x_U007emarketing-85-220-1.png/200x0w.jpg" style="background-color: #1e0504;" alt class="we-artwork__image ember129803167">
+  <style>
+    .ember129803167, #ember129803167::before {
+        width: 200px;
+        height: 200px;
+      }
+@media (min-width: 736px) {
+          .ember129803167, #ember129803167::before {
+        width: 158px;
+        height: 158px;
+      }
+        }
+@media (min-width: 1069px) {
+          .ember129803167, #ember129803167::before {
+        width: 146px;
+        height: 146px;
+      }
+        }
+  </style>
+</picture>
+
+<!---->
+    <h3 class="we-lockup__title targeted-link__target we-truncate we-truncate--single-line">HiFi音乐Pro</h3>
+
+  <h4 class="we-truncate we-truncate--single-line we-lockup__subtitle targeted-link__target">音乐</h4>
+<!----></a>
+
+
+  
+                <a href="https://itunes.apple.com/cn/app/mifm-my-music-radio-3-raxio/id1189821372?mt=8" data-test-we-lockup-kind="iosSoftware" id="ember129803172" class="we-lockup targeted-link l-column small-2 medium-3 large-2 ember-view">    <picture id="ember129803173" class="we-lockup__artwork we-artwork--lockup we-artwork--fullwidth we-artwork--ios-app-icon we-artwork ember-view">      <source srcset="https://is4-ssl.mzstatic.com/image/thumb/Purple128/v4/14/d7/db/14d7db1e-3598-993b-babb-2ce6589daec4/AppIcon-1x_U007emarketing-85-220-9.png/146x0w.jpg 1x,https://is4-ssl.mzstatic.com/image/thumb/Purple128/v4/14/d7/db/14d7db1e-3598-993b-babb-2ce6589daec4/AppIcon-1x_U007emarketing-85-220-9.png/292x0w.jpg 2x,https://is4-ssl.mzstatic.com/image/thumb/Purple128/v4/14/d7/db/14d7db1e-3598-993b-babb-2ce6589daec4/AppIcon-1x_U007emarketing-85-220-9.png/438x0w.jpg 3x" media="(min-width: 1069px)">
+<!---->      <source srcset="https://is4-ssl.mzstatic.com/image/thumb/Purple128/v4/14/d7/db/14d7db1e-3598-993b-babb-2ce6589daec4/AppIcon-1x_U007emarketing-85-220-9.png/158x0w.jpg 1x,https://is4-ssl.mzstatic.com/image/thumb/Purple128/v4/14/d7/db/14d7db1e-3598-993b-babb-2ce6589daec4/AppIcon-1x_U007emarketing-85-220-9.png/316x0w.jpg 2x,https://is4-ssl.mzstatic.com/image/thumb/Purple128/v4/14/d7/db/14d7db1e-3598-993b-babb-2ce6589daec4/AppIcon-1x_U007emarketing-85-220-9.png/474x0w.jpg 3x" media="(min-width: 736px)">
+<!---->      <source srcset="https://is4-ssl.mzstatic.com/image/thumb/Purple128/v4/14/d7/db/14d7db1e-3598-993b-babb-2ce6589daec4/AppIcon-1x_U007emarketing-85-220-9.png/200x0w.jpg 1x,https://is4-ssl.mzstatic.com/image/thumb/Purple128/v4/14/d7/db/14d7db1e-3598-993b-babb-2ce6589daec4/AppIcon-1x_U007emarketing-85-220-9.png/400x0w.jpg 2x,https://is4-ssl.mzstatic.com/image/thumb/Purple128/v4/14/d7/db/14d7db1e-3598-993b-babb-2ce6589daec4/AppIcon-1x_U007emarketing-85-220-9.png/600x0w.jpg 3x">
+      <img src="https://is4-ssl.mzstatic.com/image/thumb/Purple128/v4/14/d7/db/14d7db1e-3598-993b-babb-2ce6589daec4/AppIcon-1x_U007emarketing-85-220-9.png/200x0w.jpg" style="background-color: #171718;" alt class="we-artwork__image ember129803173">
+  <style>
+    .ember129803173, #ember129803173::before {
+        width: 200px;
+        height: 200px;
+      }
+@media (min-width: 736px) {
+          .ember129803173, #ember129803173::before {
+        width: 158px;
+        height: 158px;
+      }
+        }
+@media (min-width: 1069px) {
+          .ember129803173, #ember129803173::before {
+        width: 146px;
+        height: 146px;
+      }
+        }
+  </style>
+</picture>
+
+<!---->
+    <h3 class="we-lockup__title targeted-link__target we-truncate we-truncate--single-line">mifm - My Music Radio 3 Raxio</h3>
+
+  <h4 class="we-truncate we-truncate--single-line we-lockup__subtitle targeted-link__target">音乐</h4>
+<!----></a>
+
+
+  
+                <a href="https://itunes.apple.com/cn/app/%E7%9C%8B%E8%AF%8D%E5%90%AC%E6%AD%8C/id490629094?mt=8" data-test-we-lockup-kind="iosSoftware" id="ember129803178" class="we-lockup targeted-link l-column small-2 medium-3 large-2 ember-view">    <picture id="ember129803179" class="we-lockup__artwork we-artwork--lockup we-artwork--fullwidth we-artwork--ios-app-icon we-artwork ember-view">      <source srcset="https://is3-ssl.mzstatic.com/image/thumb/Purple1/v4/bb/43/e8/bb43e88c-7f8d-a777-ffae-ac88792a7ac8/mzl.cyrpvnka.png/146x0w.jpg 1x,https://is3-ssl.mzstatic.com/image/thumb/Purple1/v4/bb/43/e8/bb43e88c-7f8d-a777-ffae-ac88792a7ac8/mzl.cyrpvnka.png/292x0w.jpg 2x,https://is3-ssl.mzstatic.com/image/thumb/Purple1/v4/bb/43/e8/bb43e88c-7f8d-a777-ffae-ac88792a7ac8/mzl.cyrpvnka.png/438x0w.jpg 3x" media="(min-width: 1069px)">
+<!---->      <source srcset="https://is3-ssl.mzstatic.com/image/thumb/Purple1/v4/bb/43/e8/bb43e88c-7f8d-a777-ffae-ac88792a7ac8/mzl.cyrpvnka.png/158x0w.jpg 1x,https://is3-ssl.mzstatic.com/image/thumb/Purple1/v4/bb/43/e8/bb43e88c-7f8d-a777-ffae-ac88792a7ac8/mzl.cyrpvnka.png/316x0w.jpg 2x,https://is3-ssl.mzstatic.com/image/thumb/Purple1/v4/bb/43/e8/bb43e88c-7f8d-a777-ffae-ac88792a7ac8/mzl.cyrpvnka.png/474x0w.jpg 3x" media="(min-width: 736px)">
+<!---->      <source srcset="https://is3-ssl.mzstatic.com/image/thumb/Purple1/v4/bb/43/e8/bb43e88c-7f8d-a777-ffae-ac88792a7ac8/mzl.cyrpvnka.png/200x0w.jpg 1x,https://is3-ssl.mzstatic.com/image/thumb/Purple1/v4/bb/43/e8/bb43e88c-7f8d-a777-ffae-ac88792a7ac8/mzl.cyrpvnka.png/400x0w.jpg 2x,https://is3-ssl.mzstatic.com/image/thumb/Purple1/v4/bb/43/e8/bb43e88c-7f8d-a777-ffae-ac88792a7ac8/mzl.cyrpvnka.png/600x0w.jpg 3x">
+      <img src="https://is3-ssl.mzstatic.com/image/thumb/Purple1/v4/bb/43/e8/bb43e88c-7f8d-a777-ffae-ac88792a7ac8/mzl.cyrpvnka.png/200x0w.jpg" style="background-color: #30c3d0;" alt class="we-artwork__image ember129803179">
+  <style>
+    .ember129803179, #ember129803179::before {
+        width: 200px;
+        height: 200px;
+      }
+@media (min-width: 736px) {
+          .ember129803179, #ember129803179::before {
+        width: 158px;
+        height: 158px;
+      }
+        }
+@media (min-width: 1069px) {
+          .ember129803179, #ember129803179::before {
+        width: 146px;
+        height: 146px;
+      }
+        }
+  </style>
+</picture>
+
+<!---->
+    <h3 class="we-lockup__title targeted-link__target we-truncate we-truncate--single-line">看词听歌</h3>
+
+  <h4 class="we-truncate we-truncate--single-line we-lockup__subtitle targeted-link__target">音乐</h4>
+<!----></a>
+
+
+  
+                <a href="https://itunes.apple.com/cn/app/%E9%85%B7%E5%90%AC%E9%9F%B3%E4%B9%90-%E6%AD%8C%E6%9B%B2%E9%9F%B3%E4%B9%90%E5%90%AC%E4%BD%A0%E6%83%B3%E5%90%AC/id1276476987?mt=8" data-test-we-lockup-kind="iosSoftware" id="ember129803184" class="we-lockup targeted-link l-column small-2 medium-3 large-2 ember-view">    <picture id="ember129803185" class="we-lockup__artwork we-artwork--lockup we-artwork--fullwidth we-artwork--ios-app-icon we-artwork ember-view">      <source srcset="https://is3-ssl.mzstatic.com/image/thumb/Purple128/v4/9c/d2/e8/9cd2e8c3-06ef-e239-2291-d93e3e969ca7/AppIcon-1x_U007emarketing-85-220-6.png/146x0w.jpg 1x,https://is3-ssl.mzstatic.com/image/thumb/Purple128/v4/9c/d2/e8/9cd2e8c3-06ef-e239-2291-d93e3e969ca7/AppIcon-1x_U007emarketing-85-220-6.png/292x0w.jpg 2x,https://is3-ssl.mzstatic.com/image/thumb/Purple128/v4/9c/d2/e8/9cd2e8c3-06ef-e239-2291-d93e3e969ca7/AppIcon-1x_U007emarketing-85-220-6.png/438x0w.jpg 3x" media="(min-width: 1069px)">
+<!---->      <source srcset="https://is3-ssl.mzstatic.com/image/thumb/Purple128/v4/9c/d2/e8/9cd2e8c3-06ef-e239-2291-d93e3e969ca7/AppIcon-1x_U007emarketing-85-220-6.png/158x0w.jpg 1x,https://is3-ssl.mzstatic.com/image/thumb/Purple128/v4/9c/d2/e8/9cd2e8c3-06ef-e239-2291-d93e3e969ca7/AppIcon-1x_U007emarketing-85-220-6.png/316x0w.jpg 2x,https://is3-ssl.mzstatic.com/image/thumb/Purple128/v4/9c/d2/e8/9cd2e8c3-06ef-e239-2291-d93e3e969ca7/AppIcon-1x_U007emarketing-85-220-6.png/474x0w.jpg 3x" media="(min-width: 736px)">
+<!---->      <source srcset="https://is3-ssl.mzstatic.com/image/thumb/Purple128/v4/9c/d2/e8/9cd2e8c3-06ef-e239-2291-d93e3e969ca7/AppIcon-1x_U007emarketing-85-220-6.png/200x0w.jpg 1x,https://is3-ssl.mzstatic.com/image/thumb/Purple128/v4/9c/d2/e8/9cd2e8c3-06ef-e239-2291-d93e3e969ca7/AppIcon-1x_U007emarketing-85-220-6.png/400x0w.jpg 2x,https://is3-ssl.mzstatic.com/image/thumb/Purple128/v4/9c/d2/e8/9cd2e8c3-06ef-e239-2291-d93e3e969ca7/AppIcon-1x_U007emarketing-85-220-6.png/600x0w.jpg 3x">
+      <img src="https://is3-ssl.mzstatic.com/image/thumb/Purple128/v4/9c/d2/e8/9cd2e8c3-06ef-e239-2291-d93e3e969ca7/AppIcon-1x_U007emarketing-85-220-6.png/200x0w.jpg" style="background-color: #ffffff;" alt class="we-artwork__image ember129803185">
+  <style>
+    .ember129803185, #ember129803185::before {
+        width: 200px;
+        height: 200px;
+      }
+@media (min-width: 736px) {
+          .ember129803185, #ember129803185::before {
+        width: 158px;
+        height: 158px;
+      }
+        }
+@media (min-width: 1069px) {
+          .ember129803185, #ember129803185::before {
+        width: 146px;
+        height: 146px;
+      }
+        }
+  </style>
+</picture>
+
+<!---->
+    <h3 class="we-lockup__title targeted-link__target we-truncate we-truncate--single-line">酷听音乐 - 歌曲音乐听你想听</h3>
+
+  <h4 class="we-truncate we-truncate--single-line we-lockup__subtitle targeted-link__target">音乐</h4>
+<!----></a>
+
+
+  
+                <a href="https://itunes.apple.com/cn/app/%E8%BD%BB%E9%9F%B3%E4%B9%90-%E7%B2%BE%E9%80%89%E7%BA%AF%E9%9F%B3%E4%B9%90/id747657935?mt=8" data-test-we-lockup-kind="iosSoftware" id="ember129803190" class="we-lockup targeted-link l-column small-2 medium-3 large-2 ember-view">    <picture id="ember129803191" class="we-lockup__artwork we-artwork--lockup we-artwork--fullwidth we-artwork--ios-app-icon we-artwork ember-view">      <source srcset="https://is5-ssl.mzstatic.com/image/thumb/Purple122/v4/8c/c6/e9/8cc6e9fd-06b7-f1bc-32f9-83353e0e8615/mzl.mvoiltfs.png/146x0w.jpg 1x,https://is5-ssl.mzstatic.com/image/thumb/Purple122/v4/8c/c6/e9/8cc6e9fd-06b7-f1bc-32f9-83353e0e8615/mzl.mvoiltfs.png/292x0w.jpg 2x,https://is5-ssl.mzstatic.com/image/thumb/Purple122/v4/8c/c6/e9/8cc6e9fd-06b7-f1bc-32f9-83353e0e8615/mzl.mvoiltfs.png/438x0w.jpg 3x" media="(min-width: 1069px)">
+<!---->      <source srcset="https://is5-ssl.mzstatic.com/image/thumb/Purple122/v4/8c/c6/e9/8cc6e9fd-06b7-f1bc-32f9-83353e0e8615/mzl.mvoiltfs.png/158x0w.jpg 1x,https://is5-ssl.mzstatic.com/image/thumb/Purple122/v4/8c/c6/e9/8cc6e9fd-06b7-f1bc-32f9-83353e0e8615/mzl.mvoiltfs.png/316x0w.jpg 2x,https://is5-ssl.mzstatic.com/image/thumb/Purple122/v4/8c/c6/e9/8cc6e9fd-06b7-f1bc-32f9-83353e0e8615/mzl.mvoiltfs.png/474x0w.jpg 3x" media="(min-width: 736px)">
+<!---->      <source srcset="https://is5-ssl.mzstatic.com/image/thumb/Purple122/v4/8c/c6/e9/8cc6e9fd-06b7-f1bc-32f9-83353e0e8615/mzl.mvoiltfs.png/200x0w.jpg 1x,https://is5-ssl.mzstatic.com/image/thumb/Purple122/v4/8c/c6/e9/8cc6e9fd-06b7-f1bc-32f9-83353e0e8615/mzl.mvoiltfs.png/400x0w.jpg 2x,https://is5-ssl.mzstatic.com/image/thumb/Purple122/v4/8c/c6/e9/8cc6e9fd-06b7-f1bc-32f9-83353e0e8615/mzl.mvoiltfs.png/600x0w.jpg 3x">
+      <img src="https://is5-ssl.mzstatic.com/image/thumb/Purple122/v4/8c/c6/e9/8cc6e9fd-06b7-f1bc-32f9-83353e0e8615/mzl.mvoiltfs.png/200x0w.jpg" style="background-color: #3d66ab;" alt class="we-artwork__image ember129803191">
+  <style>
+    .ember129803191, #ember129803191::before {
+        width: 200px;
+        height: 200px;
+      }
+@media (min-width: 736px) {
+          .ember129803191, #ember129803191::before {
+        width: 158px;
+        height: 158px;
+      }
+        }
+@media (min-width: 1069px) {
+          .ember129803191, #ember129803191::before {
+        width: 146px;
+        height: 146px;
+      }
+        }
+  </style>
+</picture>
+
+<!---->
+    <h3 class="we-lockup__title targeted-link__target we-truncate we-truncate--single-line">轻音乐 - 精选纯音乐</h3>
+
+  <h4 class="we-truncate we-truncate--single-line we-lockup__subtitle targeted-link__target">音乐</h4>
+<!----></a>
+
+
+  
+                <a href="https://itunes.apple.com/cn/app/%E8%80%81%E6%AD%8C500%E9%A6%96-%E5%A2%A8%E7%90%B3%E9%9F%B3%E4%B9%90/id1184676303?mt=8" data-test-we-lockup-kind="iosSoftware" id="ember129803196" class="we-lockup targeted-link l-column small-2 medium-3 large-2 ember-view">    <picture id="ember129803197" class="we-lockup__artwork we-artwork--lockup we-artwork--fullwidth we-artwork--ios-app-icon we-artwork ember-view">      <source srcset="https://is1-ssl.mzstatic.com/image/thumb/Purple118/v4/0b/ab/35/0bab35ad-9603-92ed-2ebb-c4a746d61d33/AppIcon-1x_U007emarketing-85-220-0-6.png/146x0w.jpg 1x,https://is1-ssl.mzstatic.com/image/thumb/Purple118/v4/0b/ab/35/0bab35ad-9603-92ed-2ebb-c4a746d61d33/AppIcon-1x_U007emarketing-85-220-0-6.png/292x0w.jpg 2x,https://is1-ssl.mzstatic.com/image/thumb/Purple118/v4/0b/ab/35/0bab35ad-9603-92ed-2ebb-c4a746d61d33/AppIcon-1x_U007emarketing-85-220-0-6.png/438x0w.jpg 3x" media="(min-width: 1069px)">
+<!---->      <source srcset="https://is1-ssl.mzstatic.com/image/thumb/Purple118/v4/0b/ab/35/0bab35ad-9603-92ed-2ebb-c4a746d61d33/AppIcon-1x_U007emarketing-85-220-0-6.png/158x0w.jpg 1x,https://is1-ssl.mzstatic.com/image/thumb/Purple118/v4/0b/ab/35/0bab35ad-9603-92ed-2ebb-c4a746d61d33/AppIcon-1x_U007emarketing-85-220-0-6.png/316x0w.jpg 2x,https://is1-ssl.mzstatic.com/image/thumb/Purple118/v4/0b/ab/35/0bab35ad-9603-92ed-2ebb-c4a746d61d33/AppIcon-1x_U007emarketing-85-220-0-6.png/474x0w.jpg 3x" media="(min-width: 736px)">
+<!---->      <source srcset="https://is1-ssl.mzstatic.com/image/thumb/Purple118/v4/0b/ab/35/0bab35ad-9603-92ed-2ebb-c4a746d61d33/AppIcon-1x_U007emarketing-85-220-0-6.png/200x0w.jpg 1x,https://is1-ssl.mzstatic.com/image/thumb/Purple118/v4/0b/ab/35/0bab35ad-9603-92ed-2ebb-c4a746d61d33/AppIcon-1x_U007emarketing-85-220-0-6.png/400x0w.jpg 2x,https://is1-ssl.mzstatic.com/image/thumb/Purple118/v4/0b/ab/35/0bab35ad-9603-92ed-2ebb-c4a746d61d33/AppIcon-1x_U007emarketing-85-220-0-6.png/600x0w.jpg 3x">
+      <img src="https://is1-ssl.mzstatic.com/image/thumb/Purple118/v4/0b/ab/35/0bab35ad-9603-92ed-2ebb-c4a746d61d33/AppIcon-1x_U007emarketing-85-220-0-6.png/200x0w.jpg" style="background-color: #d2d2d2;" alt class="we-artwork__image ember129803197">
+  <style>
+    .ember129803197, #ember129803197::before {
+        width: 200px;
+        height: 200px;
+      }
+@media (min-width: 736px) {
+          .ember129803197, #ember129803197::before {
+        width: 158px;
+        height: 158px;
+      }
+        }
+@media (min-width: 1069px) {
+          .ember129803197, #ember129803197::before {
+        width: 146px;
+        height: 146px;
+      }
+        }
+  </style>
+</picture>
+
+<!---->
+    <h3 class="we-lockup__title targeted-link__target we-truncate we-truncate--single-line">老歌500首-墨琳音乐</h3>
+
+  <h4 class="we-truncate we-truncate--single-line we-lockup__subtitle targeted-link__target">音乐</h4>
+<!----></a>
+
+
+        </div>
+      </section>
+
+
+<!----></div></div></div></div></div>
+  <!---->
+</main>
+</div><footer id="ac-globalfooter" class="no-js" role="contentinfo" lang="zh-CN" dir="ltr"><div class="ac-gf-content"><link rel="stylesheet" type="text/css" href="https://www.apple.com/ac/globalfooter/3/zh_CN/styles/ac-globalfooter.built.css">
+<section class="ac-gf-footer">
+	<div class="ac-gf-footer-shop" x-ms-format-detection="none">
+		&#x66F4;&#x591A;&#x9009;&#x8D2D;&#x65B9;&#x5F0F;&#xFF1A;&#x524D;&#x5F80; <span class="nowrap"><a href="/cn/retail/">Apple Store &#x96F6;&#x552E;&#x5E97;</a></span>&#xFF0C;&#x81F4;&#x7535; 400-666-8800 &#x6216;&#x67E5;&#x627E;&#x5728;&#x4F60;&#x9644;&#x8FD1;&#x7684;<span class="nowrap"><a href="https://locate.apple.com/cn/zh/">&#x6388;&#x6743;&#x7ECF;&#x9500;&#x5546;</a>&#x3002;</span>
+	</div>
+	<div class="ac-gf-footer-locale">
+		<a class="ac-gf-footer-locale-link" href="//www.apple.com/choose-your-country/" title="&#x9009;&#x62E9;&#x4F60;&#x7684;&#x56FD;&#x5BB6;&#x6216;&#x5730;&#x533A;" aria-label="&#x4E2D;&#x56FD;. &#x9009;&#x62E9;&#x4F60;&#x7684;&#x56FD;&#x5BB6;&#x6216;&#x5730;&#x533A;"><span class="ac-gf-footer-locale-flag" data-hires="false"></span>&#x4E2D;&#x56FD;</a>
+	</div>
+	<div class="ac-gf-footer-legal">
+		<div class="ac-gf-footer-legal-copyright">Copyright &#xA9; 2018 Apple Inc. &#x4FDD;&#x7559;&#x6240;&#x6709;&#x6743;&#x5229;&#x3002;</div>
+		<div class="ac-gf-footer-legal-links">
+			<a class="ac-gf-footer-legal-link" href="//www.apple.com/cn/privacy/privacy-policy/">&#x9690;&#x79C1;&#x653F;&#x7B56;</a>
+			<a class="ac-gf-footer-legal-link" href="//www.apple.com/cn/legal/terms/site.html">&#x4F7F;&#x7528;&#x6761;&#x6B3E;</a>
+			<a class="ac-gf-footer-legal-link" href="//www.apple.com/cn/shop/goto/help/sales_refunds">&#x9500;&#x552E;&#x653F;&#x7B56;</a>
+			<a class="ac-gf-footer-legal-link" href="//www.apple.com/cn/legal/">&#x6CD5;&#x5F8B;&#x4FE1;&#x606F;</a>
+			<a class="ac-gf-footer-legal-link" href="//www.apple.com/cn/sitemap/">&#x7F51;&#x7AD9;&#x5730;&#x56FE;</a>
+		</div>
+	</div>
+</section>
+<script type="text/javascript" src="https://www.apple.com/ac/globalfooter/3/zh_CN/scripts/ac-globalfooter.built.js" async></script>
+</div></footer><script type="fastboot/shoebox" id="shoebox-ember-data-store">{"data":{"type":"product/app","id":"1208946007","attributes":{"userRating":{"value":4.3,"ratingCount":7,"ratingCountList":[1,0,0,1,5],"ariaLabelForRatings":"4.3 星"},"deviceFamilies":["iphone","ipod"],"contentRating":{"name":"9+","value":200,"rank":2,"advisories":["偶尔/轻微的亵渎或低俗幽默","偶尔/轻微的成人/性暗示题材"]},"copyright":"© 2015 Baidu Inc","description":"千万高品质音乐，四亿用户共同的选择！\n音乐社交、丰富乐评、场景电台、高清视频MV、权威榜单、精彩音乐直播、专利音效、智能搜索…百度音乐，极致的音乐娱乐APP！\n \n1. 千万曲库：热门歌手、影视原声、怀旧金曲，都在这里；\n2. 音乐社交：从陌生到老铁，只一首歌的距离；\n3. 丰富乐评：撒花or吐槽、你说了算；\n4. 场景电台：自动匹配你的音乐品味；\n5. 高清视频MV：360°高清视听感受；\n6. 权威榜单：为爱豆音乐打榜冲人气，彰显粉丝力量；\n7. 精彩音乐直播：围观大咖明星show，直击热门娱乐活动；\n8. 专利音效：享受极致的音效品质；\n9. 智能搜索：源于百度，精于体验；\n10.尊享会员服务：覆盖音视频、演出、应援、周边的四维音乐会员服务；\n11. 音乐商城： 一站式音乐消费平台！\n \n翻牌百度音乐，走起！\n \n如您在使用过程中有任何意见或问题，都可以通过以下方式联系我们哦：\n官方微博：@百度音乐\n官方反馈邮箱：userfeedback@baidu.com，我们期待您的宝贵意见；\n官方QQ群：198081821 \n欢迎加入，与音乐达人们一起交流。","familyShareEnabledDate":"0001-04-23T00:00:00Z","hasInAppPurchases":true,"kind":"iosSoftware","name":"百度音乐-青春版","ratingText":"因含有以下内容而被评级为 9+：","advisories":["偶尔/轻微的亵渎或低俗幽默","偶尔/轻微的成人/性暗示题材"],"releaseDate":"2017-04-04","softwareInfo":{"seller":"Beijing yinzhibang Technology Co., LTD","languagesDisplayString":"简体中文","requirementsString":"需要 iOS 8.0 或更高版本。与 iPhone、iPad 和 iPod touch 兼容。","eulaUrl":null,"supportUrl":"http://tieba.baidu.com/f?kw=%E7%99%BE%E5%BA%A6%E9%9F%B3%E4%B9%90\u0026ie=utf-8","websiteUrl":null,"privacyPolicyUrl":"http://wappass.baidu.com/passport/agreement","privacyPolicyTextUrl":null,"hasInAppPurchases":true},"url":"https://itunes.apple.com/cn/app/%E7%99%BE%E5%BA%A6%E9%9F%B3%E4%B9%90-%E9%9D%92%E6%98%A5%E7%89%88/id1208946007?mt=8","versionHistory":[{"releaseNotes":"1.    个性化资讯推荐上线啦~边听音乐边刷娱乐新鲜事儿~\n2.    登录功能优化，注册、登录更便捷^0^","versionString":"6.2.0","releaseDate":"2018-03-27T02:59:40Z"},{"releaseNotes":"新年快乐！百度音乐祝您狗年吉祥，福享新春^-^\n-推荐功能优化，内容推荐更精准哦","versionString":"6.1.1","releaseDate":"2018-02-09T05:31:47Z"},{"releaseNotes":"1.    “我的音乐”页面升级，新增推荐歌单，每日推荐海量你喜欢的歌单~\n2.    新增口味选择功能，选择口味后推荐内容更精准哦^~^\n3.    页面结构调整，动态收入到侧边栏啦,不要找不到哦~下导航增加视频tab，爱豆的新MV第一时间看到٩(^ε^｡)۶","versionString":"6.1.0","releaseDate":"2018-02-01T05:22:41Z"},{"releaseNotes":"1、代码优化APP运行更流畅\n2、修复了一小丢丢大家反馈的bug\n\n本次将在评论中抽取十位幸运用户，赠送一年百度音乐VIP会员；\n不要问我为什么，百度音乐小哥哥就是这么任性。\n2333","versionString":"6.0.7","releaseDate":"2017-11-16T06:08:05Z"},{"releaseNotes":"1、新增礼物打赏功能，喜欢TA就送朵玫瑰花吧~\n2、程序猿GG优化了性能，新版用起来更快更流畅！","versionString":"6.0.6","releaseDate":"2017-10-25T07:55:09Z"},{"releaseNotes":"1.好歌陪你过“十一”！品牌专区即将闪亮登场~\n(索尼、滚石、海蝶、贝阁、摩登天空、街声、看见音乐统统呈现~让你的耳朵不放假٩(^_^)۶ )\n2.电信流量包上线~假期听歌不用担心流量啦\n3.潜心修炼，消灭bug，老铁我用起来更“稳“了~","versionString":"6.0.5","releaseDate":"2017-10-01T01:33:20Z"},{"releaseNotes":"1.MV星人福利！增加一键播放MV按钮，想看就看，敲过瘾~\n2.找不到你想看的那个视频了？现在支持搜索视频啦~搜搜看\n3.八卦消息：设计师GG和颜值最高的程序员GG携手完成了这次界面优化。哎？什么搭配干活不累来着？\n4.修复了一堆烦人的bug后，程序员GG们人身安全得到了保障。祭天？不存在的！安心敲代码~","versionString":"6.0.4","releaseDate":"2017-09-07T03:27:21Z"},{"releaseNotes":"1.MV星人福利！增加一键播放MV按钮，想看就看，敲过瘾~\n2.找不到你想看的那个视频了？现在支持搜索视频啦~搜搜看\n3.八卦消息：设计师GG和颜值最高的程序员GG携手完成了这次界面优化。哎？什么搭配干活不累来着？\n4.修复了一堆烦人的bug后，程序员GG们人身安全得到了保障。祭天？不存在的！安心敲代码~","versionString":"6.0.3","releaseDate":"2017-09-04T02:57:05Z"},{"releaseNotes":"1.程序猿哥哥优化了一波代码，大幅度提升稳定性\n2.添加了加速属性，页面加载起来顺畅多了","versionString":"6.0.2","releaseDate":"2017-08-11T08:12:30Z"},{"releaseNotes":"薛之谦演唱会抢票活动火热进行中！\n1.结构优化：栏目模块化，操作更便捷。\n2.随心听：听歌随心所欲；听歌时间、流量消耗尽在掌控。\n3.视频播放：播放体验升级，支持边看边聊。\n4.界面优化：功能更清晰，界面更清爽。\n下个版本还会上线什么新功能？在评论区留言，猜中有奖！快来参与吧！","versionString":"6.0.0","releaseDate":"2017-08-09T09:53:35Z"},{"releaseNotes":"1.这次有一大堆细节优化\n2.性能越来越好了","versionString":"5.9.12","releaseDate":"2017-05-26T02:30:20Z"},{"releaseNotes":"1. 你喜欢的视频可以轻松分享出去啦！快让微博微信的朋友知道你在看什么！\n2. 搜索歌曲后会有“热卖”标识，让你跟音乐趋势保持同步！\n3. 看评论时增加了相关的歌曲信息，支持或反对时更明确目标啦！\n4. 产品哥说，这次有一大堆细节优化，保证再也不痒了！","versionString":"5.9.11","releaseDate":"2017-04-18T03:34:44Z"},{"releaseNotes":null,"versionString":"5.9.10","releaseDate":"2017-04-04T02:47:05Z"}],"size":109496320,"chartPositionForStore":{"appStore":{"position":77,"genreName":"音乐","chartUrl":"https://itunes.apple.com/WebObjects/MZStore.woa/wa/viewTop?cc=cn\u0026genreId=6011\u0026popId=96"}},"minimumOSVersion":"8.0","iphoneScreenshotsVersion":"iphone6+"},"relationships":{"offers":{"data":[{"type":"offer","id":"st32434232"}]},"developer":{"data":{"type":"lockup/developer","id":"1089036107"}},"artwork":{"data":{"type":"image","id":"st27404030"}},"iphoneScreenshots":{"data":[{"type":"image","id":"st3536761"},{"type":"image","id":"st3536762"},{"type":"image","id":"st3536763"},{"type":"image","id":"st3536764"},{"type":"image","id":"st3536765"}]},"subscriptions":{"data":[]},"inAppPurchases":{"data":[]},"topInApps":{"data":[{"type":"product/app/in-app","id":"st3536766"},{"type":"product/app/in-app","id":"st3536769"},{"type":"product/app/in-app","id":"st3536768"},{"type":"product/app/in-app","id":"st3536770"},{"type":"product/app/in-app","id":"st3536767"},{"type":"product/app/in-app","id":"st3536771"},{"type":"product/app/in-app","id":"st3536772"}]},"genres":{"data":[{"type":"genre","id":"st22392"},{"type":"genre","id":"st8411"}]},"moreByThisDeveloper":{"data":[{"type":"lockup/app","id":"855064798"},{"type":"lockup/app","id":"956391561"},{"type":"lockup/app","id":"1158760325"},{"type":"lockup/app","id":"1230799204"}]},"customersAlsoBoughtApps":{"data":[{"type":"lockup/app","id":"1117636837"},{"type":"lockup/app","id":"1189821372"},{"type":"lockup/app","id":"490629094"},{"type":"lockup/app","id":"1276476987"},{"type":"lockup/app","id":"747657935"},{"type":"lockup/app","id":"1184676303"},{"type":"lockup/app","id":"1235959662"},{"type":"lockup/app","id":"1128673338"},{"type":"lockup/app","id":"573831331"},{"type":"lockup/app","id":"1048838844"},{"type":"lockup/app","id":"1119551942"},{"type":"lockup/app","id":"1234632660"},{"type":"lockup/app","id":"1172653755"},{"type":"lockup/app","id":"1059292579"}]},"reviews":{"data":[{"type":"review","id":"st3536773"},{"type":"review","id":"st3536774"},{"type":"review","id":"st3536775"},{"type":"review","id":"st3536776"}]}}},"included":[{"type":"offer","id":"st32434232","attributes":{"actionText":{"short":"获取","medium":"获取","long":"获取 App","downloaded":"已安装","downloading":"正在安装"},"assets":[{"flavor":"iosSoftware","size":109496320}],"buyParams":"productType=C\u0026price=0\u0026salableAdamId=1208946007\u0026pricingParameters=STDQ\u0026pg=default\u0026appExtVrsId=826415437","price":0,"priceFormatted":"¥0.00","type":"get"},"relationships":{}},{"type":"lockup/developer","id":"1089036107","attributes":{"name":"北京音之邦文化科技有限公司","url":"https://itunes.apple.com/cn/developer/%E5%8C%97%E4%BA%AC%E9%9F%B3%E4%B9%8B%E9%82%A6%E6%96%87%E5%8C%96%E7%A7%91%E6%8A%80%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8/id1089036107?mt=8"},"relationships":{}},{"type":"image","id":"st27404030","attributes":{"bgColor":"05d9c9","height":1024,"supportsLayeredImage":false,"textColor1":"131616","textColor2":"161616","textColor3":"103d39","textColor4":"133d3a","url":"https://is5-ssl.mzstatic.com/image/thumb/Purple128/v4/0e/0d/90/0e0d90e7-757b-7ed8-3e2c-fa3a008e9d57/pr_source.png/{w}x{h}bb.{f}","width":1024,"hasAlpha":false},"relationships":{}},{"type":"image","id":"st3536761","attributes":{"bgColor":"ffffff","height":2208,"supportsLayeredImage":false,"textColor1":"000000","textColor2":"171717","textColor3":"333333","textColor4":"464646","url":"https://is4-ssl.mzstatic.com/image/thumb/Purple117/v4/00/c5/c7/00c5c79b-0543-a011-b979-94221ad93cbb/pr_source.jpg/{w}x{h}bb.{f}","width":1242,"hasAlpha":false},"relationships":{}},{"type":"image","id":"st3536762","attributes":{"bgColor":"ffffff","height":2208,"supportsLayeredImage":false,"textColor1":"000000","textColor2":"1c1c1c","textColor3":"333333","textColor4":"4a4a4a","url":"https://is1-ssl.mzstatic.com/image/thumb/Purple127/v4/a3/a3/47/a3a34798-0a55-49d8-0e2c-dfa580373fd6/pr_source.jpg/{w}x{h}bb.{f}","width":1242,"hasAlpha":false},"relationships":{}},{"type":"image","id":"st3536763","attributes":{"bgColor":"ffffff","height":2208,"supportsLayeredImage":false,"textColor1":"000000","textColor2":"2b2b2b","textColor3":"333333","textColor4":"555555","url":"https://is5-ssl.mzstatic.com/image/thumb/Purple127/v4/ab/4d/65/ab4d657f-c838-5b47-d618-61242f87b01e/pr_source.jpg/{w}x{h}bb.{f}","width":1242,"hasAlpha":false},"relationships":{}},{"type":"image","id":"st3536764","attributes":{"bgColor":"ffffff","height":2208,"supportsLayeredImage":false,"textColor1":"000000","textColor2":"333333","textColor3":"333333","textColor4":"5c5c5c","url":"https://is1-ssl.mzstatic.com/image/thumb/Purple127/v4/43/fb/e8/43fbe826-f7b3-2a29-90fe-041288332a1c/pr_source.jpg/{w}x{h}bb.{f}","width":1242,"hasAlpha":false},"relationships":{}},{"type":"image","id":"st3536765","attributes":{"bgColor":"ffffff","height":2208,"supportsLayeredImage":false,"textColor1":"010101","textColor2":"323232","textColor3":"343434","textColor4":"5b5b5b","url":"https://is2-ssl.mzstatic.com/image/thumb/Purple127/v4/a6/2e/ec/a62eec61-eb9a-7ca7-8809-42fc7db1ce2c/pr_source.jpg/{w}x{h}bb.{f}","width":1242,"hasAlpha":false},"relationships":{}},{"type":"image","id":"st2920687","attributes":{"bgColor":"30c3d0","height":1024,"supportsLayeredImage":false,"textColor1":"08030f","textColor2":"070411","textColor3":"102935","textColor4":"0f2a37","url":"https://is3-ssl.mzstatic.com/image/thumb/Purple1/v4/bb/43/e8/bb43e88c-7f8d-a777-ffae-ac88792a7ac8/mzl.cyrpvnka.png/{w}x{h}bb.{f}","width":1024,"hasAlpha":false},"relationships":{}},{"type":"image","id":"st3536777","attributes":{"height":1024,"supportsLayeredImage":false,"url":"https://is3-ssl.mzstatic.com/image/thumb/Purple/v4/e2/28/04/e228048a-9f80-4357-8c0b-72b759dcf481/mzl.cyvqgwlw.png/{w}x{h}bb.{f}","width":1024,"hasAlpha":false},"relationships":{}},{"type":"image","id":"st3536778","attributes":{"bgColor":"3d66ab","height":1024,"supportsLayeredImage":false,"textColor1":"fdf9fe","textColor2":"dff6ed","textColor3":"d6dbed","textColor4":"bfdae0","url":"https://is5-ssl.mzstatic.com/image/thumb/Purple122/v4/8c/c6/e9/8cc6e9fd-06b7-f1bc-32f9-83353e0e8615/mzl.mvoiltfs.png/{w}x{h}bb.{f}","width":1024,"hasAlpha":false},"relationships":{}},{"type":"image","id":"st2168924","attributes":{"height":1024,"supportsLayeredImage":false,"url":"https://is5-ssl.mzstatic.com/image/thumb/Purple4/v4/63/35/b9/6335b958-ef49-1b85-b7e5-477828c54fab/mzl.cutyufsr.png/{w}x{h}bb.{f}","width":1024,"hasAlpha":false},"relationships":{}},{"type":"image","id":"st2168927","attributes":{"bgColor":"ff8800","height":1024,"supportsLayeredImage":false,"textColor1":"161616","textColor2":"161616","textColor3":"452d12","textColor4":"452d12","url":"https://is4-ssl.mzstatic.com/image/thumb/Purple128/v4/9a/1e/3b/9a1e3b08-2944-c380-978e-749b31fa7da5/mzl.kqccfqrm.png/{w}x{h}bb.{f}","width":1024,"hasAlpha":false},"relationships":{}},{"type":"image","id":"st21316276","attributes":{"bgColor":"f5c920","height":1024,"supportsLayeredImage":false,"textColor1":"0f0a09","textColor2":"342b0d","textColor3":"3d300e","textColor4":"5a4b11","url":"https://is5-ssl.mzstatic.com/image/thumb/Purple128/v4/1c/64/94/1c6494b7-5b5c-7a05-cdf4-a26659a94859/pr_source.jpg/{w}x{h}bb.{f}","width":1024,"hasAlpha":false},"relationships":{}},{"type":"image","id":"st26156237","attributes":{"bgColor":"15141a","height":1024,"supportsLayeredImage":false,"textColor1":"f6ff00","textColor2":"f6ff00","textColor3":"c8cf05","textColor4":"c8cf05","url":"https://is5-ssl.mzstatic.com/image/thumb/Purple128/v4/0e/89/9e/0e899e5a-9bcf-ff64-48c2-e60b41cf161d/mzl.unfsfvrp.png/{w}x{h}bb.{f}","width":1024,"hasAlpha":false},"relationships":{}},{"type":"image","id":"st3536779","attributes":{"bgColor":"1e0504","height":1024,"supportsLayeredImage":false,"textColor1":"ffffff","textColor2":"fa342f","textColor3":"d1cdcc","textColor4":"ce2b26","url":"https://is2-ssl.mzstatic.com/image/thumb/Purple118/v4/7f/7e/6d/7f7e6d90-bba6-94a1-518a-da291bd22361/AppIcon-1x_U007emarketing-85-220-1.png/{w}x{h}bb.{f}","width":1024,"hasAlpha":false},"relationships":{}},{"type":"image","id":"st3536780","attributes":{"bgColor":"ffffff","height":1024,"supportsLayeredImage":false,"textColor1":"020c02","textColor2":"063c06","textColor3":"343d34","textColor4":"386338","url":"https://is3-ssl.mzstatic.com/image/thumb/Purple20/v4/64/85/51/64855164-e9b4-d8bb-63e3-b9638bccab66/mzl.scvswdpp.png/{w}x{h}bb.{f}","width":1024,"hasAlpha":true},"relationships":{}},{"type":"image","id":"st491920","attributes":{"bgColor":"ff8c08","height":1024,"supportsLayeredImage":false,"textColor1":"110901","textColor2":"161616","textColor3":"402302","textColor4":"452e14","url":"https://is1-ssl.mzstatic.com/image/thumb/Purple122/v4/e3/b5/50/e3b55049-9b1e-5482-f0a0-7a604596f58e/mzl.mbojbixn.png/{w}x{h}bb.{f}","width":1024,"hasAlpha":false},"relationships":{}},{"type":"image","id":"st2168909","attributes":{"bgColor":"ffffff","height":1024,"supportsLayeredImage":false,"textColor1":"160107","textColor2":"160107","textColor3":"453438","textColor4":"453438","url":"https://is1-ssl.mzstatic.com/image/thumb/Purple128/v4/43/e3/35/43e33556-c90d-9afa-7fb4-3ca7dfbab530/AppIcon-1x_U007emarketing-85-220-4.png/{w}x{h}bb.{f}","width":1024,"hasAlpha":false},"relationships":{}},{"type":"image","id":"st115144886","attributes":{"bgColor":"fcfafa","height":1024,"supportsLayeredImage":false,"textColor1":"003154","textColor2":"670000","textColor3":"325975","textColor4":"853232","url":"https://is2-ssl.mzstatic.com/image/thumb/Purple118/v4/db/d4/a7/dbd4a7f3-fff3-5288-9e30-a7ec662c5d2a/AppIcon-1x_U007emarketing-85-220-5.png/{w}x{h}bb.{f}","width":1024,"hasAlpha":false},"relationships":{}},{"type":"image","id":"st3536782","attributes":{"bgColor":"d2d2d2","height":1024,"supportsLayeredImage":false,"textColor1":"010101","textColor2":"21282c","textColor3":"2b2b2b","textColor4":"444a4d","url":"https://is1-ssl.mzstatic.com/image/thumb/Purple118/v4/0b/ab/35/0bab35ad-9603-92ed-2ebb-c4a746d61d33/AppIcon-1x_U007emarketing-85-220-0-6.png/{w}x{h}bb.{f}","width":1024,"hasAlpha":false},"relationships":{}},{"type":"image","id":"st3536783","attributes":{"bgColor":"171718","height":1024,"supportsLayeredImage":false,"textColor1":"ffffff","textColor2":"fa9d1d","textColor3":"d0d0d0","textColor4":"cd821c","url":"https://is4-ssl.mzstatic.com/image/thumb/Purple128/v4/14/d7/db/14d7db1e-3598-993b-babb-2ce6589daec4/AppIcon-1x_U007emarketing-85-220-9.png/{w}x{h}bb.{f}","width":1024,"hasAlpha":false},"relationships":{}},{"type":"image","id":"st2168937","attributes":{"bgColor":"2c0003","height":1024,"supportsLayeredImage":false,"textColor1":"ffffff","textColor2":"f9d900","textColor3":"d4cbcc","textColor4":"d0ad00","url":"https://is3-ssl.mzstatic.com/image/thumb/Purple127/v4/2c/36/70/2c36709a-0451-78bc-d363-aee6df1c9404/mzl.tmegyqlo.jpg/{w}x{h}bb.{f}","width":1024,"hasAlpha":false},"relationships":{}},{"type":"image","id":"st3536784","attributes":{"bgColor":"ff4173","height":1024,"supportsLayeredImage":false,"textColor1":"08050c","textColor2":"161616","textColor3":"391121","textColor4":"451f29","url":"https://is5-ssl.mzstatic.com/image/thumb/Purple91/v4/84/f1/2f/84f12f0e-00e5-ae4d-107a-53d63f27d712/pr_source.png/{w}x{h}bb.{f}","width":1024,"hasAlpha":false},"relationships":{}},{"type":"image","id":"st3536785","attributes":{"bgColor":"cc0020","height":1024,"supportsLayeredImage":false,"textColor1":"ffffff","textColor2":"ffa4b0","textColor3":"f4cbd2","textColor4":"f48394","url":"https://is2-ssl.mzstatic.com/image/thumb/Purple128/v4/57/46/af/5746af4d-bae3-e837-762e-b0da9c3f041e/mzl.ldyhsjgc.png/{w}x{h}bb.{f}","width":1024,"hasAlpha":false},"relationships":{}},{"type":"image","id":"st2168938","attributes":{"bgColor":"ffffff","height":1024,"supportsLayeredImage":false,"textColor1":"15050c","textColor2":"140608","textColor3":"43373c","textColor4":"43383a","url":"https://is3-ssl.mzstatic.com/image/thumb/Purple128/v4/9c/d2/e8/9cd2e8c3-06ef-e239-2291-d93e3e969ca7/AppIcon-1x_U007emarketing-85-220-6.png/{w}x{h}bb.{f}","width":1024,"hasAlpha":false},"relationships":{}},{"type":"product/app/in-app","id":"st3536766","attributes":{"buyParams":"productType=A\u0026price=12000\u0026salableAdamId=1214815922\u0026pricingParameters=STDQ\u0026pg=default","name":"百度音乐白金VIP会员（一个月）","offerType":{"offerType":"buy","accompaniesNoun":true},"price":"¥12.00"},"relationships":{}},{"type":"product/app/in-app","id":"st3536769","attributes":{"buyParams":"productType=A\u0026price=98000\u0026salableAdamId=1214793019\u0026pricingParameters=STDQ\u0026pg=default","name":"百度音乐白金VIP会员（一年）","offerType":{"offerType":"buy","accompaniesNoun":true},"price":"¥98.00"},"relationships":{}},{"type":"product/app/in-app","id":"st3536768","attributes":{"buyParams":"productType=A\u0026price=30000\u0026salableAdamId=1214792451\u0026pricingParameters=STDQ\u0026pg=default","name":"百度音乐白金VIP会员（三个月）","offerType":{"offerType":"buy","accompaniesNoun":true},"price":"¥30.00"},"relationships":{}},{"type":"product/app/in-app","id":"st3536770","attributes":{"buyParams":"productType=A\u0026price=3000\u0026salableAdamId=1214793031\u0026pricingParameters=STDQ\u0026pg=default","name":"3分贝","offerType":{"offerType":"buy","accompaniesNoun":true},"price":"¥3.00"},"relationships":{}},{"type":"product/app/in-app","id":"st3536767","attributes":{"buyParams":"productType=A\u0026price=1000\u0026salableAdamId=1214793028\u0026pricingParameters=STDQ\u0026pg=default","name":"1分贝","offerType":{"offerType":"buy","accompaniesNoun":true},"price":"¥1.00"},"relationships":{}},{"type":"product/app/in-app","id":"st3536771","attributes":{"buyParams":"productType=A\u0026price=188000\u0026salableAdamId=1299602444\u0026pricingParameters=STDQ\u0026pg=default","name":"188分贝","offerType":{"offerType":"buy","accompaniesNoun":true},"price":"¥188.00"},"relationships":{}},{"type":"product/app/in-app","id":"st3536772","attributes":{"buyParams":"productType=A\u0026price=6000\u0026salableAdamId=1214793035\u0026pricingParameters=STDQ\u0026pg=default","name":"6分贝","offerType":{"offerType":"buy","accompaniesNoun":true},"price":"¥6.00"},"relationships":{}},{"type":"genre","id":"st22392","attributes":{"mediaType":"8","name":"音乐","url":"https://itunes.apple.com/cn/genre/id6011"},"relationships":{}},{"type":"genre","id":"st8411","attributes":{"mediaType":"8","name":"娱乐","url":"https://itunes.apple.com/cn/genre/id6016"},"relationships":{}},{"type":"genre","id":"st14238","attributes":{"mediaType":"8","name":"生活","url":"https://itunes.apple.com/cn/genre/id6012"},"relationships":{}},{"type":"genre","id":"st20986","attributes":{"mediaType":"8","name":"图书","url":"https://itunes.apple.com/cn/genre/id6018"},"relationships":{}},{"type":"genre","id":"st8424","attributes":{"mediaType":"8","name":"工具","url":"https://itunes.apple.com/cn/genre/id6002"},"relationships":{}},{"type":"genre","id":"st8428","attributes":{"mediaType":"8","name":"社交","url":"https://itunes.apple.com/cn/genre/id6005"},"relationships":{}},{"type":"genre","id":"st3838","attributes":{"mediaType":"8","name":"游戏","url":"https://itunes.apple.com/cn/genre/id6014"},"relationships":{}},{"type":"lockup/app","id":"855064798","attributes":{},"relationships":{}},{"type":"lockup/app","id":"956391561","attributes":{},"relationships":{}},{"type":"lockup/app","id":"1158760325","attributes":{},"relationships":{}},{"type":"lockup/app","id":"1230799204","attributes":{},"relationships":{}},{"type":"lockup/app","id":"1117636837","attributes":{},"relationships":{}},{"type":"lockup/app","id":"1189821372","attributes":{},"relationships":{}},{"type":"lockup/app","id":"490629094","attributes":{},"relationships":{}},{"type":"lockup/app","id":"1276476987","attributes":{},"relationships":{}},{"type":"lockup/app","id":"747657935","attributes":{},"relationships":{}},{"type":"lockup/app","id":"1184676303","attributes":{},"relationships":{}},{"type":"lockup/app","id":"1235959662","attributes":{},"relationships":{}},{"type":"lockup/app","id":"1128673338","attributes":{},"relationships":{}},{"type":"lockup/app","id":"573831331","attributes":{},"relationships":{}},{"type":"lockup/app","id":"1048838844","attributes":{},"relationships":{}},{"type":"lockup/app","id":"1119551942","attributes":{},"relationships":{}},{"type":"lockup/app","id":"1234632660","attributes":{},"relationships":{}},{"type":"lockup/app","id":"1172653755","attributes":{},"relationships":{}},{"type":"lockup/app","id":"1059292579","attributes":{},"relationships":{}},{"type":"lockup/app","id":"490629094","attributes":{"deviceFamilies":["iphone","ipad","ipod"],"artistId":"406832160","artistName":"ujweng","artistUrl":"https://itunes.apple.com/cn/developer/ujweng/id406832160?mt=8","kind":"iosSoftware","name":"看词听歌","url":"https://itunes.apple.com/cn/app/%E7%9C%8B%E8%AF%8D%E5%90%AC%E6%AD%8C/id490629094?mt=8"},"relationships":{"genres":{"data":[{"type":"genre","id":"st22392"},{"type":"genre","id":"st8411"}]},"artwork":{"data":{"type":"image","id":"st2920687"}}}},{"type":"lockup/app","id":"573831331","attributes":{"deviceFamilies":["iphone","ipod"],"artistId":"372585298","artistName":"Beijing Baidu Netcom Science \u0026 Technology Co.,Ltd","artistUrl":"https://itunes.apple.com/cn/developer/beijing-baidu-netcom-science-technology-co-ltd/id372585298?mt=8","kind":"iosSoftware","name":"百度随心听","url":"https://itunes.apple.com/cn/app/%E7%99%BE%E5%BA%A6%E9%9A%8F%E5%BF%83%E5%90%AC/id573831331?mt=8"},"relationships":{"genres":{"data":[{"type":"genre","id":"st22392"},{"type":"genre","id":"st8411"}]},"artwork":{"data":{"type":"image","id":"st3536777"}}}},{"type":"lockup/app","id":"747657935","attributes":{"deviceFamilies":["iphone","ipad","ipod"],"artistId":"673918124","artistName":"xiao wei","artistUrl":"https://itunes.apple.com/cn/developer/xiao-wei/id673918124?mt=8","kind":"iosSoftware","name":"轻音乐 - 精选纯音乐","url":"https://itunes.apple.com/cn/app/%E8%BD%BB%E9%9F%B3%E4%B9%90-%E7%B2%BE%E9%80%89%E7%BA%AF%E9%9F%B3%E4%B9%90/id747657935?mt=8"},"relationships":{"genres":{"data":[{"type":"genre","id":"st22392"},{"type":"genre","id":"st14238"}]},"artwork":{"data":{"type":"image","id":"st3536778"}}}},{"type":"lockup/app","id":"855064798","attributes":{"deviceFamilies":["iphone","ipod"],"artistId":"1089036107","artistName":"北京音之邦文化科技有限公司","artistUrl":"https://itunes.apple.com/cn/developer/%E5%8C%97%E4%BA%AC%E9%9F%B3%E4%B9%8B%E9%82%A6%E6%96%87%E5%8C%96%E7%A7%91%E6%8A%80%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8/id1089036107?mt=8","kind":"iosSoftware","name":"声色","url":"https://itunes.apple.com/cn/app/%E5%A3%B0%E8%89%B2/id855064798?mt=8"},"relationships":{"genres":{"data":[{"type":"genre","id":"st22392"},{"type":"genre","id":"st8411"}]},"artwork":{"data":{"type":"image","id":"st2168924"}}}},{"type":"lockup/app","id":"956391561","attributes":{"deviceFamilies":["iphone","ipod"],"artistId":"1089036107","artistName":"北京音之邦文化科技有限公司","artistUrl":"https://itunes.apple.com/cn/developer/%E5%8C%97%E4%BA%AC%E9%9F%B3%E4%B9%8B%E9%82%A6%E6%96%87%E5%8C%96%E7%A7%91%E6%8A%80%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8/id1089036107?mt=8","kind":"iosSoftware","name":"乐播 - 想乐你就来播","url":"https://itunes.apple.com/cn/app/%E4%B9%90%E6%92%AD-%E6%83%B3%E4%B9%90%E4%BD%A0%E5%B0%B1%E6%9D%A5%E6%92%AD/id956391561?mt=8"},"relationships":{"genres":{"data":[{"type":"genre","id":"st22392"},{"type":"genre","id":"st20986"}]},"artwork":{"data":{"type":"image","id":"st2168927"}}}},{"type":"lockup/app","id":"1048838844","attributes":{"deviceFamilies":["iphone","ipad","ipod"],"artistId":"1048838843","artistName":"Dongguan Haibei Information Technology Co., Ltd.","artistUrl":"https://itunes.apple.com/cn/developer/dongguan-haibei-information-technology-co-ltd/id1048838843?mt=8","kind":"iosSoftware","name":"海贝音乐","url":"https://itunes.apple.com/cn/app/%E6%B5%B7%E8%B4%9D%E9%9F%B3%E4%B9%90/id1048838844?mt=8"},"relationships":{"genres":{"data":[{"type":"genre","id":"st22392"},{"type":"genre","id":"st8424"}]},"artwork":{"data":{"type":"image","id":"st21316276"}}}},{"type":"lockup/app","id":"1059292579","attributes":{"deviceFamilies":["iphone","ipod"],"artistId":"1059292578","artistName":"jun wang","artistUrl":"https://itunes.apple.com/cn/developer/jun-wang/id1059292578?mt=8","kind":"iosSoftware","name":"深港DJ -好听的dj舞曲播放器","url":"https://itunes.apple.com/cn/app/%E6%B7%B1%E6%B8%AFdj-%E5%A5%BD%E5%90%AC%E7%9A%84dj%E8%88%9E%E6%9B%B2%E6%92%AD%E6%94%BE%E5%99%A8/id1059292579?mt=8"},"relationships":{"genres":{"data":[{"type":"genre","id":"st22392"},{"type":"genre","id":"st8411"}]},"artwork":{"data":{"type":"image","id":"st26156237"}}}},{"type":"lockup/app","id":"1117636837","attributes":{"deviceFamilies":["iphone","ipod"],"artistId":"1274878742","artistName":"Guangzhou Shoushun Electronic Technology Co., Ltd.","artistUrl":"https://itunes.apple.com/cn/developer/guangzhou-shoushun-electronic-technology-co-ltd/id1274878742?mt=8","kind":"iosSoftware","name":"HiFi音乐Pro","url":"https://itunes.apple.com/cn/app/hifi%E9%9F%B3%E4%B9%90pro/id1117636837?mt=8"},"relationships":{"genres":{"data":[{"type":"genre","id":"st22392"},{"type":"genre","id":"st8411"}]},"artwork":{"data":{"type":"image","id":"st3536779"}}}},{"type":"lockup/app","id":"1119551942","attributes":{"deviceFamilies":["iphone","ipad","ipod"],"artistId":"472320010","artistName":"JINHUA LIN","artistUrl":"https://itunes.apple.com/cn/developer/jinhua-lin/id472320010?mt=8","kind":"iosSoftware","name":"离线音乐播放器-可定制歌单的Mp3音乐盒","url":"https://itunes.apple.com/cn/app/%E7%A6%BB%E7%BA%BF%E9%9F%B3%E4%B9%90%E6%92%AD%E6%94%BE%E5%99%A8-%E5%8F%AF%E5%AE%9A%E5%88%B6%E6%AD%8C%E5%8D%95%E7%9A%84mp3%E9%9F%B3%E4%B9%90%E7%9B%92/id1119551942?mt=8"},"relationships":{"genres":{"data":[{"type":"genre","id":"st22392"},{"type":"genre","id":"st8411"}]},"artwork":{"data":{"type":"image","id":"st3536780"}}}},{"type":"lockup/app","id":"1128673338","attributes":{"deviceFamilies":["iphone","ipad","ipod"],"artistId":"1100207942","artistName":"Hong Nguyen","artistUrl":"https://itunes.apple.com/cn/developer/hong-nguyen/id1100207942?mt=8","kind":"iosSoftware","name":"音乐播放器-高音质音乐播放器 - 听音乐 - 我的音乐","url":"https://itunes.apple.com/cn/app/%E9%9F%B3%E4%B9%90%E6%92%AD%E6%94%BE%E5%99%A8-%E9%AB%98%E9%9F%B3%E8%B4%A8%E9%9F%B3%E4%B9%90%E6%92%AD%E6%94%BE%E5%99%A8-%E5%90%AC%E9%9F%B3%E4%B9%90-%E6%88%91%E7%9A%84%E9%9F%B3%E4%B9%90/id1128673338?mt=8"},"relationships":{"genres":{"data":[{"type":"genre","id":"st22392"},{"type":"genre","id":"st8411"}]},"artwork":{"data":{"type":"image","id":"st491920"}}}},{"type":"lockup/app","id":"1158760325","attributes":{"deviceFamilies":["iphone","ipod"],"artistId":"1089036107","artistName":"北京音之邦文化科技有限公司","artistUrl":"https://itunes.apple.com/cn/developer/%E5%8C%97%E4%BA%AC%E9%9F%B3%E4%B9%8B%E9%82%A6%E6%96%87%E5%8C%96%E7%A7%91%E6%8A%80%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8/id1089036107?mt=8","kind":"iosSoftware","name":"百度音乐人","url":"https://itunes.apple.com/cn/app/%E7%99%BE%E5%BA%A6%E9%9F%B3%E4%B9%90%E4%BA%BA/id1158760325?mt=8"},"relationships":{"genres":{"data":[{"type":"genre","id":"st22392"},{"type":"genre","id":"st8428"}]},"artwork":{"data":{"type":"image","id":"st2168909"}}}},{"type":"lockup/app","id":"1172653755","attributes":{"deviceFamilies":["iphone","ipod"],"artistId":"975804294","artistName":"iMusic Culture\u0026Technology Co., LTD","artistUrl":"https://itunes.apple.com/cn/developer/imusic-culture-technology-co-ltd/id975804294?mt=8","kind":"iosSoftware","name":"爱音乐播放器-听无损音乐在线K歌看视频","url":"https://itunes.apple.com/cn/app/%E7%88%B1%E9%9F%B3%E4%B9%90%E6%92%AD%E6%94%BE%E5%99%A8-%E5%90%AC%E6%97%A0%E6%8D%9F%E9%9F%B3%E4%B9%90%E5%9C%A8%E7%BA%BFk%E6%AD%8C%E7%9C%8B%E8%A7%86%E9%A2%91/id1172653755?mt=8"},"relationships":{"genres":{"data":[{"type":"genre","id":"st22392"},{"type":"genre","id":"st8411"}]},"artwork":{"data":{"type":"image","id":"st115144886"}}}},{"type":"lockup/app","id":"1184676303","attributes":{"deviceFamilies":["iphone","ipad","ipod"],"artistId":"1183343079","artistName":"Tian Molin","artistUrl":"https://itunes.apple.com/cn/developer/tian-molin/id1183343079?mt=8","kind":"iosSoftware","name":"老歌500首-墨琳音乐","url":"https://itunes.apple.com/cn/app/%E8%80%81%E6%AD%8C500%E9%A6%96-%E5%A2%A8%E7%90%B3%E9%9F%B3%E4%B9%90/id1184676303?mt=8"},"relationships":{"genres":{"data":[{"type":"genre","id":"st22392"},{"type":"genre","id":"st8411"}]},"artwork":{"data":{"type":"image","id":"st3536782"}}}},{"type":"lockup/app","id":"1189821372","attributes":{"deviceFamilies":["iphone","ipad","ipod"],"artistId":"902235929","artistName":"HSIN WEI LEE","artistUrl":"https://itunes.apple.com/cn/developer/hsin-wei-lee/id902235929?mt=8","kind":"iosSoftware","name":"mifm - My Music Radio 3 Raxio","url":"https://itunes.apple.com/cn/app/mifm-my-music-radio-3-raxio/id1189821372?mt=8"},"relationships":{"genres":{"data":[{"type":"genre","id":"st22392"},{"type":"genre","id":"st8411"}]},"artwork":{"data":{"type":"image","id":"st3536783"}}}},{"type":"lockup/app","id":"1230799204","attributes":{"deviceFamilies":["iphone","ipod"],"artistId":"1089036107","artistName":"北京音之邦文化科技有限公司","artistUrl":"https://itunes.apple.com/cn/developer/%E5%8C%97%E4%BA%AC%E9%9F%B3%E4%B9%8B%E9%82%A6%E6%96%87%E5%8C%96%E7%A7%91%E6%8A%80%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8/id1089036107?mt=8","kind":"iosSoftware","name":"谦万别喊-薛之谦的八分音符游戏","url":"https://itunes.apple.com/cn/app/%E8%B0%A6%E4%B8%87%E5%88%AB%E5%96%8A-%E8%96%9B%E4%B9%8B%E8%B0%A6%E7%9A%84%E5%85%AB%E5%88%86%E9%9F%B3%E7%AC%A6%E6%B8%B8%E6%88%8F/id1230799204?mt=8"},"relationships":{"genres":{"data":[{"type":"genre","id":"st3838"}]},"artwork":{"data":{"type":"image","id":"st2168937"}}}},{"type":"lockup/app","id":"1234632660","attributes":{"deviceFamilies":["iphone","ipod"],"artistId":"1231391370","artistName":"Roger McAdams","artistUrl":"https://itunes.apple.com/cn/developer/roger-mcadams/id1231391370?mt=8","kind":"iosSoftware","name":"Crazy Ring: 苹果手机铃声- 手机铃声制作软件","url":"https://itunes.apple.com/cn/app/crazy-ring-%E8%8B%B9%E6%9E%9C%E6%89%8B%E6%9C%BA%E9%93%83%E5%A3%B0-%E6%89%8B%E6%9C%BA%E9%93%83%E5%A3%B0%E5%88%B6%E4%BD%9C%E8%BD%AF%E4%BB%B6/id1234632660?mt=8"},"relationships":{"genres":{"data":[{"type":"genre","id":"st22392"},{"type":"genre","id":"st8424"}]},"artwork":{"data":{"type":"image","id":"st3536784"}}}},{"type":"lockup/app","id":"1235959662","attributes":{"deviceFamilies":["iphone","ipod"],"artistId":"1147527893","artistName":"广州飞傲电子科技有限公司","artistUrl":"https://itunes.apple.com/cn/developer/%E5%B9%BF%E5%B7%9E%E9%A3%9E%E5%82%B2%E7%94%B5%E5%AD%90%E7%A7%91%E6%8A%80%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8/id1147527893?mt=8","kind":"iosSoftware","name":"飞傲音乐-音乐发烧友的专属播放器","url":"https://itunes.apple.com/cn/app/%E9%A3%9E%E5%82%B2%E9%9F%B3%E4%B9%90-%E9%9F%B3%E4%B9%90%E5%8F%91%E7%83%A7%E5%8F%8B%E7%9A%84%E4%B8%93%E5%B1%9E%E6%92%AD%E6%94%BE%E5%99%A8/id1235959662?mt=8"},"relationships":{"genres":{"data":[{"type":"genre","id":"st22392"},{"type":"genre","id":"st8424"}]},"artwork":{"data":{"type":"image","id":"st3536785"}}}},{"type":"lockup/app","id":"1276476987","attributes":{"deviceFamilies":["iphone","ipad","ipod"],"artistId":"1269984426","artistName":"Yancong Li","artistUrl":"https://itunes.apple.com/cn/developer/yancong-li/id1269984426?mt=8","kind":"iosSoftware","name":"酷听音乐 - 歌曲音乐听你想听","url":"https://itunes.apple.com/cn/app/%E9%85%B7%E5%90%AC%E9%9F%B3%E4%B9%90-%E6%AD%8C%E6%9B%B2%E9%9F%B3%E4%B9%90%E5%90%AC%E4%BD%A0%E6%83%B3%E5%90%AC/id1276476987?mt=8"},"relationships":{"genres":{"data":[{"type":"genre","id":"st22392"},{"type":"genre","id":"st8411"}]},"artwork":{"data":{"type":"image","id":"st2168938"}}}},{"type":"review","id":"st3536773","attributes":{"body":"小米也有青春版，华为也有青春版。","date":"2018-02-09T09:41:56Z","name":"411611500","rating":5,"title":"都叫青春版","userReviewId":"2185954414","response":{}},"relationships":{}},{"type":"review","id":"st3536774","attributes":{"body":"很好，又有怀旧的感觉了，给个👍","date":"2018-02-08T09:26:42Z","name":"junxing","rating":5,"title":"青春版，怀旧情怀又来了","userReviewId":"2181527824","response":{}},"relationships":{}},{"type":"review","id":"st3536775","attributes":{"body":"下到ipad里图标是蓝色的，而且没有K歌功能了，怎么办？","date":"2018-02-28T09:19:59Z","name":"helen666helen","rating":1,"title":"下到ipad里图标是蓝色的，而且没有K歌功能了，怎么办？","userReviewId":"2255292136","response":{}},"relationships":{}},{"type":"review","id":"st3536776","attributes":{"body":"不错，青春版","date":"2017-04-06T07:48:34Z","name":"georgellf","rating":5,"title":"青春版","userReviewId":"1581892290","response":{}},"relationships":{}}]}</script><script type="fastboot/shoebox" id="shoebox-ember-locale-store">{"context":{"storefrontId":"143465","languageCode":"zh-cn","storefront":"CN"},"localizations":{"WEA.AppPages.Supports.FamilySharing.Description":"启用“家人共享”后，此 App 最多可供 6 名家庭成员使用。","WEA.AppPages.Supports.Wallet.Description":"集中管理您的凭证、票券、卡片及更多。","WEA.Error.Generic.Meta.PageTitle":"正在连接 Apple Music。","WEA.AppPages.CTA.AppleSchool.Action":"在这里查看：","WEA.AppPages.FamilySharing":"家人共享","WEA.AppPages.MacAppStore.Header":"Mac App Store","WEA.AppPages.Ratings.Title":"评分","WEA.AppPages.PreOrderDisclaimer":"此内容可能进行调整，恕不另行通知。最终产品可能会有所不同。","WEA.Common.FileSize.byte.one":"1 字节","WEA.Common.FileSize.KB.AX.other":"@@count@@ KB","WEA.AppPages.Meta.tvOSAppPageMetaKeywords":"@@softwareName@@, @@developerName@@, @@categoryNames@@, tvos app, app, appstore, app store, appletv, apple tv","WEA.AppPages.Supports.Siri.Title":"Siri","WEA.Error.Generic.Open.AM":"在 Apple Music 中打开","WEA.Error.NativeMissing.iTunes.Download.text":"下载 iTunes","WEA.AppPages.Version":"版本","WEA.Common.More":"更多","WEA.Common.Preview":"预览","WEA.AppPages.Copyright":"Copyright","WEA.AppPages.OffersAppleWatchApp":"提供 Apple Watch App","WEA.Common.Meta.Twitter.domain.AM":"Apple Music","WEA.AppPages.Screenshots.appleWatch":"Apple Watch","WEA.Common.Ratings.zero":"没有评分","WEA.Common.Share.CloseMenu.AX":"WEA.Common.Share.CloseMenu.AX","WEA.Common.FileSize.KB":"@@count@@ KB","WEA.Error.Generic.Meta.PageKeywords":"Apple Music","WEA.Common.Minutes.other.abbr":"@@count@@ min","WEA.Common.Meta.Twitter.site.iTunes":"@iTunes","WEA.AppPages.InAppPurchase.Title":"App 内购买项目","WEA.AppPages.RatingsReviews.Title":"评分及评论","WEA.Error.NativeMissing.Other.LearnMore.link":"https://www.apple.com/cn/itunes/download/","WEA.AppPages.Supports.FamilySharing.Title":"家人共享","WEA.AppPages.DeveloperResponse":"开发人员回复","WEA.AppPages.FB.siteName.iosSoftware":"App Store","WEA.AppPages.PrivacyPolicy":"隐私政策","WEA.AppPages.LicenseAgreement":"许可协议","WEA.AppPages.Required":"必选","WEA.AppPages.WhatsNew.Header":"新内容","WEA.Common.LearnMore":"进一步了解","WEA.AppPages.OffersInAppPurchases":"提供 App 内购买项目","WEA.AppPages.Meta.tvOSAppPagetitle":"App Store 上的“@@softwareName@@”","WEA.AppPages.Screenshots.appleTV":"Apple TV","WEA.Common.TrackList.Artist":"艺人","WEA.Common.Hours.one":"1 小时","WEA.AppPages.Meta.tvOSAppPageMetaDescriptionLine":"阅读评论、比较用户评分、查看屏幕快照并进一步了解“@@softwareName@@”。下载“@@softwareName@@”并在您的 Apple TV 上尽享其功能。","WEA.AppPages.Size":"大小","WEA.AppPages.EditorsNotes.Header":"编辑评语","WEA.Common.Seconds.other.abbr":"@@count@@ sec","WEA.Common.Share.OpenMenu.AX":"WEA.Common.Share.OpenMenu.AX","WEA.Common.Minutes.one":"1 分钟","WEA.Common.SeeAll.Title.Item":"《@@itemName@@》-《@@productName@@》- @@sectionTitle@@","WEA.Error.Generic.Subtitle":"如果您未使用过 iTunes，请@@downloadLink@@。如果您使用过 iTunes 并且其未自动打开，请尝试从程序坞或 Windows 任务栏打开。","WEA.Common.Hours.other":"@@count@@ 小时","WEA.Error.Generic.Open.Action.AM":"打开方式","WEA.AppPages.Screenshots.iphone":"iPhone","WEA.AppPages.Screenshots.appleTVScreenshots":"Apple TV 屏幕快照","WEA.AppPages.Twitter.domain.mobileSoftwareBundle":"AppStore","WEA.Common.FileSize.MB":"@@count@@ MB","WEA.Common.Meta.Twitter.site.AM":"@appleMusic","WEA.AppPages.Seller":"销售商","WEA.AppPages.Meta.title":"App Store 上的“@@softwareName@@”","WEA.AppPages.Availability.macOS":"打开 Mac App Store 购买和下载 App。","WEA.Error.Generic.Subtitle.DownloadLink.Text":"免费下载","WEA.Common.Released":"发行日期：@@releaseDate@@","WEA.LocalNav.Title.AppStore":"App Store 预览","WEA.AppPages.OffersiMessageAppForiOS":"提供 iOS 版 iMessage App","WEA.Common.Ratings.one":"1 个评分","WEA.Error.NativeMissing.iTunes.Title":"我们未能在您的电脑上找到 iTunes。","WEA.LocalNav.Title.iBooks":"iBooks Store 预览","WEA.AppPages.Meta.PageMetaKeywords":"@@softwareName@@, @@developerName@@, @@categoryNames@@, ios apps, app, appstore, app store, iphone, ipad, ipod touch, itouch, itunes","WEA.AppPages.Description.Header":"简介","WEA.AppPages.Supports.GameCenter.Description":"挑战朋友并查看排行榜和成就。","WEA.Error.NativeMissing.Other.AM":"在 iOS、Android、Mac 和 Windows 设备上获取 Apple Music","WEA.Common.TimeFormat.UnderHour":"m:ss","WEA.Common.SeeAll.Title.Product":"@@artistName@@ — @@sectionTitle@@","WEA.AppPages.Optional":"可选","WEA.AppPages.CTA.MacAppStore.AX":"在 Mac App Store 中查看","WEA.AppPages.GameController":"游戏控制器","WEA.Common.Minutes.other":"@@count@@ 分钟","WEA.Common.FileSize.KB.AX.one":"1 KB","WEA.AppPages.Screenshots.appleWatchScreenshots":"Apple Watch 屏幕快照","WEA.AppPages.MoreAppsByDeveloperName":"更多来自@@developerName@@的 App","WEA.Common.DateFormat":"ll","WEA.AppPages.OffersiMessageApp":"提供 iMessage App","WEA.AppPages.OffersAppleWatchAppForiPhone":"提供 iPhone 版 Apple Watch App","WEA.AppPages.RankInGenre":"“@@genreName@@”类第 @@rank@@ 名","WEA.AppPages.Twitter.site.desktopApp":"@MacAppStore","WEA.AppPages.Availability.iOS.Bundle":"只能在 iOS 设备上的 App Store 获取此 App 套装。","WEA.AppPages.Twitter.site.mobileSoftwareBundle":"@AppStore","WEA.LocalNav.Title.MAS":"Mac App Store 预览","WEA.AppPages.Screenshots.ipad":"iPad","WEA.Common.Share.Embed.AX":"WEA.Common.Share.Embed.AX","WEA.Error.Generic.Subtitle.DownloadLink.URL":"http://www.apple.com/cn/itunes/download/","WEA.AppPages.Supports.Siri.Description":"只需开口让 Siri 帮忙，即可在此 App 中轻松搞定大小事物。","WEA.AppPages.Location.Description":"此 App 在未打开时仍可能使用您的位置信息，这会缩短电池续航时间。","WEA.AppPages.CTA.MacAppStore.App":"Mac App Store","WEA.Common.SeparatorDuration":"@@hours@@ @@minutes@@","WEA.Common.NowPlaying":"正在播放","WEA.AppPages.Meta.MacAppStorePageTitle":"Mac App Store 上的“@@softwareName@@”","WEA.Common.TrackList.Price":"价格","WEA.Common.TimeFormat.HourOrMore":"h:mm:ss","WEA.AppPages.Supports.Wallet.Title":"钱包","WEA.AppPages.PreOrder":"预订","WEA.Common.Ratings.other":"@@count@@ 个评分","WEA.Common.SeeAll.Title.Generic":"@@parentName@@ - @@sectionTitle@@","WEA.AppPages.AppleTV":"Apple TV","WEA.AppPages.Compatibility":"兼容性","WEA.Common.DateFormat.AX":"LL","WEA.AppPages.AgeRating":"年龄分级","WEA.AppPages.Screenshots.messagesScreenshots":"iMessage 信息的屏幕快照","WEA.Common.Free":"免费","WEA.AppPages.CTA.AppleSchool.App":"Apple 校园","WEA.AppPages.AppStore.Header":"App Store","WEA.LocalNav.CTA.FreeTrial":"立即体验","WEA.AppPages.Subscriptions.PayUpFront":"@@price@@（试用）","WEA.Common.Share.Link.AX":"WEA.Common.Share.Link.AX","WEA.AppPages.AdditionalScreenshots":"更多屏幕快照","WEA.AppPages.DeveloperWebsite":"开发人员网站","WEA.LocalNav.CTA.DownloadiTunes.url":"https://www.apple.com/cn/itunes/download/","WEA.AppPages.Information.Title":"信息","WEA.Error.NativeMissing.iTunes.Download.link":"https://www.apple.com/cn/itunes/download/","WEA.Common.FileSize.MB.AX.one":"1 MB","WEA.AppPages.Twitter.site.iosSoftware":"@AppStore","WEA.LocalNav.Title.iTunes":"iTunes 预览","WEA.AppPages.Subscriptions.Title":"订阅","WEA.AppPages.Supports.GameCenter.Title":"Game Center","WEA.LocalNav.Title.Podcasts":"播客预览","WEA.Common.SeeAll.Button":"查看全部","WEA.AppPages.FB.siteName.mobileSoftwareBundle":"App Store","WEA.AppPages.Rating":"分级","WEA.LocalNav.CTA.DownloadiTunes":"下载 iTunes","WEA.AppPages.AppleWatch":"Apple Watch","WEA.Common.TrackList.Track":"标题","WEA.AppPages.AppSupport":"App 支持","WEA.AppPages.MoreByThisDeveloper.Title":"更多来自此开发人员的 App","WEA.AppPages.TopInCategory.Title":"“@@categoryName@@”类热门 App","WEA.AppPages.CTA.AppleSchool.AX":"在“Apple 校园”中查看","WEA.AppPages.VersionHistory.Title":"版本记录","WEA.Common.AverageRating":"@@rating@@（满分 @@ratingTotal@@ 分）","WEA.Common.Share.Social.AX":"WEA.Common.Share.Social.AX","WEA.Error.Generic.Install.AM":"如果此链接无效，您可能需要@@installLink@@。","WEA.AppPages.Twitter.domain.iosSoftware":"AppStore","WEA.Error.Generic.Meta.PageDescription":"WEA.Error.Generic.Meta.PageDescription","WEA.AppPages.EditorsChoice":"编辑精选","WEA.Common.TogglePlay":"播放/暂停","WEA.Common.FileSize.byte.other":"@@count@@ 字节","WEA.AppPages.Updated":"更新日期","WEA.Error.Generic.Title.iTunes":"正在连接到 iTunes Store。","WEA.LocalNav.CTA.FreeTrial.url":"https://itunes.apple.com/subscribe?app=music","WEA.AppPages.Meta.MacAppPageMetaDescriptionLine":"阅读评论、比较用户评分、查看屏幕快照并进一步了解“@@softwareName@@”。下载适用于 macOS @@minimumOSVersion@@ 或更高版本的“@@softwareName@@”，并在您的 Mac 上尽享其功能。","WEA.Common.TrackList.Time":"时间","WEA.Common.TrackList.Album":"专辑","WEA.AppPages.Languages":"语言","WEA.AppPages.Subscriptions.PayAsYouGo":"@@price@@（试用）","WEA.Error.Generic.Title":"正在连接 Apple Music","WEA.Common.Close":"关闭","WEA.AppPages.Availability.tvOS":"只能在 Apple TV 上 的 App Store 获取此 App。","WEA.Error.Generic.AppleMusicLogo.Text":"Apple Music","WEA.Common.Meta.FB.siteName.AM":"Apple Music","WEA.Common.Meta.Twitter.domain.iTunes":"iTunes","WEA.AppPages.ViewIn":"在这里查看：","WEA.Error.NativeMissing.Other.iTunes":"在 iOS、Android、Mac 和 Windows 设备上获取 iTunes","WEA.AppPages.Screenshots.iphoneScreenshots":"iPhone 屏幕快照","WEA.Common.Preview.VideoName":"预览“@@videoName@@”","WEA.AppPages.Location.Title":"位置","WEA.AppPages.Supports.Title":"支持","WEA.AppPages.TopInAppPurchases.Title":"App 内购买项目","WEA.AppPages.Subscriptions.FreeTrial":"免费试用","WEA.Common.SeparatorGeneric":"@@string1@@，@@string2@@","WEA.AppPages.CustomersAlsoBought.Title":"您可能也会喜欢","WEA.Error.Generic.Install.AM.Link.Text":"安装 Apple Music","WEA.AppPages.Availability.iOS":"只能在 iOS 设备上的 App Store 获取此 App。","WEA.AppPages.Meta.MacAppPageMetaKeywords":"@@softwareName@@, @@developerName@@, @@categoryNames@@, mac app, app store, appstore, 应用程序, itunes","WEA.Common.Meta.FB.siteName.iTunes":"iTunes","WEA.AppPages.Screenshots.messages":"iMessage 信息","WEA.AppPages.OnlyForAppleTV":"仅适用于 Apple TV","WEA.AppPages.Category":"类別","WEA.AppPages.InAppPurchases.Title":"App 内购买项目","WEA.LocalNav.Title.AM":"Apple Music 预览","WEA.Common.Yes":"是","WEA.Error.NativeMissing.AM.Subtitle":"您必须安装 iTunes 才能使用 Apple Music","WEA.AppPages.Twitter.domain.desktopApp":"MacAppStore","WEA.AppPages.Price.Title":"价格","WEA.AppPages.AX.ViewIn":"在这里查看：","WEA.Common.FileSize.GB":"@@count@@ GB","WEA.Common.Share.EmbedCopied":"WEA.Common.Share.EmbedCopied","WEA.Common.FileSize.GB.AX.other":"@@count@@ GB","WEA.AppPages.ExpectedReleaseDate":"预期@@expectedReleaseDate@@发布","WEA.Common.Seconds.one":"1 Second","WEA.Common.FileSize.GB.AX.one":"1 GB","WEA.AppPages.OnlyForiMessage":"仅适用于 iMessage 信息","WEA.AppPages.EditReview":"要编辑您对此 App 的评论，请使用 iPhone 或 iPad 在 App Store 中查看此 App。","WEA.AppPages.Screenshots.ipadScreenshots":"iPad 屏幕快照","WEA.Common.Related":"相关","WEA.Common.Share.LinkCopied":"WEA.Common.Share.LinkCopied","WEA.AppPages.FB.siteName.desktopApp":"Mac App Store","WEA.Common.View":"查看","WEA.Error.Generic.Meta.PageKeywords.iTunes":"iTunes Store","WEA.Common.FileSize.MB.AX.other":"@@count@@ MB","WEA.AppPages.Meta.PageMetaDescriptionLine":"阅读评论、比较用户评分、查看屏幕快照并进一步了解“@@softwareName@@”。下载“@@softwareName@@”并在您的 Apple TV 上尽享其功能。","WEA.AppPages.CustomerReviews.Title":"评分及评论","WEA.AppPages.Screenshots":"屏幕快照","WEA.AppPages.CTA.MacAppStore.Action":"在这里查看："}}</script><script type="fastboot/shoebox" id="shoebox-global-elements">{"isLoaded":true}</script><script type="x/boundary" id="fastboot-body-end"></script>
+
+    <script src="https://web-experience.itunes.apple.com/assets/vendor-b49ced1218dbdecfeb1524a3b8a6570c.js"></script>
+    <script src="https://web-experience.itunes.apple.com/assets/web-experience-app-76f74576d3c08822afaf5b52e443a1dd.js"></script>
+
+    
+  </body>
+</html>

@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ç¥¨å¡æ´»å¨</title>
+        <meta http-equiv="content-type" content="text/html;charset=utf-8">
+        <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+        <meta name="format-detection" content="telephone=no">
+        <link rel="stylesheet" href="//music.baidu.com/cms/webview/bmKern/bmWebview.min.css?ver=1513068139532">
+        <link rel="stylesheet" href="//music.baidu.com/cms/common/bmEditor/template/main.webview.css?ver=1513068139532">
+        <link rel="stylesheet" href="https://static2.qianqian.com/web/cms/webview/ticket2017/css/main.css?ver=1513068139532">
+        <script src="https://static2.qianqian.com/web/cms/webview/ticket2017/js/utils.js?ver=1513068139532"></script>
+        <script>
+            function IsPC() {
+                var userAgentInfo = navigator.userAgent;
+                var Agents = ["Android", "iPhone","SymbianOS", "Windows Phone","iPad", "iPod"];
+                var flag = true;
+
+                for (var v = 0; v < Agents.length; v++) {
+                    if (userAgentInfo.indexOf(Agents[v]) > 0) {
+                        flag = false;
+                        break;
+                    }
+
+                }
+                return flag;
+            }
+            
+            if(IsPC()){
+                params = queryObj();
+                location.href = "http://music.baidu.com/hd/ticket/info/"+params.aid;
+            }
+        </script>
+    </head>
+    <body>
+        <div id="main">
+            
+        </div>
+
+        <div id="modal" class="modal fade">
+            <div class="modal-mask"></div>
+            <div class="modal-content">
+                <span class="modal-close">x</span>
+                <h3 class="title">ç«å³æ¥å</h3>
+                <div class="input-group">
+                    <span class="input-group-addon">æµ&nbsp;&nbsp;&nbsp;ç§°:</span>
+                    <input type="text" name="name" class="form-control" />
+                </div>
+                <div class="input-group">
+                    <span class="input-group-addon">æ&nbsp;&nbsp;&nbsp;æº:</span>
+                    <input type="text" name="iphone" class="form-control" />
+                </div>
+                <div class="input-group">
+                    <span class="input-group-addon">éªè¯ç :</span>
+                    <input type="text" name="code" class="form-control" />
+                    <span class="input-group-addon btn-check">è·åéªè¯ç </span>
+                </div>
+                <div class="checkbox">
+                    <label>
+                        <span class="icon-checkbox icon-checked"></span><input type="checkbox" name="isagree" class="hide" checked='true'>åæåå æ´»å¨ï¼å¹¶æ¥å<a href="http://passport.qianqian.com/v2/web/protocal.html">éç§æ¡æ¬¾</a>
+                    </label>
+                </div>
+                <div class="btn-info btn-submit">æè¦åå </div>
+            </div>
+        </div>
+        <script type="text/template" id="tpl">
+            <div class="header">
+                <div class="pic" style="background: url(<%= pic_url%>) no-repeat center;background-size:cover;">
+                    <% var tip = getStatus(join_start, join_end);%>
+                    <span class="<%= tip.className%>"><%= tip.message %></span>
+                </div>
+                <div class="hb">
+                    <a class="author" href="https://music.baidu.com/cms/webview/ugc_diy/v2/ugc_self.html?nickname=<%=create_user_name%>">
+                        <img src="<%= create_user_pic%>" alt="" class="avatar">
+                        <span class="name"><%= create_user_name%></span>
+                    </a>
+                    <a class="btn btn-my-share"><i></i>åäº«</a>
+                    <% if(isFriend==0) {%>
+                        <a class="btn btn-care" data-uid="<%= create_user_id%>"><i></i>å³æ³¨</a>
+                    <%}else if(isFriend==1){%>
+                        <a class="btn btn-care cared" data-uid="<%= create_user_id%>"><i></i>å·²å³æ³¨</a>
+                    <%}else if(isFriend==2) {%>
+                        <a class="btn btn-care cared" data-uid="<%= create_user_id%>"><i></i>äºç¸å³æ³¨</a>
+                    <%}%>
+                </div>
+            </div>
+            <div class="wrapper piao-info">
+                <h3 class="title"><%= title%></h3>
+                <%if (join_type==0) {%>
+                    <p class="vip"><i></i><span>ç»å½ç¨æ·å³å¯åä¸</span></p>
+                <%}else if (join_type== -10){%>
+                    <p class="vip"><i></i><span>ä¼åå³å¯åä¸</span></p>
+                <%}else if (join_type == 10){%>
+                    <p class="vip"><i></i><span>è´­ä¹°1ä¸ªæä¼åå³å¯åä¸</span></p>
+                <%}else if (join_type == 11){%>
+                    <p class="vip"><i></i><span>è´­ä¹°3ä¸ªæä¼åå³å¯åä¸</span></p>
+                <%}else if (join_type == 12){%>
+                    <p class="vip"><i></i><span>è´­ä¹°6ä¸ªæä¼åå³å¯åä¸</span></p>
+                <%}else if (join_type == 20){%>
+                    <p class="vip"><i></i><span>è´­ä¹°å¹´ä¼åå³å¯åä¸</span></p>
+                <%}%>
+                <ul>
+                    <li><span class="icon-user pull-left"></span><span>åä¸åé¢ï¼<%= activity_persion%>äºº</span></li>
+                    <li><span class="icon-time pull-left"></span><span>æ´»å¨æ¶é´ï¼<%= dateFormat(activity_start)%>&nbsp;&nbsp;å¼å§</span></li>
+                    <li class="clearfix"><span class="icon-address pull-left"></span><span>æ´»å¨å°ç¹ï¼<%= address%></span></li>
+                </ul>
+            </div>
+            <% if(winner_list.length>0) {%>
+            <div class="wrapper winners">
+                <h3 class="header">è·å¥åå</h3>
+                <div class="content">
+                    <% if (winner_list.length>8) {%>
+                    <ul class="clearfix">
+                        <%_.each(winner_list, function(item, i) {%>
+                            <% if (i<8){%>
+                            <li class="pull-left"><%=item%></li>
+                            <%}%>
+                        <%})%>
+                    </ul>
+                    <ul class="clearfix more-list">
+                        <%_.each(winner_list, function(item, i) {%>
+                            <% if (i>=8){%>
+                            <li class="pull-left"><%=item%></li>
+                            <%}%>
+                        <%})%>
+                    </ul>
+                    <div class="btn-more">å±å¼å¨é¨</div>
+                    <% } else {%>
+                         <ul class="clearfix">
+                            <%_.each(winner_list, function(item, i) {%>
+                                <li class="pull-left"><%=item%></li>
+                            <%})%>
+                        </ul>
+                    <%}%>
+                </div>
+            </div>
+            <%}%>
+            <% if(detail) {%>
+            <div class="wrapper active-info">
+                <h3 class="header">æ´»å¨è¯¦æ</h3>
+                <div class="content"><%= detail%></div>
+            </div>
+            <%}%>
+            <div class="wrapper active-rule">
+                <h3 class="header">æ´»å¨è§å</h3>
+                <div class="content">
+                    <ul>
+                        <li><b>æ´»å¨æ¶é´ï¼</b><%= dateFormat(activity_start)%>&nbsp;&nbsp;å¼å§</li>
+                        <li><b>æ¥åæ¶é´ï¼</b><%= dateFormat(join_start)%>-<%= dateFormat(join_end)%></li>
+                        <li><b>æ¼åºå°ç¹ï¼</b><%= address%></li>
+                        <li><b>åä¸åé¢ï¼</b><%= activity_persion%>äºº</li>
+                    </ul>
+                </div>
+            </div>
+            <footer>
+                <% var timeData = getStatus(join_start,join_end); %>
+                <% if (timeData.status == 0) {%>
+                    <div class="btn-join disable">æ¥åæªå¼å§</div>
+                <%}else if(timeData.status==-1) {%>
+                    <div class="btn-join disable">æ¥åå·²ç»æ</div>
+                <%} else if(join_status ==1) {%>
+                    <div class="btn-join disable">æ¥åäººæ°å·²è¾¾ä¸é</div>
+                <%} else {%>
+                    <% if (isLogin) {%>
+                        <% if(my_join_status==1) {%>
+                            <div class="btn-join disable">å·²æ¥å</div>
+                        <%} else if(my_join_status == -10) {%>
+                            <a class="btn-vip" href="<%= vipurl%>"><span class="icon-vip"></span>å¼éä¼åå³å¯åå </a>
+                        <%} else if(my_join_status == 10) {%>
+                            <a class="btn-vip" href="<%= vipurl%>"><span class="icon-vip"></span>è´­ä¹°1ä¸ªæä¼åå³å¯åä¸</a>
+                        <%} else if(my_join_status == 11) {%>
+                            <a class="btn-vip" href="<%= vipurl%>"><span class="icon-vip"></span>è´­ä¹°3ä¸ªæä¼åå³å¯åä¸</a>
+                        <%} else if(my_join_status == 12) {%>
+                            <a class="btn-vip" href="<%= vipurl%>"><span class="icon-vip"></span>è´­ä¹°6ä¸ªæä¼åå³å¯åä¸</a>
+                        <%} else if(my_join_status == 20) {%>
+                            <a class="btn-vip" href="<%= vipurl%>"><span class="icon-vip"></span>è´­ä¹°å¹´ä¼åå³å¯åä¸</a>
+                        <%} else if(my_join_status == 30) {%>
+                            <%if (join_type<=0) {%>
+                                <div class="btn-join">æè¦åå </div>
+                            <%}else if (join_type == 10){%>
+                                <a class="btn-vip" href="<%= vipurl%>"><span class="icon-vip"></span>è´­ä¹°1ä¸ªæä¼åå³å¯åä¸</a>
+                            <%}else if (join_type == 11){%>
+                                <a class="btn-vip" href="<%= vipurl%>"><span class="icon-vip"></span>è´­ä¹°3ä¸ªæä¼åå³å¯åä¸</a>
+                            <%}else if (join_type == 12){%>
+                                <a class="btn-vip" href="<%= vipurl%>"><span class="icon-vip"></span>è´­ä¹°6ä¸ªæä¼åå³å¯åä¸</a>
+                            <%}else if (join_type == 20){%>
+                                <a class="btn-vip" href="<%= vipurl%>"><span class="icon-vip"></span>è´­ä¹°å¹´ä¼åå³å¯åä¸</a>
+                            <%}%>
+                        <%} else {%>
+                            <div class="btn-join">æè¦åå </div>
+                        <%}%>
+                    <%} else {%>
+                        <div class="btn-join">æè¦åå </div>
+                    <%}%>
+                <%}%>
+            </footer>
+        </script>
+        <script src="//music.baidu.com/cms/webview/common/bmKern/bmWebviewHttps.min.js?ver=1513068139532"></script>
+        <!-- <script src="http://music.baidu.com/cms/webview/common/player/zepto-bmplayer.min.js?ver=1513068139532"></script> -->
+        <script src="https://static0.qianqian.com/web/cms/webapp/js/ad-zepto-bmPlayer.js"></script>
+        <script src="https://music.baidu.com/cms/common/bmEditor/template/common.js?ver=1513068139532"></script>
+        <script src="https://music.baidu.com/cms/common/bmEditor/template/main.webview.js?ver=1513068139532"></script>
+        <script src="https://static2.qianqian.com/web/cms/webview/ticket2017/js/libs/zepto.extend.js?ver=1513068139532"></script>
+        <script src="https://static2.qianqian.com/web/cms/webview/ticket2017/js/libs/aes.js?ver=1513068139532"></script>
+        <script src="https://static2.qianqian.com/web/cms/webview/ticket2017/js/libs/jweixin.js?ver=1513068139532"></script>
+        <script src="https://static2.qianqian.com/web/cms/webview/ticket2017/js/wechat.js?ver=1513068139532"></script>
+        <script src="https://static2.qianqian.com/web/cms/webview/ticket2017/js/info.js?ver=1513068139532"></script>
+    </body>
+</html><!--34074161190201697472040418-->
+<script> var _trace_page_logid = 3407416119; </script>

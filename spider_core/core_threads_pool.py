@@ -3,6 +3,12 @@
 import queue  # 队列
 import copy  # 拷贝对象 用于创建线程池中线程
 from .core_threads import TaskType, FetchThread, ParseThread, SaveThread
+from .core_fetcher import Fetcher
+from .core_parser import Parser
+from .core_saver import Saver
+from .core_url_filter import UrlFilter as Filter
+import spider_core.conf as confg
+
 
 
 class ThreadPool(object):
@@ -47,6 +53,11 @@ class ThreadPool(object):
         :return:
         """
         self.add_task(task_type=TaskType.TASK_FETCH, task_content=(priority, url, deep, repeat))
+        return
+
+    def set_seed_urls(self,url_seeds):
+        for seed in url_seeds:
+            self.set_start_url(url=seed,priority=0,deep=0,repeat=0)
         return
 
     def execute(self):
@@ -99,7 +110,7 @@ class ThreadPool(object):
 
         # 当一个任务类型是fetch 并且url从未解析过 或者url已经请求过但是在重试次数范围内 添加一个fetch task
         if task_type == TaskType.TASK_FETCH and (
-                task_content[-1] > 0 or self._url_filter.check_and_add(task_content[1])):
+                task_content[-1] <3  or self._url_filter.check_and_add(task_content[1])):
             self._queue_fetch.put_nowait(task_content)
         elif task_type == TaskType.TASK_PARSE:
             self._queue_parse.put_nowait(task_content)
@@ -142,3 +153,32 @@ class ThreadPool(object):
 
     def is_all_task_done(self):
         return self._queue_save.empty() and self._queue_parse.empty() and self._queue_fetch.empty()
+
+    _instance=None
+
+
+def create_pool():
+
+    # read conf files
+    _max_repeat, _crawl_interval, _crawl_timeout, _max_depth, _fetcher_num, _url_pattern, _output_directory,url_seeds =confg.conf()
+
+    # init pool
+    f=Fetcher(max_repeat=_max_repeat,crawl_interval=_crawl_interval,crawl_timeout=_crawl_timeout)
+    p=Parser(max_depth=_max_depth,url_pattern=_url_pattern)
+    s=Saver(output_directory=_output_directory)
+    ul=Filter(black_patterns=(),white_patterns=(r"^http",),capacity=None)
+    pool=ThreadPool(f,p,s,ul,_fetcher_num)
+    # set urls
+    pool.set_seed_urls(url_seeds)
+
+    return pool
+
+
+
+
+
+
+
+
+
+
