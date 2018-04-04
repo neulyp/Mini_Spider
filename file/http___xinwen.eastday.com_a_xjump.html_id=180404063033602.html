@@ -1,0 +1,93 @@
+
+<!doctype html>
+<html lang="zh-cmn-Hans-CN">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="renderer" content="webkit" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
+    <META name="filetype" content="1">
+    <META name="publishedtype" content="1">
+    <META name="pagetype" content="2">
+    <META name="catalogs" content="toutiao_PC">
+    <meta name="applicable-device" content="pc">
+    <link href="/assets/images/favicon.ico" type="image/x-icon" rel="icon" />
+    <link rel="canonical" href="" />
+    <title>ç­ç¹æ°é»</title>
+    <meta name="keywords" content="æ°é»" />
+    <meta name="description" content="æ°é»" />
+    <script type="text/javascript" src="/assets/js/jquery.min.js"></script>
+    <script type="text/javascript" src="/assets/js/jquery.cookie.js"></script>
+    <script type="text/javascript" src="/assets/js/xinwen_cookie.js"></script>
+</head>
+
+<body>
+<script>
+    var arr = [];
+    var province_id = $.cookie("minieastday_pro_id") || "";
+    if (!province_id) {
+        getTerritory();
+    } else {
+        doJump(Number(province_id));
+    }
+
+    // å¾å°å°å ä¸æµ·3 åäº¬1 å¹¿å·26
+    function getTerritory() {
+        $.ajax({
+            type: 'get',
+            url: '//position.dftoutiao.com/position/get',
+            dataType: 'jsonp',
+            jsonp: 'jsonpcallback',
+            timeout: 6000,
+            success: function(data) {
+                province_id = data.position.pro_id ? data.position.pro_id : '';
+                doJump(Number(province_id));
+            },
+            error: function() {
+                province_id = '';
+                doJump(Number(province_id));
+            }
+        });
+    }
+
+    //è·³è½¬ä»£ç 
+    function doJump(d) {
+        var id = getUrlParamVal('id'),
+            qids, jurl;
+        coo_name == null ? qids = '' : qids = '?qid=' + coo_name;
+        if (!id) {
+            jurl = '/' + qids;
+        } else if (d == 3 || d == 1 || d == 26) {
+            jurl = '/a/' + id + '.html' + qids;
+        } else {
+            if ($.inArray(id, arr) >= 0) {
+                if($.cookie('xinwen_index_lunboid')){
+                     jurl = '/a/' + id + '.html' + qids;
+                }else{
+                     var expiresDate = new Date();
+                    expiresDate.setTime(expiresDate.getTime() + (12 * 60 * 60 * 1000));
+                    $.cookie("xinwen_index_lunboid", id, {
+                        expires: expiresDate,
+                        path: '/',
+                        domain: 'eastday.com'
+                    });
+                    jurl = '/' + qids;
+                }
+            } else {
+                jurl = '/a/' + id + '.html' + qids;
+            }
+        }
+        window.location.href = jurl;
+    }
+
+    //è·åqueryå¼
+    function getUrlParamVal(name) {
+        var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)");
+        var r = window.location.search.substr(1).match(reg);
+        if (r != null) return decodeURI(r[2]);
+        return null;
+    }
+</script>
+</body>
+
+</html>

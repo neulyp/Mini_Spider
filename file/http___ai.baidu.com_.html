@@ -1,0 +1,1874 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <title>百度AI开放平台-全球领先的人工智能服务平台</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="人工智能,百度AI开放平台,语音,speech,语音技术,图像,图像技术,NLP,自然语言,视频分析,视频技术,知识图谱,增强现实,大数据,数据智能,深度学习,机器学习,Paddle,场景应用,解决方案,baiduai,ai.baidu.com,aibaidu,baidubrain,baidurengongzhineng,baidurengongzhinengkaifangpingtai,baidudanao,智能,人工神经网络,人工智能的未来,人工智能产品,什么是人工智能,人工智能专业,人工智能技术,人工智能网站,人工智能的应用,人工智能算法,人工智能系统,人工智能编程,百度智能,AI,AI软件,百度,baidu,百度大脑,百度大脑官网,百度大脑平台,百度大脑开放平台,百度AI,百度AI平台,百度人工智能,人工智能百度,百度人工智能平台,百度人工智能开放平台,百度人工智能技术,百度大脑开放api,百度语音,百度图像,百度NLP,百度自然语言,百度自然语言处理,百度视频技术,百度知识图谱,百度增强现实,百度数据智能,百度深度学习">
+    <meta name="description" content="提供全球领先的语音、图像、NLP等多项人工智能技术，开放对话式人工智能系统、智能驾驶系统两大行业生态，共享AI领域最新的应用场景和解决方案，帮您提升竞争力，开创未来">
+    <meta name="baidu-site-verification" content="GOPjfm49Yc" />
+    <link rel="shortcut icon" href="//aip.bdstatic.com/portal/dist/1522402512491/ai_images/favicon-32.ico">
+    <!--[if IE 9]>
+    <link rel="stylesheet" href="//aip.bdstatic.com/portal/dist/1522402512491/css/ie9.style.css">
+    <![endif]-->
+    <link rel="stylesheet" href="//aip.bdstatic.com/portal/dist/1522402512491/css/vendor.style.css">
+    <link rel="stylesheet" href="//aip.bdstatic.com/portal/dist/1522402512491/css/home.style.css">
+    <script>
+        var _hmt = _hmt || [];
+        (function() {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?fdad4351b2e90e0f489d7fbfc47c8acf";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+</head>
+<body class="ai-platform">
+<div class="ai-nav-contain" id="ai-nav-contain">
+    <div class="ai-nav-cover">
+        <a href="/">
+            <div class="ai-nav-brand"></div>
+        </a>
+        <div class="ai-nav-item">
+            <div class="ai-nav-name">产品服务</div>
+            <div class="ai-nav-detail ai-nav-detail-l" id="ai-nav-tech">
+                <div class="ai-nav-detail-l-column">
+                    <div class="ai-nav-tech-group">
+                        <div class="ai-nav-tech-category-name"><a href="/tech/speech">语音识别</a></div>
+                        <div class="ai-nav-tech-name"><a href="/tech/speech/asr">语音识别</a></div>
+                        <div class="ai-nav-tech-name ai-new"><a href="/tech/speech/lsr">长语音识别</a></div>
+                        <div class="ai-nav-tech-name ai-new"><a href="/tech/speech/fsr">远场语音识别</a></div>
+                    </div>
+                    <div class="ai-nav-tech-group">
+                        <div class="ai-nav-tech-category-name">
+                            <a href="/tech/speech/tts">语音合成</a>
+                        </div>
+                    </div>
+                    <div class="ai-nav-tech-group">
+                        <div class="ai-nav-tech-category-name">
+                            <a href="/tech/speech/wake">语音唤醒</a>
+                        </div>
+                    </div>
+                    <div class="ai-nav-tech-group">
+                        <div class="ai-nav-tech-category-name">
+                            视频技术
+                        </div>
+                        <div class="ai-nav-tech-name">
+                            <a href="/tech/video/vca">视频内容分析</a>
+                        </div>
+                        <div class="ai-nav-tech-name ai-test">
+                            <a href="/tech/video/vcs">视频封面选取</a>
+                        </div>
+                        <div class="ai-nav-tech-name">
+                            <a href="/tech/video/vcc">视频比对检索</a>
+                        </div>
+                        <div class="ai-nav-tech-name">
+                            <a href="/tech/video/vcr">视频内容审核</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="ai-nav-detail-l-column">
+                    <div class="ai-nav-tech-group">
+                        <div class="ai-nav-tech-category-name">
+                            <a href="/tech/ocr">文字识别</a>
+                        </div>
+                        <div class="ai-nav-tech-name">
+                            <a href="/tech/ocr/general">通用文字识别</a>
+                        </div>
+                        <div class="ai-nav-tech-name">
+                            <a href="/tech/ocr/webimage">网络图片识别</a>
+                        </div>
+                        <div class="ai-nav-tech-name">
+                            <a href="/tech/ocr/cards">卡证识别</a>
+                        </div>
+                        <div class="ai-nav-tech-name">
+                            <a href="/tech/ocr/business">营业执照识别</a>
+                        </div>
+                        <div class="ai-nav-tech-name">
+                            <a href="/tech/ocr/plate">车牌识别</a>
+                        </div>
+                        <div class="ai-nav-tech-name">
+                            <a href="/tech/ocr/receipt">票据识别</a>
+                        </div>
+                        <div class="ai-nav-tech-name">
+                            <a href="/tech/ocr/table">表格文字识别</a>
+                        </div>
+                        <div class="ai-nav-tech-name ai-new">
+                            <a href="/tech/ocr/iocr">自定义模版识别</a>
+                        </div>
+                    </div>
+                    <div class="ai-nav-tech-group">
+                        <div class="ai-nav-tech-category-name"><a href="/tech/imagerecognition">图像识别</a></div>
+                        <div class="ai-nav-tech-name"><a href="/tech/imagerecognition/general">通用图像分析</a></div>
+                        <div class="ai-nav-tech-name"><a href="/tech/imagerecognition/fine_grained">细粒度图像识别</a></div>
+                        <div class="ai-nav-tech-name ai-test"><a href="/tech/imagerecognition/human">人体分析</a></div>
+                        <div class="ai-nav-tech-name ai-test"><a href="/customize/common/welcome" target="_blank">定制化图像识别</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="ai-nav-detail-l-column">
+                    <div class="ai-nav-tech-group">
+                        <div class="ai-nav-tech-category-name"><a href="/tech/face">人脸识别</a></div>
+                        <div class="ai-nav-tech-name"><a href="/tech/face/detect">人脸检测</a></div>
+                        <div class="ai-nav-tech-name"><a href="/tech/face/compare">人脸对比</a></div>
+                        <div class="ai-nav-tech-name"><a href="/tech/face/search">人脸查找</a></div>
+                        <div class="ai-nav-tech-name ai-new"><a href="/tech/face/collect">人脸采集</a></div>
+                    </div>
+                    <div class="ai-nav-tech-group">
+                        <div class="ai-nav-tech-category-name"><a href="/tech/imagesearch">图像搜索</a></div>
+                        <div class="ai-nav-tech-name"><a href="/tech/imagesearch/same">相同图片搜索</a></div>
+                        <div class="ai-nav-tech-name"><a href="/tech/imagesearch/similar">相似图片搜索</a></div>
+                        <div class="ai-nav-tech-name ai-new"><a href="/tech/imagesearch/product">商品图片搜索</a></div>
+                    </div>
+                    <div class="ai-nav-tech-group">
+                        <div class="ai-nav-tech-category-name"><a href="/tech/contentcensoring">内容审核</a></div>
+                        <div class="ai-nav-tech-name"><a href="/tech/imagecensoring">图像审核</a></div>
+                        <div class="ai-nav-tech-name"><a href="/tech/textcensoring">文本审核</a></div>
+                        <div class="ai-nav-tech-name"><a href="/tech/video/vcr">视频内容审核</a></div>
+                    </div>
+                    <div class="ai-nav-tech-group">
+                        <div class="ai-nav-tech-category-name ai-new ai-label-title">
+                            <a href="http://ar.baidu.com/home" target="_blank">增强现实</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="ai-nav-detail-l-column">
+                    <div class="ai-nav-tech-group">
+                        <div class="ai-nav-tech-category-name">
+                            <a href="/tech/nlp">语言处理基础技术</a>
+                        </div>
+                        <div class="ai-nav-tech-name">
+                            <a href="/tech/nlp/lexical">词法分析</a>
+                        </div>
+                        <div class="ai-nav-tech-name">
+                            <a href="/tech/nlp/dependency_parsing">依存句法分析</a>
+                        </div>
+                        <div class="ai-nav-tech-name">
+                            <a href="/tech/nlp/word_embedding">词向量表示</a>
+                        </div>
+                        <div class="ai-nav-tech-name">
+                            <a href="/tech/nlp/dnnlm_cn">DNN语言模型</a>
+                        </div>
+                        <div class="ai-nav-tech-name">
+                            <a href="/tech/nlp/word_emb_sim">词义相似度</a>
+                        </div>
+                        <div class="ai-nav-tech-name">
+                            <a href="/tech/nlp/simnet">短文本相似度</a>
+                        </div>
+                        <div class="ai-nav-tech-name">
+                            <a href="/tech/nlp/comment_tag">评论观点抽取</a>
+                        </div>
+                        <div class="ai-nav-tech-name">
+                            <a href="/tech/nlp/sentiment_classify">情感倾向分析</a>
+                        </div>
+                        <div class="ai-nav-tech-name ai-new">
+                            <a href="/tech/nlp/doctagger">文章标签</a>
+                        </div>
+                        <div class="ai-nav-tech-name ai-new">
+                            <a href="/tech/nlp/topictagger">文章分类</a>
+                        </div>
+                    </div>
+                    <div class="ai-nav-tech-group">
+                        <div class="ai-nav-tech-category-name">
+                            <a href="/tech/unit">理解与交互技术UNIT</a>
+                        </div>
+                    </div>
+                    <div class="ai-nav-tech-group">
+                        <div class="ai-nav-tech-category-name">
+                            <a href="http://fanyi-api.baidu.com/api/trans/product/index" target="_blank">
+                                机器翻译
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="ai-nav-detail-l-column">
+                    <div class="ai-nav-tech-group">
+                        <div class="ai-nav-tech-category-name">
+                            <a href="https://di.baidu.com/" target="_blank">数据智能</a>
+                        </div>
+                        <div class="ai-nav-tech-name">
+                            <a href="https://di.baidu.com/product/tuijian" target="_blank">推荐引擎</a>
+                        </div>
+                        <div class="ai-nav-tech-name">
+                            <a href="https://di.baidu.com/product/tongji" target="_blank">网站统计</a>
+                        </div>
+                        <div class="ai-nav-tech-name">
+                            <a href="https://di.baidu.com/product/mtj" target="_blank">移动统计</a>
+                        </div>
+                        <div class="ai-nav-tech-name">
+                            <a href="https://di.baidu.com/product/stj" target="_blank">百度智客</a>
+                        </div>
+                        <div class="ai-nav-tech-name">
+                            <a href="https://di.baidu.com/product/yuqing" target="_blank">舆情平台</a>
+                        </div>
+                        <div class="ai-nav-tech-name">
+                            <a href="https://di.baidu.com/product/opinion" target="_blank">舆情API</a>
+                        </div>
+                        <div class="ai-nav-tech-name">
+                            <a href="https://di.baidu.com/product/insurancerisk" target="_blank">保险风险识别</a>
+                        </div>
+                        <div class="ai-nav-tech-name">
+                            <a href="https://di.baidu.com/product/insurancefraud" target="_blank">理赔反欺诈</a>
+                        </div>
+                        <div class="ai-nav-tech-name">
+                            <a href="https://di.baidu.com/product/sinan" target="_blank">司南营销分析</a>
+                        </div>
+                        <div class="ai-nav-tech-name">
+                            <a href="https://di.baidu.com/product/huwai" target="_blank">司南户外分析</a>
+                        </div>
+                        <div class="ai-nav-tech-name">
+                            <a href="https://di.baidu.com/product/keqing" target="_blank">客情分析</a>
+                        </div>
+                        <div class="ai-nav-tech-name">
+                            <a href="https://di.baidu.com/product/shangqing" target="_blank">商情分析</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="ai-nav-detail-l-column">
+                    <div class="ai-nav-tech-group">
+                        <div class="ai-nav-tech-category-name">
+                            <a href="/tech/cognitive">知识理解</a>
+                        </div>
+                        <div class="ai-nav-tech-name ai-test">
+                            <a href="/tech/cognitive/entity_annotation">实体标注</a>
+                        </div>
+                    </div>
+                    <div class="ai-nav-tech-group">
+                        <div class="ai-nav-tech-category-name">
+                            <a href="/tech/kg/schema">知识图谱schema</a>
+                        </div>
+                    </div>
+                    <div class="ai-nav-tech-group">
+                        <div class="ai-nav-tech-category-name">
+                            <a href="http://www.paddlepaddle.org/" target="_blank">PaddlePaddle</a>
+                        </div>
+                        <div class="ai-nav-tech-name">
+                            <a href="/paddlepaddle" target="_blank">PaddlePaddle训练营</a>
+                        </div>
+                    </div>
+                    <div class="ai-nav-tech-group">
+                        <div class="ai-nav-tech-category-name ai-new ai-label-title">
+                            <a href="/broad" target="_blank">开放数据集</a>
+                        </div>
+                        <div class="ai-nav-tech-name">
+                            <a href="/broad/subordinate?dataset=sceneparsing" target="_blank">室外场景理解</a>
+                        </div>
+                        <div class="ai-nav-tech-name">
+                            <a href="/broad/subordinate?dataset=video" target="_blank">视频精彩片段</a>
+                        </div>
+                        <div class="ai-nav-tech-name">
+                            <a href="/broad/subordinate?dataset=dureader" target="_blank">阅读理解</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="ai-nav-item">
+            <div class="ai-nav-name">解决方案</div>
+            <div class="ai-nav-detail ai-nav-detail-m">
+                <a href="/solution/faceprint" class="ai-nav-list-item">人脸核身</a>
+                <a href="/solution/facesignIn" class="ai-nav-list-item ai-new ai-label-title">人脸会场签到</a>
+                <a href="/solution/faceidentify" class="ai-nav-list-item">人脸会员识别 </a>
+                <a href="/solution/facegate" class="ai-nav-list-item">人脸闸机 </a>
+                <a href="/solution/ivs" class="ai-nav-list-item ai-new ">智能安防视频分析</a>
+                <a href="/solution/itma" class="ai-nav-list-item ai-test ai-label-title">智能电销</a>
+                <a href="/solution/roboticvision" class="ai-nav-list-item ai-new ai-label-title">机器人导航和视觉</a>
+                <a href="/solution/servicerobot" class="ai-nav-list-item ai-new ai-label-title">服务机器人</a>
+                <a href="/solution/smarthome" class="ai-nav-list-item">DuerOS智慧家庭</a>
+                <a href="/solution/voiceassistant" class="ai-nav-list-item">DuerOS智能语音助理</a>
+                <a href="/solution/arads" class="ai-nav-list-item">AR智能营销</a>
+                <a href="/solution/luban" class="ai-nav-list-item ai-new ">大数据基础套件（鲁班）</a>
+            </div>
+        </div>
+        <div class="ai-nav-item">
+            <div class="ai-nav-name">案例与场景</div>
+            <div class="ai-nav-detail ai-nav-detail-s">
+                <a href="/customer" target="_blank">
+                    <div class="ai-nav-list-item">客户案例</div>
+                </a>
+                <a href="/scenarios" target="_blank">
+                    <div class="ai-nav-list-item">应用场景</div>
+                </a>
+            </div>
+        </div>
+        <div class="ai-nav-item">
+            <div class="ai-nav-name">开发资源</div>
+            <div class="ai-nav-detail ai-nav-detail-s">
+                <a href="/docs" target="_blank">
+                    <div class="ai-nav-list-item">文档中心</div>
+                </a>
+                <a href="/sdk" target="_blank">
+                    <div class="ai-nav-list-item">SDK下载</div>
+                </a>
+                <a href="/support/video" target="_blank">
+                    <div class="ai-nav-list-item">教学视频</div>
+                </a>
+                <a href="/docs#/FAQ" target="_blank">
+                    <div class="ai-nav-list-item">常见问题</div>
+                </a>
+            </div>
+        </div>
+        <div class="ai-nav-item">
+            <div class="ai-nav-name">合作伙伴</div>
+            <div class="ai-nav-detail ai-nav-detail-s">
+                <a href="/partner#seek" target="_blank">
+                    <div class="ai-nav-list-item">寻找生态伙伴</div>
+                </a>
+                <a href="/partner#project" target="_blank">
+                    <div class="ai-nav-list-item">生态伙伴计划</div>
+                </a>
+                <a href="/partner#elite" target="_blank">
+                    <div class="ai-nav-list-item">优秀伙伴展示</div>
+                </a>
+            </div>
+        </div>
+
+        <a href="/accelerator" target="_blank">
+            <div class="ai-nav-item ai-nav-item-last">AI加速器</div>
+        </a>
+        <a href="/support/news" class="ai-nav-sub-item ai-item-ask" target="_blank">资讯</a>
+        <a href="/forum" target="_blank">
+            <div class="ai-nav-sub-item ai-item-forum">社区</div>
+        </a>
+        <div class="ai-item-control">
+            控制台
+            <div class="ai-control-detail">
+                <div class="ai-control-detail-items">
+                    <a href="https://console.bce.baidu.com/ai/?fromai=1#/ai/speech/overview/index"
+                       class="to-console"
+                       target="_blank">
+                        <div class="ai-control-detail-item ai-detail-img1">语音技术</div>
+                    </a>
+                    <a href="https://console.bce.baidu.com/ai/?fromai=1#/ai/ocr/overview/index"
+                       class="to-console"
+                       target="_blank">
+                        <div class="ai-control-detail-item ai-detail-img2">文字识别</div>
+                    </a>
+                    <a href="https://console.bce.baidu.com/ai/?fromai=1#/ai/face/overview/index"
+                       class="to-console"
+                       target="_blank">
+                        <div class="ai-control-detail-item ai-detail-img3">人脸识别</div>
+                    </a>
+                    <a href="https://console.bce.baidu.com/ai/?fromai=1#/ai/antiporn/overview/index"
+                       class="to-console"
+                       target="_blank">
+                        <div class="ai-control-detail-item ai-detail-img4">图像审核</div>
+                    </a>
+                    <a href="https://console.bce.baidu.com/ai/?fromai=1#/ai/imagerecognition/overview/index"
+                       class="to-console"
+                       target="_blank">
+                        <div class="ai-control-detail-item ai-control-detail-item-base ai-detail-img5">图像识别</div>
+                    </a>
+                    <a href="https://console.bce.baidu.com/ai/?fromai=1#/ai/imagesearch/overview/index"
+                       class="to-console"
+                       target="_blank">
+                        <div class="ai-control-detail-item ai-detail-img6">图像搜索</div>
+                    </a>
+                    <a href="https://console.bce.baidu.com/ai/?fromai=1#/ai/nlp/overview/index"
+                       class="to-console"
+                       target="_blank">
+                        <div class="ai-control-detail-item ai-detail-img7">自然语言</div>
+                    </a>
+                    <a href="/unit"
+                       target="_blank">
+                        <div class="ai-control-detail-item ai-control-detail-item-base ai-detail-img8">UNIT</div>
+                    </a>
+                    <a href="https://console.bce.baidu.com/ai/?fromai=1#/ai/kg/overview/index"
+                       class="to-console"
+                       target="_blank">
+                        <div class="ai-control-detail-item ai-control-detail-item-base ai-detail-img9">知识图谱</div>
+                    </a>
+                </div>
+                <a href="https://console.bce.baidu.com/?fromai=1#/aip/overview"
+                   class="to-console"
+                   target="_blank">
+                    <div class="ai-pass-in">直接进入</div>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="ai-content">
+    <div class="ai-home-banner">
+    <div class="ai-banner-cover">
+                <a href="http://ai.baidu.com/solution/facesignIn" class="ai-banner-contain"
+           target="_blank">
+            <div class="ai-banner-img  ai-banner-img1 "
+                 style="background-image:url(https://ai.bdstatic.com/file/30B09F0DB56F44E6A59649CC0F96FDEE);
+                 background-color:#011326"
+                 data-index="0"></div>
+        </a>
+                <a href="http://ai.baidu.com/solution/roboticvision" class="ai-banner-contain"
+           target="_blank">
+            <div class="ai-banner-img "
+                 style="background-image:url(https://ai.bdstatic.com/file/6EF3E0217D3441C5B6FBE72EB644A00D);
+                 background-color:#030f20"
+                 data-index="1"></div>
+        </a>
+                <a href="http://ai.baidu.com/solution/ivs" class="ai-banner-contain"
+           target="_blank">
+            <div class="ai-banner-img "
+                 style="background-image:url(https://ai.bdstatic.com/file/40EC36D2329345029B62294C330084EA);
+                 background-color:#0c0620"
+                 data-index="2"></div>
+        </a>
+                <a href="http://ai.baidu.com/tech/nlp/topictagger" class="ai-banner-contain"
+           target="_blank">
+            <div class="ai-banner-img "
+                 style="background-image:url(https://ai.bdstatic.com/file/514B6D6079C74A0B94AFA07F2C1622A3);
+                 background-color:#070b21"
+                 data-index="3"></div>
+        </a>
+                <a href="http://ai.baidu.com/support/news?action=detail&id=236" class="ai-banner-contain"
+           target="_blank">
+            <div class="ai-banner-img "
+                 style="background-image:url(https://ai.bdstatic.com/file/1C098CE4A82547A08DFCB17F3F16A06B);
+                 background-color:#111425"
+                 data-index="4"></div>
+        </a>
+                <a href="http://ai.baidu.com/support/news?action=detail&id=256" class="ai-banner-contain"
+           target="_blank">
+            <div class="ai-banner-img "
+                 style="background-image:url(https://ai.bdstatic.com/file/48957BB2BD25417FA26B64F7EE79F9DD);
+                 background-color:#030d20"
+                 data-index="5"></div>
+        </a>
+                <div class="ai-banner-bar-cover">
+                        <div class="ai-banner-bar" data-index="0">
+                人脸会场签到解决方案
+                <div class="ai-inner-show" data-index="0">
+                    <div class="ai-banner-bar-inner" data-index="0"></div>
+                </div>
+            </div>
+                        <div class="ai-banner-bar" data-index="1">
+                机器人导航和视觉方案
+                <div class="ai-inner-show" data-index="1">
+                    <div class="ai-banner-bar-inner" data-index="1"></div>
+                </div>
+            </div>
+                        <div class="ai-banner-bar" data-index="2">
+                智能安防视频分析解决方案
+                <div class="ai-inner-show" data-index="2">
+                    <div class="ai-banner-bar-inner" data-index="2"></div>
+                </div>
+            </div>
+                        <div class="ai-banner-bar" data-index="3">
+                文章分类功能上线
+                <div class="ai-inner-show" data-index="3">
+                    <div class="ai-banner-bar-inner" data-index="3"></div>
+                </div>
+            </div>
+                        <div class="ai-banner-bar" data-index="4">
+                语音识别linux SDK发布
+                <div class="ai-inner-show" data-index="4">
+                    <div class="ai-banner-bar-inner" data-index="4"></div>
+                </div>
+            </div>
+                        <div class="ai-banner-bar" data-index="5">
+                人脸客户端SDK全新上线
+                <div class="ai-inner-show" data-index="5">
+                    <div class="ai-banner-bar-inner" data-index="5"></div>
+                </div>
+            </div>
+                    </div>
+    </div>
+    <div class="ai-to-last-img"></div>
+    <div class="ai-to-next-img"></div>
+</div>
+
+<div class="ai-intro">
+            <a href="/docs#/Begin" target="_blank">
+        <div class="ai-intro-list">
+            <div class="ai-intro-title">开发者快速接入百度AI 只需五步轻松搞定</div>
+            <div class="ai-intro-example">新手引导</div>
+        </div>
+    </a>
+                <a href="/support/news?action=detail&id=266" target="_blank">
+        <div class="ai-intro-list">
+            <div class="ai-intro-title">语音识别—REST API 新增四川话、搜索模型</div>
+            <div class="ai-intro-example ai-intro-example2">上线快报</div>
+        </div>
+    </a>
+                <a href="/support/news?action=detail&id=295" target="_blank">
+        <div class="ai-intro-list">
+            <div class="ai-intro-title">24小时智能图书馆   “AI”不只是刷脸开门</div>
+            <div class="ai-intro-example ai-intro-example3">新闻资讯</div>
+        </div>
+    </a>
+                <a href="/support/news?action=detail&id=226" target="_blank">
+        <div class="ai-intro-list ai-last-intro-list">
+            <div class="ai-intro-title">2017 AI开发者实战营 6站现场精彩视频回顾</div>
+            <div class="ai-intro-example ai-intro-example4">精彩活动</div>
+        </div>
+    </a>
+        </div>
+
+<div class="ai-video">
+    <div class="ai-video-list">
+        <div class="ai-video-cover" data-index="0">
+            Apollo，驾驶也可自由仰望星空
+        </div>
+        <div class="ai-video-mask ai-mask-img4"></div>
+        <video class="video-js ai-video-short"></video>
+        <video class="video-js ai-video-long" data-index="0"></video>
+        <div class="ai-video-duration">02:16</div>
+    </div>
+    <div class="ai-video-list ai-video-intro">
+        <div class="ai-video-title">AI 改变生活</div>
+        <div class="ai-video-intros">用科技让复杂的世界更简单</div>
+    </div>
+    <div class="ai-video-list">
+        <div class="ai-video-cover" data-index="1">
+            DuerOS，唤醒乐高激发无限创造 
+        </div>
+        <div class="ai-video-mask ai-mask-img3"></div>
+        <video class="video-js ai-video-short"></video>
+        <video class="video-js ai-video-long" data-index="1"></video>
+        <div class="ai-video-duration">02:04</div>
+    </div>
+    <div class="ai-video-list">
+        <div class="ai-video-cover" data-index="2">
+            人脸，独一无二的身份密码
+        </div>
+        <div class="ai-video-mask ai-mask-img2"></div>
+        <video class="video-js ai-video-short"></video>
+        <video class="video-js ai-video-long" data-index="2"></video>
+        <div class="ai-video-duration">01:44</div>
+    </div>
+    <div class="ai-video-list">
+        <div class="ai-video-cover" data-index="3">
+            数智，唤醒沉睡数据的无限价值
+        </div>
+        <div class="ai-video-mask ai-mask-img1"></div>
+        <video class="video-js ai-video-short"></video>
+        <video class="video-js ai-video-long" data-index="3"></video>
+        <div class="ai-video-duration">01:13</div>
+    </div>
+    <div class="ai-video-list">
+        <div class="ai-video-cover" data-index="4">
+            UNIT对话机器人，暖心陪伴左右
+        </div>
+        <div class="ai-video-mask ai-mask-img0"></div>
+        <video class="video-js ai-video-short"></video>
+        <video class="video-js ai-video-long" data-index="4"></video>
+        <div class="ai-video-duration">02:19</div>
+    </div>
+    <div class="ai-video-play-mask" id="video-play-mask"></div>
+</div>
+
+<div class="ai-server">
+    <div class="ai-server-title">
+        全球领先的AI服务
+    </div>
+    <div class="ai-server-layer">
+        <div class="ai-server-tab">
+            <div class="ai-server-item" id="first-server-item" data-row="0" data-index="0">
+                <div class="ai-item-leftside-extend0"></div>
+                <div class="ai-server-item-desc">
+                    <div class="ai-server-item-icon ai-server-item-icon-1"></div>
+                    <div class="ai-server-item-info ai-server-circle">
+                        语音识别
+                        <div class="ai-circle-inner ai-first-circle" id="ai-first-circle"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="ai-server-item" data-row="0" data-index="1">
+                <div class="ai-server-item-desc">
+                    <div class="ai-server-item-icon ai-server-item-icon-2 ai-server-item-icon-tts"></div>
+                    <div class="ai-server-item-info">
+                        语音合成
+                    </div>
+                </div>
+            </div>
+            <div class="ai-server-item" data-row="0" data-index="2">
+                <div class="ai-server-item-desc">
+                    <div class="ai-server-item-icon ai-server-item-icon-3"></div>
+                    <div class="ai-server-item-info">
+                        语音唤醒
+                    </div>
+                </div>
+            </div>
+            <div class="ai-server-item" data-row="0" data-index="3">
+                <div class="ai-item-leftside-extend9"></div>
+                <div class="ai-server-item-desc">
+                    <div class="ai-server-item-icon ai-server-item-icon-4"></div>
+                    <div class="ai-server-item-info ai-server-circle">
+                        文字识别
+                        <div class="ai-circle-inner"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="ai-server-item ai-server-last-item" data-row="0" data-index="4">
+                <div class="ai-item-leftside-extend11"></div>
+                <div class="ai-server-item-desc">
+                    <div class="ai-server-item-icon ai-server-item-icon-5"></div>
+                    <div class="ai-server-item-info">
+                        人脸识别
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="ai-server-sub" id="first-server-sub">
+            <div class="ai-server-sub-item ai-server-sub-show ai-server-img0">
+                <div class="ai-server-sub-left">
+                    <div class="ai-server-sub-tag">语音识别</div>
+                    <div class="ai-server-sub-main">
+                        提供近场、远场、长语音等多场景高精度语音识别服务
+                    </div>
+                    <a href="/tech/speech" class="ai-server-sub-link">
+                        查看详情
+                        <span class="ai-link-array"></span>
+                    </a>
+                </div>
+                <div class="ai-server-sub-right">
+                    <a href="/tech/speech/asr" class="ai-server-sub-desc-link">
+                        <div class="ai-server-sub-desc">
+                            <div class="ai-server-sub-title">语音识别</div>
+                            <div class="ai-server-sub-info">将语音转换成文字</div>
+                        </div>
+                    </a>
+                    <a href="/tech/speech/lsr" class="ai-server-sub-desc-link">
+                        <div class="ai-server-sub-desc">
+                            <div class="ai-server-sub-title ai-server-product">长语音识别</div>
+                            <div class="ai-server-sub-info">将长语音（长时间连续）转成文字</div>
+                        </div>
+                    </a>
+                    <a href="/tech/speech/fsr" class="ai-server-sub-desc-link">
+                        <div class="ai-server-sub-desc">
+                            <div class="ai-server-sub-title ai-server-product">远场语音识别</div>
+                            <div class="ai-server-sub-info">将远场（三至五米）的语音转成文字</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="ai-server-sub-item ai-server-img1">
+                <div class="ai-server-sub-single">
+                    <div class="ai-server-sub-single-tag">语音合成</div>
+                    <div class="ai-server-sub-single-desc">
+                        将用户输入的文字，转换成流畅自然的语音输出，并且可以支持语速、音调、音量、音频码率设置，
+                        打破传统文字式人机交互的方式，让人机沟通更自然
+                    </div>
+                    <a href="/tech/speech/tts" class="ai-server-sub-link">
+                        查看详情
+                        <span class="ai-link-array"></span>
+                    </a>
+                </div>
+            </div>
+            <div class="ai-server-sub-item ai-server-img2">
+                <div class="ai-server-sub-single">
+                    <div class="ai-server-sub-single-tag">语音唤醒</div>
+                    <div class="ai-server-sub-single-desc">
+                        支持特定语音指令唤醒和打断、唤醒的同时执行指令操作。轻量级，低功耗，
+                        可自定义设置多个唤醒词，为您的应用打造自然流畅的对话，唤醒各个软件系统
+                    </div>
+                    <a href="/tech/speech/wake" class="ai-server-sub-link">
+                        查看详情
+                        <span class="ai-link-array"></span>
+                    </a>
+                </div>
+            </div>
+            <div class="ai-server-sub-item">
+                <div class="ai-item-leftside-extend7"></div>
+                <div class="ai-server-sub-left">
+                    <div class="ai-server-sub-tag">文字识别</div>
+                    <div class="ai-server-sub-main">
+                        提供多种场景下精准的图像文字识别技术服务
+                    </div>
+                    <a href="/tech/ocr" class="ai-server-sub-link">
+                        查看详情
+                        <span class="ai-link-array"></span>
+                    </a>
+                </div>
+                <div class="ai-server-sub-right">
+                    <a href="/tech/ocr/general" class="ai-server-sub-desc-link">
+                        <div class="ai-server-sub-desc">
+                            <div class="ai-server-sub-title">通用文字识别</div>
+                            <div class="ai-server-sub-info">多场景多语言的文字识别</div>
+                        </div>
+                    </a>
+                    <a href="/tech/ocr/webimage" class="ai-server-sub-desc-link">
+                        <div class="ai-server-sub-desc">
+                            <div class="ai-server-sub-title">网络图片识别</div>
+                            <div class="ai-server-sub-info">在复杂字体和背景下的文字识别</div>
+                        </div>
+                    </a>
+                    <a href="/tech/ocr/cards" class="ai-server-sub-desc-link">
+                        <div class="ai-server-sub-desc">
+                            <div class="ai-server-sub-title">卡证识别</div>
+                            <div class="ai-server-sub-info">身份证、银行卡、驾驶证、行驶证识别</div>
+                        </div>
+                    </a>
+                    <a href="/tech/ocr/plate" class="ai-server-sub-desc-link">
+                        <div class="ai-server-sub-desc">
+                            <div class="ai-server-sub-title">车牌识别</div>
+                            <div class="ai-server-sub-info">对车牌进行文字识别</div>
+                        </div>
+                    </a>
+                    <a href="/tech/ocr/business" class="ai-server-sub-desc-link">
+                        <div class="ai-server-sub-desc">
+                            <div class="ai-server-sub-title">营业执照识别</div>
+                            <div class="ai-server-sub-info">对营业执照进行文字识别</div>
+                        </div>
+                    </a>
+                    <a href="/tech/ocr/receipt" class="ai-server-sub-desc-link">
+                        <div class="ai-server-sub-desc">
+                            <div class="ai-server-sub-title">票据识别</div>
+                            <div class="ai-server-sub-info">识别医疗、金融、物流等各类票据</div>
+                        </div>
+                    </a>
+                    <a href="/tech/ocr/table" class="ai-server-sub-desc-link">
+                        <div class="ai-server-sub-desc">
+                            <div class="ai-server-sub-title">表格文字识别</div>
+                            <div class="ai-server-sub-info">结构化识别表格内容信息</div>
+                        </div>
+                    </a>
+                    <a href="/tech/ocr/iocr" class="ai-server-sub-desc-link">
+                        <div class="ai-server-sub-desc">
+                            <div class="ai-server-sub-title ai-server-product">自定义模版识别</div>
+                            <div class="ai-server-sub-info">结构化任意票据内容</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="ai-server-sub-item">
+                <div class="ai-server-sub-left">
+                    <div class="ai-server-sub-tag">人脸识别</div>
+                    <div class="ai-server-sub-main">
+                        基于深度学习的人脸识别技术，精准识别人脸信息，助力产品升级
+                    </div>
+                    <a href="/tech/face" class="ai-server-sub-link">
+                        查看详情
+                        <span class="ai-link-array"></span>
+                    </a>
+                </div>
+                <div class="ai-server-sub-right">
+                    <a href="/tech/face/detect" class="ai-server-sub-desc-link">
+                        <div class="ai-server-sub-desc">
+                            <div class="ai-server-sub-title">人脸检测</div>
+                            <div class="ai-server-sub-info">检测人脸位置、属性、关键点及质量</div>
+                        </div>
+                    </a>
+                    <a href="/tech/face/compare" class="ai-server-sub-desc-link">
+                        <div class="ai-server-sub-desc">
+                            <div class="ai-server-sub-title">人脸对比</div>
+                            <div class="ai-server-sub-info">比较两张人脸的相似度</div>
+                        </div>
+                    </a>
+                    <a href="/tech/face/search" class="ai-server-sub-desc-link">
+                        <div class="ai-server-sub-desc">
+                            <div class="ai-server-sub-title">人脸查找</div>
+                            <div class="ai-server-sub-info">在人脸库中找到相似的人脸</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="ai-server-layer">
+        <div class="ai-server-tab">
+            <div class="ai-server-item" data-row="1" data-index="5">
+                <div class="ai-item-leftside-extend1"></div>
+                <div class="ai-server-item-desc">
+                    <div class="ai-server-item-icon ai-server-item-icon-6"></div>
+                    <div class="ai-server-item-info">
+                        图像审核
+                    </div>
+                </div>
+            </div>
+            <div class="ai-server-item" data-row="1" data-index="6">
+                <div class="ai-item-leftside-extend4"></div>
+                <div class="ai-server-item-desc">
+                    <div class="ai-server-item-icon ai-server-item-icon-7"></div>
+                    <div class="ai-server-item-info ai-server-circle">
+                        图像识别
+                        <div class="ai-circle-inner"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="ai-server-item" data-row="1" data-index="7">
+                <div class="ai-item-leftside-extend6"></div>
+                <div class="ai-server-item-desc">
+                    <div class="ai-server-item-icon ai-server-item-icon-8"></div>
+                    <div class="ai-server-item-info">
+                        图像搜索
+                    </div>
+                </div>
+            </div>
+            <div class="ai-server-item" data-row="1" data-index="8">
+                <div class="ai-item-leftside-extend10"></div>
+                <div class="ai-server-item-desc">
+                    <div class="ai-server-item-icon ai-server-item-icon-9"></div>
+                    <div class="ai-server-item-info ai-server-circle">
+                        视频技术
+                        <div class="ai-circle-inner"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="ai-server-item ai-server-last-item" data-row="1" data-index="9">
+                <div class="ai-server-item-desc">
+                    <div class="ai-server-item-icon ai-server-item-icon-10"></div>
+                    <div class="ai-server-item-info ai-server-circle">
+                        增强现实
+                        <div class="ai-circle-inner"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="ai-server-sub">
+            <div class="ai-server-sub-item">
+                <div class="ai-server-sub-left">
+                    <div class="ai-server-sub-tag">图像审核</div>
+                    <div class="ai-server-sub-main">
+                        识别图片中的涉黄、涉暴涉恐、政治敏感、微商广告、恶心等内容，节省审核人力
+                    </div>
+                    <a href="/tech/imagecensoring" class="ai-server-sub-link">
+                        查看详情
+                        <span class="ai-link-array"></span>
+                    </a>
+                </div>
+                <div class="ai-server-sub-right">
+                    <a href="/tech/imagecensoring/antiporn" class="ai-server-sub-desc-link">
+                        <div class="ai-server-sub-desc">
+                            <div class="ai-server-sub-title">色情识别</div>
+                            <div class="ai-server-sub-info">人工智能鉴黄技术，高精度识别色情、性感内容</div>
+                        </div>
+                    </a>
+                    <a href="/tech/imagecensoring/antiterror" class="ai-server-sub-desc-link">
+                        <div class="ai-server-sub-desc">
+                            <div class="ai-server-sub-title">暴恐识别</div>
+                            <div class="ai-server-sub-info">智能识别暴恐人物、场景、旗帜</div>
+                        </div>
+                    </a>
+                    <a href="/tech/imagecensoring" class="ai-server-sub-desc-link">
+                        <div class="ai-server-sub-desc">
+                            <div class="ai-server-sub-title">政治敏感识别</div>
+                            <div class="ai-server-sub-info">识别政治人物与敏感政治事件场景</div>
+                        </div>
+                    </a>
+                    <a href="/tech/imagecensoring" class="ai-server-sub-desc-link">
+                        <div class="ai-server-sub-desc">
+                            <div class="ai-server-sub-title">广告检测</div>
+                            <div class="ai-server-sub-info">智能检测图像中的水印、二维码、条形码，检测各种微商广告</div>
+                        </div>
+                    </a>
+                    <a href="/tech/imagecensoring" class="ai-server-sub-desc-link">
+                        <div class="ai-server-sub-desc">
+                            <div class="ai-server-sub-title">恶心图像识别</div>
+                            <div class="ai-server-sub-info">准确识别恶心，令人不适类的图像</div>
+                        </div>
+                    </a>
+                    <a href="/tech/imagecensoring" class="ai-server-sub-desc-link">
+                        <div class="ai-server-sub-desc">
+                            <div class="ai-server-sub-title">图像质量检测</div>
+                            <div class="ai-server-sub-info">图像美观度与清晰度识别</div>
+                        </div>
+                    </a>
+                    <a href="/tech/imagecensoring" class="ai-server-sub-desc-link">
+                        <div class="ai-server-sub-desc">
+                            <div class="ai-server-sub-title">用户头像审核</div>
+                            <div class="ai-server-sub-info">对用户头像进行多维度的合规判断</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="ai-server-sub-item">
+                <div class="ai-server-sub-left">
+                    <div class="ai-server-sub-tag">图像识别</div>
+                    <div class="ai-server-sub-main">
+                        对图片内容分析，识别出图片中的物体名称等综合信息
+                    </div>
+                    <a href="/tech/imagerecognition" class="ai-server-sub-link">
+                        查看详情
+                        <span class="ai-link-array"></span>
+                    </a>
+                </div>
+                <div class="ai-server-sub-right">
+                    <a href="/tech/imagerecognition/general" class="ai-server-sub-desc-link">
+                        <div class="ai-server-sub-desc">
+                            <div class="ai-server-sub-title">通用图像分析</div>
+                            <div class="ai-server-sub-info">识别图片中的物体、场景信息</div>
+                        </div>
+                    </a>
+                    <a href="/tech/imagerecognition/fine_grained" class="ai-server-sub-desc-link">
+                        <div class="ai-server-sub-desc">
+                            <div class="ai-server-sub-title">细粒度图像识别</div>
+                            <div class="ai-server-sub-info">识别商标、动植物、菜品、车型等</div>
+                        </div>
+                    </a>
+                    <a href="/tech/imagerecognition/human" class="ai-server-sub-desc-link">
+                        <div class="ai-server-sub-desc">
+                            <div class="ai-server-sub-title ai-server-call-test ai-server-call-modify">人体分析</div>
+                            <div class="ai-server-sub-info">提供人体关键点识别等能力</div>
+                        </div>
+                    </a>
+                    <a href="/customize/common/welcome" class="ai-server-sub-desc-link" target="_blank">
+                        <div class="ai-server-sub-desc">
+                            <div class="ai-server-sub-title ai-server-call-test ai-server-call-modify">定制化图像识别</div>
+                            <div class="ai-server-sub-info">定制化训练图像识别模型</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="ai-server-sub-item">
+                <div class="ai-server-sub-left">
+                    <div class="ai-server-sub-tag">图像搜索</div>
+                    <div class="ai-server-sub-main">
+                        以图搜图，在指定图库中智能搜索出相同或相似的图片
+                    </div>
+                    <a href="/tech/imagesearch" class="ai-server-sub-link">
+                        查看详情
+                        <span class="ai-link-array"></span>
+                    </a>
+                </div>
+                <div class="ai-server-sub-right">
+                    <a href="/tech/imagesearch" class="ai-server-sub-desc-link">
+                        <div class="ai-server-sub-desc">
+                            <div class="ai-server-sub-title">相同图片搜索</div>
+                            <div class="ai-server-sub-info">找到与查询图片语义相似的图片</div>
+                        </div>
+                    </a>
+                    <a href="/tech/imagesearch" class="ai-server-sub-desc-link">
+                        <div class="ai-server-sub-desc">
+                            <div class="ai-server-sub-title">相似图片搜索</div>
+                            <div class="ai-server-sub-info">找到与查询图片中含相同主体的图片</div>
+                        </div>
+                    </a>
+                    <a href="/tech/imagesearch" class="ai-server-sub-desc-link">
+                        <div class="ai-server-sub-desc">
+                            <div class="ai-server-sub-title ai-server-product">商品图片搜索</div>
+                            <div class="ai-server-sub-info">自建商品库，查询相同或相似商品图片</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="ai-server-sub-item">
+                <div class="ai-server-sub-left">
+                    <div class="ai-server-sub-tag">视频技术</div>
+                    <div class="ai-server-sub-main">
+                        对视频多维度分析，开放视频内容分析、内容审核等能力
+                    </div>
+                </div>
+                <div class="ai-server-sub-right">
+                    <a href="/tech/video/vca" class="ai-server-sub-desc-link">
+                        <div class="ai-server-sub-desc">
+                            <div class="ai-server-sub-title">视频内容分析</div>
+                            <div class="ai-server-sub-info">智能分析视频图像和语音内容</div>
+                        </div>
+                    </a>
+                    <a href="/tech/video/vcs" class="ai-server-sub-desc-link">
+                        <div class="ai-server-sub-desc">
+                            <div class="ai-server-sub-title ai-server-call-test ai-server-call-modify">视频封面选取</div>
+                            <div class="ai-server-sub-info">智能选取静态或动态画面作为视频封面</div>
+                        </div>
+                    </a>
+                    <a href="/tech/video/vcc" class="ai-server-sub-desc-link">
+                        <div class="ai-server-sub-desc">
+                            <div class="ai-server-sub-title">视频比对检索</div>
+                            <div class="ai-server-sub-info">以图搜源视频，以视频搜相同片段视频</div>
+                        </div>
+                    </a>
+                    <a href="/tech/video/vcr" class="ai-server-sub-desc-link">
+                        <div class="ai-server-sub-desc">
+                            <div class="ai-server-sub-title">视频内容审核</div>
+                            <div class="ai-server-sub-info">针对视频内容进行多维智能审核</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="ai-server-sub-item ai-server-img9">
+                <div class="ai-server-sub-single">
+                    <div class="ai-server-sub-single-tag ai-server-product-title">DuMix AR开放平台</div>
+                    <div class="ai-server-sub-single-desc">
+                        专注于环境感知、虚实融合和人机交互，广泛应用于营销、教育、旅游等场景，旨在打造业界最具活力和影响力的AR技术、应用和内容生态
+                    </div>
+                    <a href="http://ar.baidu.com/dumixar" target="_blank" class="ai-server-sub-link">
+                        查看详情
+                        <span class="ai-link-array"></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="ai-server-layer">
+        <div class="ai-server-tab">
+            <div class="ai-server-item" data-row="2" data-index="10">
+                <div class="ai-item-leftside-extend2"></div>
+                <div class="ai-server-item-desc">
+                    <div class="ai-server-item-icon ai-server-item-icon-11"></div>
+                    <div class="ai-server-item-info">
+                        语言处理基础技术
+                    </div>
+                </div>
+            </div>
+            <div class="ai-server-item" data-row="2" data-index="11">
+                <div class="ai-server-item-desc">
+                    <div class="ai-server-item-icon ai-server-item-icon-12"></div>
+                    <div class="ai-server-item-info">
+                        文本审核
+                    </div>
+                </div>
+            </div>
+            <div class="ai-server-item" data-row="2" data-index="12">
+                <div class="ai-server-item-desc">
+                    <div class="ai-server-item-icon ai-server-item-icon-13"></div>
+                    <div class="ai-server-item-info">
+                        理解与交互技术UNIT
+                    </div>
+                </div>
+            </div>
+            <div class="ai-server-item" data-row="2" data-index="13">
+                <div class="ai-server-item-desc">
+                    <div class="ai-server-item-icon ai-server-item-icon-14"></div>
+                    <div class="ai-server-item-info">
+                        机器翻译
+                    </div>
+                </div>
+            </div>
+            <div class="ai-server-item ai-server-last-item" data-row="2" data-index="14">
+                <div class="ai-item-leftside-extend12"></div>
+                <div class="ai-server-item-desc">
+                    <div class="ai-server-item-icon ai-server-item-icon-15"></div>
+                    <div class="ai-server-item-info">
+                        智能营销
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="ai-server-sub">
+            <div class="ai-server-sub-item">
+                <div class="ai-server-sub-left">
+                    <div class="ai-server-sub-tag">语言处理<br>基础技术</div>
+                    <div class="ai-server-sub-main">
+                        为精准和深度的中文语义分析与应用提供坚实技术基础
+                    </div>
+                    <a href="/tech/nlp" class="ai-server-sub-link">
+                        查看详情
+                        <span class="ai-link-array"></span>
+                    </a>
+                </div>
+                <div class="ai-server-sub-right">
+                    <a href="/tech/nlp/lexical" class="ai-server-sub-desc-link">
+                        <div class="ai-server-sub-desc">
+                            <div class="ai-server-sub-title">词法分析</div>
+                            <div class="ai-server-sub-info">含中文分词、词性标注、命名实体识别</div>
+                        </div>
+                    </a>
+                    <a href="/tech/nlp/dependency_parsing" class="ai-server-sub-desc-link">
+                        <div class="ai-server-sub-desc">
+                            <div class="ai-server-sub-title">依存句法分析</div>
+                            <div class="ai-server-sub-info">分析中文语句的依存句法结构</div>
+                        </div>
+                    </a>
+                    <a href="/tech/nlp/word_embedding" class="ai-server-sub-desc-link">
+                        <div class="ai-server-sub-desc">
+                            <div class="ai-server-sub-title">词向量表示</div>
+                            <div class="ai-server-sub-info">词语的向量化计算表示</div>
+                        </div>
+                    </a>
+                    <a href="/tech/nlp/dnnlm_cn" class="ai-server-sub-desc-link">
+                        <div class="ai-server-sub-desc">
+                            <div class="ai-server-sub-title">DNN语言模型</div>
+                            <div class="ai-server-sub-info">分析中文语句的通顺程度</div>
+                        </div>
+                    </a>
+                    <a href="/tech/nlp/word_emb_sim" class="ai-server-sub-desc-link">
+                        <div class="ai-server-sub-desc">
+                            <div class="ai-server-sub-title">词义相似度</div>
+                            <div class="ai-server-sub-info">计算两个中文词语之间的语义相似度</div>
+                        </div>
+                    </a>
+                    <a href="/tech/nlp/simnet" class="ai-server-sub-desc-link">
+                        <div class="ai-server-sub-desc">
+                            <div class="ai-server-sub-title">短文本相似度</div>
+                            <div class="ai-server-sub-info">计算两个中文短句之间的语义相似度</div>
+                        </div>
+                    </a>
+                    <a href="/tech/nlp/comment_tag" class="ai-server-sub-desc-link">
+                        <div class="ai-server-sub-desc">
+                            <div class="ai-server-sub-title">评论观点抽取</div>
+                            <div class="ai-server-sub-info">分析提取用户评论观点标签与情感极性</div>
+                        </div>
+                    </a>
+                    <a href="/tech/nlp/sentiment_classify" class="ai-server-sub-desc-link">
+                        <div class="ai-server-sub-desc">
+                            <div class="ai-server-sub-title">情感倾向分析</div>
+                            <div class="ai-server-sub-info">对主观信息文本进行情感极性判断</div>
+                        </div>
+                    </a>
+                    <a href="/tech/nlp/doctagger" class="ai-server-sub-desc-link">
+                        <div class="ai-server-sub-desc">
+                            <div class="ai-server-sub-title ai-server-product">文章标签</div>
+                            <div class="ai-server-sub-info">分析并提取文章的核心内容标签</div>
+                        </div>
+                    </a>
+                    <a href="/tech/nlp/topictagger" class="ai-server-sub-desc-link">
+                        <div class="ai-server-sub-desc">
+                            <div class="ai-server-sub-title ai-server-product">文章分类</div>
+                            <div class="ai-server-sub-info">按内容类型对文章进行自动分类</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="ai-server-sub-item ai-server-img11">
+                <div class="ai-server-sub-single">
+                    <div class="ai-server-sub-single-tag ai-server-call-test">文本审核</div>
+                    <div class="ai-server-sub-single-desc">
+                        基于深度学习的文本审核技术，一站式准确识别文本中夹杂的色情、推广、辱骂、违禁违法等垃圾内容，
+                        净化网络环境，为您的应用提供更可靠的内容安全保障
+                    </div>
+                    <a href="/tech/textcensoring" class="ai-server-sub-link">
+                        查看详情
+                        <span class="ai-link-array"></span>
+                    </a>
+                </div>
+            </div>
+            <div class="ai-server-sub-item ai-server-img12">
+                <div class="ai-server-sub-single">
+                    <div class="ai-server-sub-single-tag">理解与交互技术UNIT</div>
+                    <div class="ai-server-sub-single-desc">
+                        UNIT为对话逻辑配置平台，搭载业界领先的需求理解、对话控制及底层的机器学习、自然语言处理、知识挖掘等核心技术，
+                        精确匹配业务逻辑，满足不同场景对话需求
+                    </div>
+                    <a href="/tech/unit" class="ai-server-sub-link">
+                        查看详情
+                        <span class="ai-link-array"></span>
+                    </a>
+                </div>
+            </div>
+            <div class="ai-server-sub-item ai-server-img13">
+                <div class="ai-server-sub-single">
+                    <div class="ai-server-sub-single-tag">机器翻译</div>
+                    <div class="ai-server-sub-single-desc">
+                        支持全球28种语言互译，756个翻译方向，每日响应过亿次的翻译请求。任何第三方应用或者网站都可以通过使用百度翻译API为用户提供实时优质的多语言翻译服务，提升产品体验
+                    </div>
+                    <a href="https://fanyi-api.baidu.com/api/trans/product/index" target="_blank"
+                       class="ai-server-sub-link">
+                        查看详情
+                        <span class="ai-link-array"></span>
+                    </a>
+                </div>
+            </div>
+            <div class="ai-server-sub-item">
+                <div class="ai-server-sub-left">
+                    <div class="ai-server-sub-tag">智能营销</div>
+                    <div class="ai-server-sub-main">
+                        洞察市场及目标客户，挖掘企业信息，预测销售时机，提升营销效率
+                    </div>
+                </div>
+                <div class="ai-server-sub-right">
+                    <a href="https://di.baidu.com/product/keqing" target="_blank" class="ai-server-sub-desc-link">
+                        <div class="ai-server-sub-desc">
+                            <div class="ai-server-sub-title">客情分析</div>
+                            <div class="ai-server-sub-info">客户销售意图预测，客户群体特征分析</div>
+                        </div>
+                    </a>
+                    <a href="https://di.baidu.com/product/shangqing" target="_blank" class="ai-server-sub-desc-link">
+                        <div class="ai-server-sub-desc">
+                            <div class="ai-server-sub-title">商情分析</div>
+                            <div class="ai-server-sub-info">挖掘合适的潜在企业客户，提供销售转化预测服务</div>
+                        </div>
+                    </a>
+                    <a href="https://di.baidu.com/product/sinan" target="_blank" class="ai-server-sub-desc-link">
+                        <div class="ai-server-sub-desc">
+                            <div class="ai-server-sub-title">司南营销分析</div>
+                            <div class="ai-server-sub-info">全面、专业的品牌营销辅助分析工具</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="ai-server-layer">
+        <div class="ai-server-tab">
+            <div class="ai-server-item" data-row="3" data-index="15">
+                <div class="ai-item-leftside-extend3"></div>
+                <div class="ai-server-item-desc">
+                    <div class="ai-server-item-icon ai-server-item-icon-16"></div>
+                    <div class="ai-server-item-info ai-server-circle">
+                        风控与反欺诈
+                        <div class="ai-circle-inner"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="ai-server-item" data-row="3" data-index="16">
+                <div class="ai-item-leftside-extend5"></div>
+                <div class="ai-server-item-desc">
+                    <div class="ai-server-item-icon ai-server-item-icon-17"></div>
+                    <div class="ai-server-item-info">
+                        舆情监控
+                    </div>
+                </div>
+            </div>
+            <div class="ai-server-item" data-row="3" data-index="17">
+                <div class="ai-item-leftside-extend8"></div>
+                <div class="ai-server-item-desc">
+                    <div class="ai-server-item-icon ai-server-item-icon-18"></div>
+                    <div class="ai-server-item-info">
+                        知识图谱
+                    </div>
+                </div>
+            </div>
+            <div class="ai-server-item" data-row="3" data-index="18">
+                <div class="ai-server-item-desc">
+                    <div class="ai-server-item-icon ai-server-item-icon-19"></div>
+                    <div class="ai-server-item-info">
+                        PaddlePaddle
+                    </div>
+                </div>
+            </div>
+            <div class="ai-server-item  ai-server-last-item" data-row="3" data-index="19">
+                <div class="ai-item-leftside-extend13"></div>
+                <div class="ai-server-item-desc">
+                    <div class="ai-server-item-icon ai-server-item-icon-20"></div>
+                    <div class="ai-server-item-info ai-server-circle">
+                        开放数据集
+                        <div class="ai-circle-inner"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="ai-server-sub">
+            <div class="ai-server-sub-item">
+                <div class="ai-server-sub-left">
+                    <div class="ai-server-sub-tag">风控与反欺诈</div>
+                    <div class="ai-server-sub-main">
+                        依靠深厚的数据能力，搭建模型，提炼画像，辅助客户识别风险、防控欺诈
+                    </div>
+                </div>
+                <div class="ai-server-sub-right">
+                    <a href="https://di.baidu.com/product/insurancerisk" target="_blank"
+                       class="ai-server-sub-desc-link">
+                        <div class="ai-server-sub-desc">
+                            <div class="ai-server-sub-title">保险风险识别</div>
+                            <div class="ai-server-sub-info">从营销环节把控获客质量、从定价环节实现个性化风险评估</div>
+                        </div>
+                    </a>
+                    <a href="https://di.baidu.com/product/insurancefraud" target="_blank"
+                       class="ai-server-sub-desc-link">
+                        <div class="ai-server-sub-desc">
+                            <div class="ai-server-sub-title">保险理赔与反欺诈</div>
+                            <div class="ai-server-sub-info">基于用户特征数据，核查报案信息真伪，甄别理赔欺诈案件</div>
+                        </div>
+                    </a>
+                    <a href="https://di.baidu.com/solution/finance" target="_blank" class="ai-server-sub-desc-link">
+                        <div class="ai-server-sub-desc">
+                            <div class="ai-server-sub-title ai-server-product">银行|互金风控</div>
+                            <div class="ai-server-sub-info">通过金融画像及各类反欺诈、信用模型，有效识别用户风险</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="ai-server-sub-item">
+                <div class="ai-server-sub-left">
+                    <div class="ai-server-sub-tag">舆情监控</div>
+                    <div class="ai-server-sub-main">
+                        全方位分析互联网舆论，实时监控舆论动态，追溯事件脉络
+                    </div>
+                </div>
+                <div class="ai-server-sub-right">
+                    <a href="https://di.baidu.com/product/yuqing" target="_blank" class="ai-server-sub-desc-link">
+                        <div class="ai-server-sub-desc">
+                            <div class="ai-server-sub-title">舆情平台</div>
+                            <div class="ai-server-sub-info">专业、开放、易用的互联网舆情分析平台</div>
+                        </div>
+                    </a>
+                    <a href="https://di.baidu.com/product/opinion" target="_blank" class="ai-server-sub-desc-link">
+                        <div class="ai-server-sub-desc">
+                            <div class="ai-server-sub-title">舆情API</div>
+                            <div class="ai-server-sub-info">个性化深度定制，准确实时把握互联网舆情脉搏</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="ai-server-sub-item">
+                <div class="ai-server-sub-left">
+                    <div class="ai-server-sub-tag">知识图谱</div>
+                    <div class="ai-server-sub-main">
+                        致力于构建最大最全最好的中文知识图谱，汇聚知识，连接万物
+                    </div>
+                </div>
+                <div class="ai-server-sub-right">
+                    <a href="/tech/cognitive" class="ai-server-sub-desc-link">
+                        <div class="ai-server-sub-desc">
+                            <div class="ai-server-sub-title">知识理解</div>
+                            <div class="ai-server-sub-info">基于知识图谱丰富的数据体系，提供对文本语义中实体、概念等深度理解解析能力</div>
+                        </div>
+                    </a>
+                    <a href="/tech/kg/schema" class="ai-server-sub-desc-link">
+                        <div class="ai-server-sub-desc">
+                            <div class="ai-server-sub-title">知识图谱Schema</div>
+                            <div class="ai-server-sub-info">定义知识图谱数据模型及词汇体系</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="ai-server-sub-item ai-server-img18">
+                <div class="ai-server-sub-left">
+                    <div class="ai-server-sub-tag">PaddlePaddle</div>
+                    <div class="ai-server-sub-main">
+                        百度深度学习平台PaddlePaddle是大规模并行分布式深度学习框架，易学易用、高效灵活，努力做最符合中国开发者需要的深度学习平台
+                    </div>
+                </div>
+                <div class="ai-server-sub-right">
+                    <a href="http://www.paddlepaddle.org/" class="ai-server-sub-desc-link" target="_blank">
+                        <div class="ai-server-sub-desc">
+                            <div class="ai-server-sub-title">PaddlePaddle官网</div>
+                            <div class="ai-server-sub-info">支持海量图像识别分类、机器翻译和自动驾驶等多个领域的业务需求</div>
+                        </div>
+                    </a>
+                    <a href="/paddlepaddle" class="ai-server-sub-desc-link">
+                        <div class="ai-server-sub-desc">
+                            <div class="ai-server-sub-title">PaddlePaddle训练营</div>
+                            <div class="ai-server-sub-info">从零开始学PaddlePaddle，深度学习系列公开课</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="ai-server-sub-item ai-server-img19">
+                <div class="ai-server-sub-left">
+                    <div class="ai-server-sub-tag ai-new-product">开放数据集</div>
+                    <div class="ai-server-sub-main">
+                        中文世界中真实性最高的开放数据集, 贴近真正用户场景, 自带良好标注, 帮助开发者快速训练自己的人工智能模型及算法
+                    </div>
+                    <a href="/broad" target="_blank" class="ai-server-sub-link">
+                        查看详情
+                        <span class="ai-link-array"></span>
+                    </a>
+                </div>
+                <div class="ai-server-sub-right">
+                    <a href="/broad/subordinate?dataset=sceneparsing"
+                       target="_blank"
+                       class="ai-server-sub-desc-link">
+                        <div class="ai-server-sub-desc">
+                            <div class="ai-server-sub-title">室外场景理解</div>
+                            <div class="ai-server-sub-info">海量场景图像， 并详尽标注其中道路，人体， 车辆等数据</div>
+                        </div>
+                    </a>
+                    <a href="/broad/subordinate?dataset=video"
+                       target="_blank"
+                       class="ai-server-sub-desc-link">
+                        <div class="ai-server-sub-desc">
+                            <div class="ai-server-sub-title">视频精彩片段</div>
+                            <div class="ai-server-sub-info">大量的综艺视频, 并标注其中的精彩片段起止时刻</div>
+                        </div>
+                    </a>
+                    <a href="/broad/subordinate?dataset=dureader"
+                       target="_blank"
+                       class="ai-server-sub-desc-link">
+                        <div class="ai-server-sub-desc">
+                            <div class="ai-server-sub-title">阅读理解</div>
+                            <div class="ai-server-sub-info">海量真实文本, 促进机器阅读理解领域内的研究</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="ai-join">
+    <div class="ai-join-title">全面开放的行业生态</div>
+    <a href="http://apollo.auto" target="_blank">
+        <div class="ai-example1">
+            <div class="ai-join-logo">百度Apollo平台</div>
+            <div class="ai-example1-tip">
+                Apollo（阿波罗）是一个开放的、完整的、安全的平台，将帮助汽车行业及自动驾驶领域的合作伙伴结合车辆和硬件系统，搭建一套属于自己的自动驾驶系统。
+            </div>
+        </div>
+    </a>
+    <a href="https://dueros.baidu.com/" target="_blank">
+        <div class="ai-example1">
+            <div class="ai-join-logo2">对话式人工智能系统</div>
+            <div class="ai-example1-tip">
+                DuerOS为企业及开发者提供了一整套对话式人工智能解决方案，包括软硬一体化的智能设备解决方案和技能开发部署方案，赋予万物与人对话的能力。
+            </div>
+        </div>
+    </a>
+</div>
+
+<div class="ai-solution">
+    <div class="ai-solution-title">丰富易用的解决方案</div>
+    <div class="ai-sub-title">贴合您的业务场景，轻松实现方案集成</div>
+    <div class="ai-contain-cover">
+        <div class="ai-img-container">
+            <a href="/solution/faceprint">
+                <div class="ai-item-list">
+                    <div class="ai-item-img ai-item-img-faceprint"></div>
+                    <div class="ai-item-title">人脸核身</div>
+                    <div class="ai-item-info">快速完成用户身份核实，确保「真人」且为「本人」</div>
+                </div>
+            </a>
+            <a href="/solution/facesignIn">
+                <div class="ai-item-list">
+                    <div class="ai-item-img ai-item-img-facesignin"></div>
+                    <div class="ai-item-title ai-new-solution">人脸会场签到</div>
+                    <div class="ai-item-info">参会人邀请注册、刷脸签到、与会人统计管理平台</div>
+                </div>
+            </a>
+            <a href="/solution/faceidentify">
+                <div class="ai-item-list">
+                    <div class="ai-item-img ai-item-img-faceidentify"></div>
+                    <div class="ai-item-title">人脸会员识别</div>
+                    <div class="ai-item-info">人脸注册、人脸自动捕获、会员识别一整套解决方案</div>
+                </div>
+            </a>
+            <a href="/solution/facegate">
+                <div class="ai-item-list">
+                    <div class="ai-item-img ai-item-img-facegate"></div>
+                    <div class="ai-item-title">人脸闸机</div>
+                    <div class="ai-item-info">针对闸机及门禁场景，提供行业定制的全流程解决方案</div>
+                </div>
+            </a>
+            <a href="/solution/ivs">
+                <div class="ai-item-list">
+                    <div class="ai-item-img ai-item-img-ivs"></div>
+                    <div class="ai-item-title ai-new-solution">智能安防视频分析</div>
+                    <div class="ai-item-info">助力安防，在复杂环境下自动识别特定人员及异常行为</div>
+                </div>
+            </a>
+            <a href="/solution/itma">
+                <div class="ai-item-list">
+                    <div class="ai-item-img ai-item-img-itma"></div>
+                    <div class="ai-item-title ai-test-solution">智能电销</div>
+                    <div class="ai-item-info">AI技术辅助坐席人员实时了解客户意图，推荐话术应答</div>
+                </div>
+            </a>
+            <a href="/solution/roboticvision">
+                <div class="ai-item-list">
+                    <div class="ai-item-img ai-item-img-roboticvision"></div>
+                    <div class="ai-item-title ai-new-solution">机器人导航和视觉</div>
+                    <div class="ai-item-info">提供导航定位、避障、地图重建、场景物体识别等功能</div>
+                </div>
+            </a>
+            <a href="/solution/servicerobot">
+                <div class="ai-item-list">
+                    <div class="ai-item-img ai-item-img-servicerobot"></div>
+                    <div class="ai-item-title ai-new-solution">服务机器人</div>
+                    <div class="ai-item-info">赋予机器人VIP识别、语音问答、线路导航等能力</div>
+                </div>
+            </a>
+            <a href="/solution/smarthome">
+                <div class="ai-item-list">
+                    <div class="ai-item-img ai-item-img-smarthome"></div>
+                    <div class="ai-item-title">DuerOS智慧家庭</div>
+                    <div class="ai-item-info">提供成熟的智能音箱、智能冰箱、智能TV解决方案</div>
+                </div>
+            </a>
+            <a href="/solution/voiceassistant">
+                <div class="ai-item-list">
+                    <div class="ai-item-img ai-item-img-voiceassistant"></div>
+                    <div class="ai-item-title">DuerOS智能语音助理</div>
+                    <div class="ai-item-info">手机拥有与人对话的能力，提供信息查询等生活服务</div>
+                </div>
+            </a>
+            <a href="/solution/arads">
+                <div class="ai-item-list">
+                    <div class="ai-item-img ai-item-img-arads"></div>
+                    <div class="ai-item-title">AR智能营销</div>
+                    <div class="ai-item-info">从创意制作到投放一站式完成，提供多种广告制作类型</div>
+                </div>
+            </a>
+            <a href="/solution/luban">
+                <div class="ai-item-list">
+                    <div class="ai-item-img ai-item-img-luban"></div>
+                    <div class="ai-item-title">大数据基础套件(鲁班)</div>
+                    <div class="ai-item-info">提供百度自研的数据仓库、日志分析、数据挖掘等方案</div>
+                </div>
+            </a>
+        </div>
+    </div>
+    <div class="ai-solution-bar" id="solution-bar"></div>
+</div>
+
+<div class="ai-success-stories">
+    <div class="ai-success-title">为客户提供业务新动力</div>
+    <div class="ai-list-items">
+        <div class="ai-list-item ai-list-item1 ai-list-item-select" data-index="0">用友</div>
+        <div class="ai-list-item ai-list-item2" data-index="1">家图网</div>
+        <div class="ai-list-item ai-list-item3" data-index="2">中通</div>
+        <div class="ai-list-item ai-list-item4" data-index="3">房天下</div>
+        <div class="ai-list-item ai-list-item5" data-index="4">嘀嗒出行</div>
+        <div class="ai-list-item ai-list-item6" data-index="5">拉勾网</div>
+        <a class="ai-list-item-last" href="/customer" target="_blank"></a>
+    </div>
+    <div class="ai-move-bar"></div>
+    <div class="ai-list-details">
+        <div class="ai-list-item-detail ai-first-detail">
+            <div class="ai-item-detail-img">
+                <div class="ai-detail-img ai-detail-img0"></div>
+                <div class="ai-detail-img-title">杨鹏</div>
+                <div class="ai-detail-img-info">集团助理总裁／协同云总经理</div>
+            </div>
+            <div class="ai-item-detail-des">
+                友空间作为面向大中型企业的社交化协同办公平台，很多场景需要明确的二次身份认证，比如考勤打卡，流程单据审批（规划中），以避免出现非本人操作的情况。借助百度的人脸识别功能很好地解决了这些问题，让企业管理的每一个环节都严谨规范。
+                <div class="ai-des-quan0"></div>
+                <div class="ai-des-quan1"></div>
+            </div>
+            <div class="ai-item-look-example">
+                <a href="/customer/yongyou" class="ai-item-look-link" target="_blank">
+                    查看案例<span class="ai-look-example-array"></span>
+                </a>
+            </div>
+        </div>
+        <div class="ai-list-item-detail">
+            <div class="ai-item-detail-img">
+                <div class="ai-detail-img ai-detail-img1"></div>
+                <div class="ai-detail-img-title">江晖</div>
+                <div class="ai-detail-img-info">家图网联合创始人 总经理</div>
+            </div>
+            <div class="ai-item-detail-des">
+                家图网作为社交化家居电商导购平台，应用百度AI定制化图像识别技术，激活了数百万张沉寂的家居图片，极大的提升了用户活跃度；并与物体识别、个性化内容推荐等技术交叉应用，使商品推荐效果也得到了大大的提升，为用户和广告主提供了高质量的家居服务。
+                <div class="ai-des-quan0"></div>
+                <div class="ai-des-quan1"></div>
+            </div>
+            <div class="ai-item-look-example">
+                <a href="/customer/idcool" class="ai-item-look-link" target="_blank">
+                    查看案例<span class="ai-look-example-array"></span>
+                </a>
+            </div>
+        </div>
+        <div class="ai-list-item-detail">
+            <div class="ai-item-detail-img">
+                <div class="ai-detail-img ai-detail-img2"></div>
+                <div class="ai-detail-img-title">周子庆</div>
+                <div class="ai-detail-img-info">信息安全顾问</div>
+            </div>
+            <div class="ai-item-detail-des">
+                得益于百度AI平台提供的人脸核身解决方案，中通在快递行业内率先实现了员工身份的流程全自动核验。配合企业内部的安全风控系统，极大地提高了保障企业与客户信息安全的能力。在新技术以指数方式涌现的今天，我们携手百度用更好的产品，造就更多人的幸福。
+                <div class="ai-des-quan0"></div>
+                <div class="ai-des-quan1"></div>
+            </div>
+            <div class="ai-item-look-example">
+                <a href="/customer/zhongtong" class="ai-item-look-link" target="_blank">
+                    查看案例<span class="ai-look-example-array"></span>
+                </a>
+            </div>
+        </div>
+        <div class="ai-list-item-detail">
+            <div class="ai-item-detail-img">
+                <div class="ai-detail-img ai-detail-img3"></div>
+                <div class="ai-detail-img-title">莫天全</div>
+                <div class="ai-detail-img-info">房天下CEO</div>
+            </div>
+            <div class="ai-item-detail-des">
+                房天下通过引入百度自然语言处理技术对楼盘互动类内容进行深度分析，给购房者和开发商都提供了非常有价值的参考。AI技术在房天下会有更多创新应用，我们期待来一场房地产家居领域的技术革命，提升自己并推动行业发展。
+                <div class="ai-des-quan0"></div>
+                <div class="ai-des-quan1"></div>
+            </div>
+            <div class="ai-item-look-example">
+                <a href="/customer/fang" class="ai-item-look-link" target="_blank">
+                    查看案例<span class="ai-look-example-array"></span>
+                </a>
+            </div>
+        </div>
+        <div class="ai-list-item-detail">
+            <div class="ai-item-detail-img">
+                <div class="ai-detail-img ai-detail-img4"></div>
+                <div class="ai-detail-img-title">段剑波</div>
+                <div class="ai-detail-img-info">联合创始人<br>技术副总裁</div>
+            </div>
+            <div class="ai-item-detail-des">
+                嘀嗒出行引进百度AI语音合成技术，为近千万顺风车车主和几十万出租车车主构建实时语音派单系统，实现了最为关键的听单功能。很荣幸和百度AI站在一起，为用户提供便捷和安全的出行服务。
+                <div class="ai-des-quan0"></div>
+                <div class="ai-des-quan1"></div>
+            </div>
+            <div class="ai-item-look-example">
+                <a href="/customer/dida" class="ai-item-look-link" target="_blank">
+                    查看案例<span class="ai-look-example-array"></span>
+                </a>
+            </div>
+        </div>
+        <div class="ai-list-item-detail">
+            <div class="ai-item-detail-img">
+                <div class="ai-detail-img ai-detail-img5"></div>
+                <div class="ai-detail-img-title">马德龙</div>
+                <div class="ai-detail-img-info">拉勾网 CEO</div>
+            </div>
+            <div class="ai-item-detail-des">
+                拉勾将百度 AI
+                的人脸识别功能应用到招聘者身份审核中，实现了AI技术和招聘场景的深度结合，提升了信息审核效率和安全性。作为国内领先的互联网人力资源综合平台，和百度AI一起，为平台上的25万企业用户和1500万互联网求职者提供保障。
+                <div class="ai-des-quan0"></div>
+                <div class="ai-des-quan1"></div>
+            </div>
+            <div class="ai-item-look-example">
+                <a href="/customer/lagou" class="ai-item-look-link" target="_blank">
+                    查看案例<span class="ai-look-example-array"></span>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="ai-home-partner-cover">
+    <div class="ai-home-partner">
+        <div class="ai-partner-title">助力生态伙伴 共赢AI未来</div>
+        <div class="ai-partner-intro">
+            <div class="ai-partner-info-detail">
+                <div class="ai-partner-intro-title">技术资源</div>
+                <div class="ai-partner-intro-detail">专属的定期培训、技术支持，及新产品内测体验，还将有机会参与百度AI主题沙龙。</div>
+            </div>
+            <div class="ai-partner-info-detail">
+                <div class="ai-partner-intro-title">品牌共建</div>
+                <div class="ai-partner-intro-detail">获得百度AI的品牌赋能推广，及专有的营销渠道推广，助力您创造品牌价值。</div>
+            </div>
+            <div class="ai-partner-info-detail">
+                <div class="ai-partner-intro-title">成就客户</div>
+                <div class="ai-partner-intro-detail">获得定制化需求支持及入驻平台展现机会，引领行业升级，携手成就客户并推进AI生态的建设与发展。</div>
+            </div>
+        </div>
+        <div class="ai-partner-img">
+            <a href="/partner/sinoxk" target="_blank">
+                <div class="ai-partner-img-item1"></div>
+            </a>
+            <a href="/partner/senseit" target="_blank">
+                <div class="ai-partner-img-item2"></div>
+            </a>
+            <a href="/partner/cella" target="_blank">
+                <div class="ai-partner-img-item3"></div>
+            </a>
+            <a href="/partner/das" target="_blank">
+                <div class="ai-partner-img-item4"></div>
+            </a>
+            <a href="/partner/roobo" target="_blank">
+                <div class="ai-partner-img-item5"></div>
+            </a>
+            <a href="/partner/yunva" target="_blank">
+                <div class="ai-partner-img-item6"></div>
+            </a>
+            <a href="/partner/romens" target="_blank">
+                <div class="ai-partner-img-item7"></div>
+            </a>
+            <a href="/partner/huiker" target="_blank">
+                <div class="ai-partner-img-item8"></div>
+            </a>
+        </div>
+        <a href="/partner" class="ai-want-be-partner" target="_blank">
+            申请合作
+        </a>
+    </div>
+</div>
+
+<div class="ai-product-number-cover">
+    <div class="ai-product-number">
+        <div class="ai-product-title">全线产品免费开放，等你加入</div>
+        <div class="ai-product-sub-title">
+            我们致力于构建最全面、最开放、最前沿的AI开放平台
+        </div>
+        <div class="ai-product-sub-title">
+            提供最易用的API、SDK等开发组件，助力您快速高效地实现产品升级
+        </div>
+        <div class="ai-product-number-detail">
+            <div class="ai-ability-number">
+                <span class="ai-number-title">0</span>
+                <span class="ai-number-unit1">项</span>
+                <div class="ai-number-des">技术能力</div>
+            </div>
+            <div class="ai-speed-integration">
+                <span class="ai-speed-title">0</span>
+                <span class="ai-number-unit2">小时</span>
+                <div class="ai-number-des">快速集成</div>
+            </div>
+            <div class="ai-people-using">
+                <span class="ai-using-title">0</span>
+                <span class="ai-number-unit3">+</span>
+                <div class="ai-number-des">开发者正在使用</div>
+            </div>
+        </div>
+        <a href="https://console.bce.baidu.com/?fromai=1#/aip/overview" class="ai-join-us" target="_blank">
+            立即体验
+        </a>
+    </div>
+</div>
+
+
+</div>
+<aside class="aside-action">
+    <ul>
+        <li class="consult">
+            <a id="ai-consult" data-spec="合作咨询"></a>
+        </li>
+        <li class="back-top">
+            <a data-spec="返回顶部"></a>
+        </li>
+    </ul>
+</aside>
+<div class="ai-footer" id="ai-footer">
+    <div class="ai-footer-cover">
+        <div class="ai-footer-items">
+            <div class="ai-item-class">
+                <div class="ai-title">快速入口</div>
+                <div>
+                    <a class="ai-items" href="https://console.bce.baidu.com/iam/?fromai=1#/iam/baseinfo" target="_blank">
+                        账户中心
+                    </a>
+                </div>
+                <div>
+                    <a class="ai-items" href="https://console.bce.baidu.com/?fromai=1#/aip/overview" target="_blank">
+                        管理控制台
+                    </a>
+                </div>
+                <div>
+                    <a class="ai-items" href="https://console.bce.baidu.com/billing/?fromai=1#/account/index" target="_blank">
+                        财务中心
+                    </a>
+                </div>
+                <div>
+                    <a class="ai-items" href="https://cloud.baidu.com/calculator.html#/ocr/price" target="_blank">
+                        价格计算器
+                    </a>
+                </div>
+                <div>
+                    <a class="ai-items" href="/docs#/AI-service-agreement/top" target="_blank">
+                        服务协议
+                    </a>
+                </div>
+                <div>
+                    <a class="ai-items" href="/partner/apply" target="_blank">
+                        合作申请
+                    </a>
+                </div>
+            </div>
+            <div class="ai-item-class">
+                <div class="ai-title">开发资源</div>
+                <div>
+                    <a class="ai-items" href="/forum" target="_blank">
+                        技术论坛
+                    </a>
+                </div>
+                <div>
+                    <a class="ai-items" href="/docs#/Begin/top" target="_blank">
+                        文档中心
+                    </a>
+                </div>
+                <div>
+                    <a class="ai-items" href="/sdk" target="_blank">
+                        SDK下载
+                    </a>
+                </div>
+                <div>
+                    <a class="ai-items" href="/support/video" target="_blank">
+                        教学视频
+                    </a>
+                </div>
+                <div>
+                    <a class="ai-items" href="https://github.com/Baidu-AIP" target="_blank">
+                        GitHub
+                    </a>
+                </div>
+                <div class="ai-items" id="qq-group-show">QQ支持群</div>
+            </div>
+            <div class="ai-item-class">
+                <div class="ai-title">常见问题</div>
+                <div>
+                    <a class="ai-items" href="/docs#/FAQ/54966861" target="_blank">
+                        账号登录
+                    </a>
+                </div>
+                <div>
+                    <a class="ai-items" href="/docs#/FAQ/30a9eac7" target="_blank">
+                        接口调用
+                    </a>
+                </div>
+                <div>
+                    <a class="ai-items" href="/docs#/FAQ/d1a6a706" target="_blank">
+                        商用咨询
+                    </a>
+                </div>
+                <div>
+                    <a class="ai-items" href="/docs#/FAQ/61e783cc" target="_blank">
+                        技术问答
+                    </a>
+                </div>
+            </div>
+            <div class="ai-item-class ai-last-class">
+                <div class="ai-title">服务支持</div>
+                <div class="ai-items consult">合作咨询</div>
+                <div>
+                    <a class="ai-items" href="http://ticket.bce.baidu.com/#/ticket/create" target="_blank">
+                        提交工单
+                    </a>
+                </div>
+                <div>
+                    <a class="ai-items" href="mailto:baidu_ai@baidu.com" target="_blank">
+                        意见反馈
+                    </a>
+                </div>
+                <div class="ai-telephone">客服电话<br>4008-777-818</div>
+            </div>
+        </div>
+        <div class="ai-items-img">
+            百度AI微信公众号
+        </div>
+    </div>
+    <div class="ai-footer-baseline-contain">
+        <div class="ai-footer-baseline">
+            <div class="ai-first-baseline">友情链接：</div>
+            <a href="https://cloud.baidu.com/?t=cp:online-media%7Cci:%7Ccn:ai" target="_blank">
+                <div class="ai-baseline-info">百度云</div>
+            </a>
+            <div class="ai-baseline-info-divider">|</div>
+            <a href="https://developer.baidu.com" target="_blank">
+                <div class="ai-baseline-info">百度开发者中心</div>
+            </a>
+            <div class="ai-baseline-info-divider">|</div>
+            <a href="https://app.baidu.com" target="_blank">
+                <div class="ai-baseline-info">百度手助平台</div>
+            </a>
+            <div class="ai-baseline-info-divider">|</div>
+            <a href="https://bit.baidu.com" target="_blank">
+                <div class="ai-baseline-info">百度技术学院</div>
+            </a>
+            <div class="ai-baseline-info-divider">|</div>
+            <a href="http://zhongbao.baidu.com" target="_blank">
+                <div class="ai-baseline-info ai-info-add">百度数据众包</div>
+            </a>
+            <a href="http://www.baidu.com/duty" target="_blank">
+                <div class="ai-baseline-info ai-info-read">© 2018 Baidu 使用百度前必读</div>
+            </a>
+        </div>
+    </div>
+    <div class="ai-qq-group" id="qq-group">
+        <div class="ai-qq-group-title">QQ支持群</div>
+        <div class="ai-qq-group-column">
+            <div class="ai-qq-group-item">百度语音：<span class="ai-qq-number">464413749</span></div>
+            <div class="ai-qq-group-item">文字识别：<span class="ai-qq-number">631977213</span></div>
+            <div class="ai-qq-group-item">人脸识别：<span class="ai-qq-number">282744268</span></div>
+            <div class="ai-qq-group-item">图像审核：<span class="ai-qq-number">375765194</span></div>
+            <div class="ai-qq-group-item">图像识别：<span class="ai-qq-number">649285136</span></div>
+            <div class="ai-qq-group-item">定制化图像识别：<span class="ai-qq-number">185289236</span></div>
+            <div class="ai-qq-group-item">图像搜索：<span class="ai-qq-number">630770006</span></div>
+            <div class="ai-qq-group-item">视频分析：<span class="ai-qq-number">632473158</span></div>
+            <div class="ai-qq-group-item">百度AR：<span class="ai-qq-number">472081119</span></div>
+            <div class="ai-qq-group-item">自然语言：<span class="ai-qq-number">632426386</span></div>
+            <div class="ai-qq-group-item">文本审核：<span class="ai-qq-number">484776967</span></div>
+            <div class="ai-qq-group-item">UNIT：<span class="ai-qq-number">584835350</span></div>
+            <div class="ai-qq-group-item">百度翻译：<span class="ai-qq-number">214857706</span></div>
+            <div class="ai-qq-group-item">数据智能：<span class="ai-qq-number">650596829</span></div>
+            <div class="ai-qq-group-item">知识图谱：<span class="ai-qq-number">655854786</span></div>
+            <div class="ai-qq-group-item">DuerOS：<span class="ai-qq-number">604592023</span></div>
+            <div class="ai-qq-group-item">百度AI开放平台：<span class="ai-qq-number">224994340</span></div>
+        </div>
+        <div class="ai-hide-group" id="qq-group-hide">×</div>
+    </div>
+</div>
+<script src="//aip.bdstatic.com/portal/dist/1522402512491/js/vendor.js"></script>
+<script src="//aip.bdstatic.com/portal/dist/1522402512491/js/home.js"></script>
+<script>
+    (function () {
+        var bp = document.createElement('script');
+        var curProtocol = window.location.protocol.split(':')[0];
+        if (curProtocol === 'https') {
+            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+        }
+        else {
+            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+        }
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(bp, s);
+    })();
+</script>
+</body>
+</html>
+<!--25816983820309999882040410-->
+<script> var _trace_page_logid = 2581698382; </script>

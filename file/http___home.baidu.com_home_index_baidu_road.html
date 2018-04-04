@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1 user-scalable=no" />
+<!-- 删除默认的苹果工具栏和菜单栏 ： 即启用 WebApp 全屏模式  -->
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<!-- 在web app应用下状态条（屏幕顶部条）的颜色；默认值为default（白色），可以定为black（黑色）和black-translucent（灰色半透明）若值为“black-translucent”将会占据页面px位置，浮在页面上方（会覆盖页面20px高度–iphone4和itouch4的Retina屏幕为40px）。 -->
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<!-- 忽略数字自动识别为电话号码 ,忽略识别邮箱 -->
+<meta name="format-detection" content="telephone=no, email=no" />
+<!-- 启用360浏览器的极速模式(webkit) -->
+<meta name="renderer" content="webkit">
+<!-- 避免IE使用兼容模式 -->
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<!-- uc强制竖屏 -->
+<meta name="screen-orientation" content="portrait" />
+<!-- QQ强制竖屏 -->
+<meta name="x5-orientation" content="portrait">
+<!-- UC强制全屏 -->
+<meta name="full-screen" content="true" />
+<!-- QQ强制全屏 -->
+<meta name="x5-fullscreen" content="true" />
+<!-- 360强制全屏 -->
+<meta name="360-fullscreen" content="true" />
+<script src="/Public/js/fontbase.js?v=12"></script>
+<link href="/Public/css/lib/bootstrap.min.css?v=14" rel="stylesheet">
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+      <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+<link rel="stylesheet" href="/Public/css/common.css?v=16">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fb9a77820b2fa17d7223b50a01ab1aa7a' type='text/javascript'%3E%3C/script%3E"));
+</script>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="/Public/css/sideyear.css?v=13">
+    <link rel="stylesheet" href="/Public/css/baiduRoad.css?v=13">
+    <title>百度大事记</title>
+    <script>
+    window.PointerEvent = undefined;
+    </script>
+    <style>
+
+    @media screen and (min-width: 768px){
+        html {
+        min-width: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+    }
+    
+    body {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+        min-width: 0;
+        position: relative;
+        overflow: hidden;
+    }
+    
+    .box1 {
+        width: 100%;
+        height: 100%;
+
+        overflow-x: auto;
+    }
+    
+    .box2 {
+        width: 100%;
+        min-width: 1200px;
+        height: 100%;
+        position: relative;
+    }
+    
+    .box3 {
+        width: 100%;
+        height: 100%;
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
+    
+    .box4 {
+        width: 100%;
+        height: 100%;
+    }
+    }
+    
+    </style>
+</head>
+
+<body>
+    <div class="box1">
+        <div class="box2">
+            <div class="box3">
+                <div class="main">
+                    <div class="bd-content-nav nav-show J-bd-nav">
+  <div class="section nav-section">
+    <div class="nav-box">
+      <div class="row">
+        <div class="col-sm-2 col-xs-12">
+          <a href="/home/index">
+            <img src="/Public/img/logo.png?v=15" alt="" class="logo">
+          </a>
+        </div>
+        <div class="col-sm-10 col-xs-12">
+          <ul class="bd-nav">
+            <li class="nav-bd-link active"><a href="/home/index" target="_blank">关于百度</a></li>
+            <li class="nav-bd-link"><a href="//www.baidu.com/more/" target="_blank">关于产品</a></li>
+            <li class="nav-bd-link"><a href="/home/index/join_us" target="_blank">加入我们</a></li>
+            <li class="nav-bd-link"><a href="/home/index/contact_us" target="_blank">联系我们</a></li>
+            <div class="sideline"></div>
+          </ul>
+        </div>
+        <div class="bd-content-fun">
+          <span class="cn-home-link">中文</span>|
+          <a href="//ir.baidu.com/phoenix.zhtml?c=188488&p=irol-irhome" class="en-home-link" target="_blank">EN</a>
+          <script>
+            var imgRoot = "/Public";
+            function doSearch(form){
+              form.ct.value = "2097152";
+              form.si.value = "home.baidu.com";
+              form.tn.value = "baidulocal";
+              form.action = "http://www.baidu.com/s";
+              return true;
+            }
+            function cls(tar){
+                if(tar.value==tar.getAttribute('defaultvalue')) tar.value="";
+            }
+            function res(tar){
+                if(tar.value=='') tar.value=tar.getAttribute('defaultvalue');
+            }
+            document.write("<FORM name=f1 class='bd-zhannei-search' onsubmit='return doSearch(this);'>");
+            document.write("<INPUT type=hidden name=tn><INPUT type=hidden name=si><INPUT type=hidden name=ct>");
+            document.write("<INPUT class=formfont size=16 name=word style='border:1px solid #7f9db9;display:inline-block;vertical-align:middle;background:url("+ imgRoot +"/img/search.png?v=12) no-repeat;padding-left:28px;background-position:5px;background-size:9%;height:27px; color: #cbcbcb' onfocus='cls(this);' onblur='res(this);' value=\"站内搜索\"  defaultvalue=\"站内搜索\" onClick= \"javascript:if(this.value=='站内搜索')this.value=''\";>&nbsp;");
+            document.write("<INPUT type=submit value=百度一下 class='bd-zhannei-btn'>");
+
+          </script><!--站内搜索结束 -->
+          <!-- <a href="//www.baidu.com" target="_blank">
+            <img src="/Public/img/search.png?v=12" alt="">
+          </a> -->
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="h5-nav-bar J-bd-nav">
+  <!-- <div class="h5-nav-search-btn"></div> -->
+  <div class="logo-box">
+    <img src="/Public/img/logo.png?v=15" alt="" class="h5-nav-logo">
+  </div>
+  <svg id="list" class="h5-nav-toggle-box" width="44" height="44" viewBox="0, 0, 44, 44"></svg>
+  <div class="h5-nav-list">
+    <a href="/home/index" class="h5-nav h5-active" target="_blank">关于百度</a>
+    <a href="//www.baidu.com/more/" class="h5-nav" target="_blank">关于产品</a>
+    <a href="/home/index/join_us" class="h5-nav" target="_blank">加入我们</a>
+    <a href="/home/index/contact_us" class="h5-nav" target="_blank">联系我们</a>
+    <a href="//ir.baidu.com/phoenix.zhtml?c=188488&p=irol-irhome" class="h5-nav" target="_blank">ENGLISH</a>
+  </div>
+</div>
+<div class="h5-nav-mask"></div>
+
+                    <div class="main-body">
+                        <div class="new">
+                            <span class="news-title">百度大事记</span>
+                            <div class="current-year current-year-xs visible-xs">
+                                <span class="year year-choose-xs">2017</span><span class="arrow-icon"></span>
+                            </div>
+                            <!-- <div class="top-mask"></div> -->
+                        </div>
+                        <div class="content">
+                            <div class="content-road">
+                                <div class="road clearfix">
+                                    <div class="road-bar visible-xs">
+                                        <img src="/Public/img/bar-top.png?v=13" alt="" class="road-img road-img-top">
+                                        <!-- <img src="/Public/img/bar.png?v=13" alt="" class="road-img img-bar"> -->
+                                        <img src="/Public/img/bar-top.png?v=13" alt="" class="road-img road-img-bottom">
+                                    </div>
+                                    <div class="road-right visible-xs">
+                                        <ul class="month-box">
+                                            <li class="month-detail">
+                                                        <div class="month-detail-con clearfix">
+                                                            <p class="month">12月</p>
+                                                            <p class="event">
+                                                                百度与河北省政府、雄安新区管委会签署战略合作协议，共同将雄安打造为AI-City智能城市新标杆。                                                            </p>
+                                                        </div>
+                                                        <div class="down-more hide">
+                                                            <img src="/Public/img/down-more.png?v=13" alt="" class="down-img">
+                                                            <img src="/Public/img/down-more.png?v=13" alt="" class="down-img">
+                                                        </div>
+                                                    </li><li class="month-detail">
+                                                        <div class="month-detail-con clearfix">
+                                                            <p class="month">12月</p>
+                                                            <p class="event">
+                                                                百度与华为、小米分别达成战略合作。在“软硬结合”的AI思维下，百度将持续发展更多合作伙伴。                                                            </p>
+                                                        </div>
+                                                        <div class="down-more hide">
+                                                            <img src="/Public/img/down-more.png?v=13" alt="" class="down-img">
+                                                            <img src="/Public/img/down-more.png?v=13" alt="" class="down-img">
+                                                        </div>
+                                                    </li><li class="month-detail">
+                                                        <div class="month-detail-con clearfix">
+                                                            <p class="month">11月</p>
+                                                            <p class="event">
+                                                                首批国家新一代人工智能开放创新平台名单公布，百度主导建设自动驾驶国家人工智能开放创新平台。                                                            </p>
+                                                        </div>
+                                                        <div class="down-more hide">
+                                                            <img src="/Public/img/down-more.png?v=13" alt="" class="down-img">
+                                                            <img src="/Public/img/down-more.png?v=13" alt="" class="down-img">
+                                                        </div>
+                                                    </li><li class="month-detail">
+                                                        <div class="month-detail-con clearfix">
+                                                            <p class="month">11月</p>
+                                                            <p class="event">
+                                                                2017百度世界大会召开，百度宣布2018年将量产无人车，同时百度首款标杆性人工智能硬件产品raven H面世。                                                            </p>
+                                                        </div>
+                                                        <div class="down-more hide">
+                                                            <img src="/Public/img/down-more.png?v=13" alt="" class="down-img">
+                                                            <img src="/Public/img/down-more.png?v=13" alt="" class="down-img">
+                                                        </div>
+                                                    </li><li class="month-detail">
+                                                        <div class="month-detail-con clearfix">
+                                                            <p class="month">11月</p>
+                                                            <p class="event">
+                                                                百度发布了集搜索和信息流双引擎于一体的手机百度10.0，引领新移动时代的新交互体验。                                                            </p>
+                                                        </div>
+                                                        <div class="down-more hide">
+                                                            <img src="/Public/img/down-more.png?v=13" alt="" class="down-img">
+                                                            <img src="/Public/img/down-more.png?v=13" alt="" class="down-img">
+                                                        </div>
+                                                    </li><li class="month-detail">
+                                                        <div class="month-detail-con clearfix">
+                                                            <p class="month">10月</p>
+                                                            <p class="event">
+                                                                百度硅谷第二个研发中心正式运营，百度西雅图研发中心也同时成立，这标志着百度在北美核心技术圈的布局初步完成。                                                            </p>
+                                                        </div>
+                                                        <div class="down-more hide">
+                                                            <img src="/Public/img/down-more.png?v=13" alt="" class="down-img">
+                                                            <img src="/Public/img/down-more.png?v=13" alt="" class="down-img">
+                                                        </div>
+                                                    </li><li class="month-detail">
+                                                        <div class="month-detail-con clearfix">
+                                                            <p class="month">7月</p>
+                                                            <p class="event">
+                                                                百度举办全球首个AI开发者大会，首次发布人工智能开放平台的整体战略、技术和解决方案。会上陆奇表示，百度将“All in AI”。                                                            </p>
+                                                        </div>
+                                                        <div class="down-more hide">
+                                                            <img src="/Public/img/down-more.png?v=13" alt="" class="down-img">
+                                                            <img src="/Public/img/down-more.png?v=13" alt="" class="down-img">
+                                                        </div>
+                                                    </li><li class="month-detail">
+                                                        <div class="month-detail-con clearfix">
+                                                            <p class="month">7月</p>
+                                                            <p class="event">
+                                                                李彦宏乘坐无人车辆开上五环，收到无人车历史上第一张罚单。四个月后，北京自动驾驶新规出台。                                                            </p>
+                                                        </div>
+                                                        <div class="down-more hide">
+                                                            <img src="/Public/img/down-more.png?v=13" alt="" class="down-img">
+                                                            <img src="/Public/img/down-more.png?v=13" alt="" class="down-img">
+                                                        </div>
+                                                    </li><li class="month-detail">
+                                                        <div class="month-detail-con clearfix">
+                                                            <p class="month">6月</p>
+                                                            <p class="event">
+                                                                成立不足9个月的百度信息流业务日活跃用户破亿。在搜索+信息流”双引擎强力推动下，信息流迅速成为国内又一个超级应用。                                                            </p>
+                                                        </div>
+                                                        <div class="down-more hide">
+                                                            <img src="/Public/img/down-more.png?v=13" alt="" class="down-img">
+                                                            <img src="/Public/img/down-more.png?v=13" alt="" class="down-img">
+                                                        </div>
+                                                    </li><li class="month-detail">
+                                                        <div class="month-detail-con clearfix">
+                                                            <p class="month">6月</p>
+                                                            <p class="event">
+                                                                百度与中国农业银行达成战略合作，并成立金融科技联合实验室。通过AI Fintech联合创新，双方将共推银行业进入智能金融新时代。                                                            </p>
+                                                        </div>
+                                                        <div class="down-more hide">
+                                                            <img src="/Public/img/down-more.png?v=13" alt="" class="down-img">
+                                                            <img src="/Public/img/down-more.png?v=13" alt="" class="down-img">
+                                                        </div>
+                                                    </li><li class="month-detail">
+                                                        <div class="month-detail-con clearfix">
+                                                            <p class="month">5月</p>
+                                                            <p class="event">
+                                                                百度发布新使命：用科技让复杂的世界更简单。                                                            </p>
+                                                        </div>
+                                                        <div class="down-more hide">
+                                                            <img src="/Public/img/down-more.png?v=13" alt="" class="down-img">
+                                                            <img src="/Public/img/down-more.png?v=13" alt="" class="down-img">
+                                                        </div>
+                                                    </li><li class="month-detail">
+                                                        <div class="month-detail-con clearfix">
+                                                            <p class="month">5月</p>
+                                                            <p class="event">
+                                                                在国务院总理李克强与德国总理默克尔见证下，百度与德国博世集团签署战略合作协议，双方将在自动驾驶、智能交通、智能车联网领域展开深入合作。                                                              </p>
+                                                        </div>
+                                                        <div class="down-more hide">
+                                                            <img src="/Public/img/down-more.png?v=13" alt="" class="down-img">
+                                                            <img src="/Public/img/down-more.png?v=13" alt="" class="down-img">
+                                                        </div>
+                                                    </li><li class="month-detail">
+                                                        <div class="month-detail-con clearfix">
+                                                            <p class="month">4月</p>
+                                                            <p class="event">
+                                                                百度推出Apollo（阿波罗）自动驾驶平台，向汽车行业及合作伙伴提供了一个开放、完整、安全的软件平台。这是全球范围内自动驾驶技术的第一次系统级开放。                                                            </p>
+                                                        </div>
+                                                        <div class="down-more hide">
+                                                            <img src="/Public/img/down-more.png?v=13" alt="" class="down-img">
+                                                            <img src="/Public/img/down-more.png?v=13" alt="" class="down-img">
+                                                        </div>
+                                                    </li><li class="month-detail">
+                                                        <div class="month-detail-con clearfix">
+                                                            <p class="month">4月</p>
+                                                            <p class="event">
+                                                                百度在人工智能领域公开的中国专利申请超过2000项，国外专利申请数百项。专利布局帮助百度抢占技术制高点。                                                            </p>
+                                                        </div>
+                                                        <div class="down-more hide">
+                                                            <img src="/Public/img/down-more.png?v=13" alt="" class="down-img">
+                                                            <img src="/Public/img/down-more.png?v=13" alt="" class="down-img">
+                                                        </div>
+                                                    </li><li class="month-detail">
+                                                        <div class="month-detail-con clearfix">
+                                                            <p class="month">3月</p>
+                                                            <p class="event">
+                                                                由国家发改委批复、百度牵头筹建的中国深度学习技术及应用国家工程实验室正式揭牌。                                                            </p>
+                                                        </div>
+                                                        <div class="down-more hide">
+                                                            <img src="/Public/img/down-more.png?v=13" alt="" class="down-img">
+                                                            <img src="/Public/img/down-more.png?v=13" alt="" class="down-img">
+                                                        </div>
+                                                    </li><li class="month-detail">
+                                                        <div class="month-detail-con clearfix">
+                                                            <p class="month">2月</p>
+                                                            <p class="event">
+                                                                《麻省理工科技评论》公布2017年十大突破技术，百度凭借领先的人脸识别技术登上榜单，包揽人工智能所有奖项。                                                            </p>
+                                                        </div>
+                                                        <div class="down-more hide">
+                                                            <img src="/Public/img/down-more.png?v=13" alt="" class="down-img">
+                                                            <img src="/Public/img/down-more.png?v=13" alt="" class="down-img">
+                                                        </div>
+                                                    </li><li class="month-detail">
+                                                        <div class="month-detail-con clearfix">
+                                                            <p class="month">1月</p>
+                                                            <p class="event">
+                                                                前微软全球执行副总裁陆奇加盟百度，出任百度集团总裁兼首席运营官。                                                            </p>
+                                                        </div>
+                                                        <div class="down-more hide">
+                                                            <img src="/Public/img/down-more.png?v=13" alt="" class="down-img">
+                                                            <img src="/Public/img/down-more.png?v=13" alt="" class="down-img">
+                                                        </div>
+                                                    </li><li class="month-detail">
+                                                        <div class="month-detail-con clearfix">
+                                                            <p class="month">1月</p>
+                                                            <p class="event">
+                                                                百度人工智能机器人小度参加《最强大脑》，对战三位人类选手二胜一平未尝败绩。                                                            </p>
+                                                        </div>
+                                                        <div class="down-more hide">
+                                                            <img src="/Public/img/down-more.png?v=13" alt="" class="down-img">
+                                                            <img src="/Public/img/down-more.png?v=13" alt="" class="down-img">
+                                                        </div>
+                                                    </li>                                        </ul>
+                                    </div>
+                                    <div class="pc-road-right">
+                                        <div class="year-review-container">
+                                            <div class="row year-review">
+                                                <div class="year-review-left"></div>
+                                                <div class="year-review-right">
+                                                    <div class="before-years" style="left: auto;right: auto;position: absolute;z-index: 1;display: none;">
+                                                        <div class="circle-outer" style="position: relative;left: -8px;top: -17px;">
+                                                            <div class="circle-inner"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="scroll-get-more clearfix">
+                                            <span class="more-text">加载更多</span>
+                                            <img src="/Public/img/load-more.png?v=12" alt="" class="load-img">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="target"></div>
+                    <div class="full-section bottom-section">
+  <div class="section">
+    <div class="bd-home-bottom">
+      <div class="bd-bottom-share">
+        <span>实时资讯请关注：</span>
+
+
+        <div class="share-wechat">
+                    <img src="http://static.home.baidu.com/homebd/canbfldghejikm1496932813.png?authorization=bce-auth-v1%2Fe6803def36ae467f81ebdb4bdc75f119%2F2017-06-08T14%3A40%3A14Z%2F-1%2F%2Fa795f1f97d12e2a8c9da9862672bd4fec4a887237ec8883e8a3974e9a52b3624" class="share-wechat-img" alt="">
+                    <img src="http://static.home.baidu.com/homebd/djkgaclebfhnim1496932814.jpg?authorization=bce-auth-v1%2Fe6803def36ae467f81ebdb4bdc75f119%2F2017-06-08T14%3A40%3A14Z%2F-1%2F%2F9dfa094e984958f1fefb4c3a95b5f8da3e60c759c30442b2479559bfbcdacf2c" class="share-wechat-qrcode">
+                  </div>
+                        <a href="http://weibo.com/baiduguanfang?refer_flag=1001030101_&amp;is_hot=1" target="_blank">
+                  <img src="http://static.home.baidu.com/homebd/fnejlmkaghcdib1496932842.png?authorization=bce-auth-v1%2Fe6803def36ae467f81ebdb4bdc75f119%2F2017-06-08T14%3A40%3A43Z%2F-1%2F%2F5907b18db08f16dba8613f5117fa9c699a09ac79273e32ef0a1f114b7bdd6e55" alt="">
+                </a>                <a href="https://www.facebook.com/BaiduIncorporated" target="_blank">
+                  <img src="http://static.home.baidu.com/homebd/ldmfajnhcbkegi1496932864.png?authorization=bce-auth-v1%2Fe6803def36ae467f81ebdb4bdc75f119%2F2017-06-08T14%3A41%3A05Z%2F-1%2F%2F2a180dd88df9a8a7af776fd7239773fab056d1af32cf701e234f5664133a559b" alt="">
+                </a>                <a href="https://twitter.com/Baidu_Inc" target="_blank">
+                  <img src="http://static.home.baidu.com/homebd/ldgjhfknbaicem1496932883.png?authorization=bce-auth-v1%2Fe6803def36ae467f81ebdb4bdc75f119%2F2017-06-08T14%3A41%3A23Z%2F-1%2F%2F9ec183749754c187c58c2d5b66a8d2f4bd59f6258188aae327addba639a1631d" alt="">
+                </a>
+      </div>
+
+      <div class="bd-bottom-moremsg">
+        <div class="bd-more-msg">更多信息</div>
+        <a href="http://csr.baidu.com/" class="bd-more-duty bottom-cooperation" target="_blank">社会责任</a><a href="http://home.baidu.com/home/index/contact_us" class="bd-more-duty bottom-cooperation" target="_blank">联系我们</a>      </div><div class="bd-bottom-moremsg">
+        <div class="bd-more-msg">商业合作</div>
+        <a href="http://union.baidu.com/customerLogin.html?fromu=http%3A%2F%2Funion.baidu.com%2F" class="bd-more-duty bottom-cooperation" target="_blank">百度联盟</a><a href="http://e.baidu.com/?subsite=bj" class="bd-more-duty bottom-cooperation" target="_blank">百度推广</a><a href="http://pro.baidu.com/" class="bd-more-duty bottom-cooperation" target="_blank">营销中心</a>      </div>      <div class="bd-bottom-icp">&copy; Baidu <a href="//www.baidu.com/duty/" target="_blank">使用百度前必读</a> 京ICP证030173号</div>
+    </div>
+  </div>
+</div>
+
+<div class="return-top">
+  <img src="/Public/img/return-top.png?v=12" alt="" class="return-img">
+</div>
+<div class="pc-return">
+  <img src="/Public/img/pc-backtop.png?v=12" alt="" class="pc-return-img">
+</div>
+<div class="mobile-bd-home-bottom">
+  <div class="bd-bottom-share">
+    <span>实时资讯请关注：</span>
+
+
+
+    <div class="share-wechat">
+                <img src="http://static.home.baidu.com/homebd/canbfldghejikm1496932813.png?authorization=bce-auth-v1%2Fe6803def36ae467f81ebdb4bdc75f119%2F2017-06-08T14%3A40%3A14Z%2F-1%2F%2Fa795f1f97d12e2a8c9da9862672bd4fec4a887237ec8883e8a3974e9a52b3624" class="share-wechat-img" alt="">
+                <img src="http://static.home.baidu.com/homebd/djkgaclebfhnim1496932814.jpg?authorization=bce-auth-v1%2Fe6803def36ae467f81ebdb4bdc75f119%2F2017-06-08T14%3A40%3A14Z%2F-1%2F%2F9dfa094e984958f1fefb4c3a95b5f8da3e60c759c30442b2479559bfbcdacf2c" class="m-share-wechat-qrcode">
+              </div>
+                     <a href="http://weibo.com/baiduguanfang?refer_flag=1001030101_&amp;is_hot=1" target="_blank">
+              <img src="http://static.home.baidu.com/homebd/fnejlmkaghcdib1496932842.png?authorization=bce-auth-v1%2Fe6803def36ae467f81ebdb4bdc75f119%2F2017-06-08T14%3A40%3A43Z%2F-1%2F%2F5907b18db08f16dba8613f5117fa9c699a09ac79273e32ef0a1f114b7bdd6e55" alt="">
+            </a>           <a href="https://www.facebook.com/BaiduIncorporated" target="_blank">
+              <img src="http://static.home.baidu.com/homebd/ldmfajnhcbkegi1496932864.png?authorization=bce-auth-v1%2Fe6803def36ae467f81ebdb4bdc75f119%2F2017-06-08T14%3A41%3A05Z%2F-1%2F%2F2a180dd88df9a8a7af776fd7239773fab056d1af32cf701e234f5664133a559b" alt="">
+            </a>           <a href="https://twitter.com/Baidu_Inc" target="_blank">
+              <img src="http://static.home.baidu.com/homebd/ldgjhfknbaicem1496932883.png?authorization=bce-auth-v1%2Fe6803def36ae467f81ebdb4bdc75f119%2F2017-06-08T14%3A41%3A23Z%2F-1%2F%2F9ec183749754c187c58c2d5b66a8d2f4bd59f6258188aae327addba639a1631d" alt="">
+            </a>
+  </div>
+  <div class="mobile-flex">
+    <div class="mobile-bd-bottom-moremsg mobile-flex-box">
+           <div class="mobile-bd-bottom-content">公司介绍<img src="/Public/img/mobile-arrow-up.png?v=12" class="mobile-arrow-up"><img src="/Public/img/mobile-arrow-down.png?v=12" class="mobile-arrow-down"></div>
+           <ul class="mobile-bd-detail">
+            <li><a href="http://home.baidu.com/home/index/company_culture" target="_blank">核心价值观</a></li><li><a href="http://home.baidu.com/home/index/company" target="_blank">百度简介</a></li><li><a href="http://home.baidu.com/home/index/baidu_road" target="_blank">百度大事记</a></li><li><a href="http://home.baidu.com/home/index/management_team" target="_blank">管理团队</a></li>        </ul>
+      </div><div class="mobile-bd-bottom-moremsg mobile-flex-box">
+           <div class="mobile-bd-bottom-content">更多信息<img src="/Public/img/mobile-arrow-up.png?v=12" class="mobile-arrow-up"><img src="/Public/img/mobile-arrow-down.png?v=12" class="mobile-arrow-down"></div>
+           <ul class="mobile-bd-detail">
+            <li><a href="http://csr.baidu.com/" target="_blank">社会责任</a></li><li><a href="http://home.baidu.com/home/index/contact_us" target="_blank">联系我们</a></li>        </ul>
+      </div><div class="mobile-bd-bottom-moremsg mobile-flex-box">
+           <div class="mobile-bd-bottom-content">商业合作<img src="/Public/img/mobile-arrow-up.png?v=12" class="mobile-arrow-up"><img src="/Public/img/mobile-arrow-down.png?v=12" class="mobile-arrow-down"></div>
+           <ul class="mobile-bd-detail">
+            <li><a href="http://e.baidu.com/?subsite=bj" target="_blank">百度推广</a></li><li><a href="http://union.baidu.com/customerLogin.html?fromu=http%3A%2F%2Funion.baidu.com%2F" target="_blank">百度联盟</a></li><li><a href="http://pro.baidu.com/" target="_blank">营销中心</a></li>        </ul>
+      </div>
+  </div>
+  <div class="mobile-bd-bottom-icp">&copy; Baidu <a href="//www.baidu.com/duty/" target="_blank">使用百度前必读</a> 京ICP证030173号</div>
+</div>
+<div class="loading"></div>
+
+                </div>
+                <div class="dialog dialog-date">
+                    <div class="date-box">
+                        <div class="date-title clearfix">
+                            <span class="btn-item btn-cancle pull-left">取消</span>
+                            <span class="choose-year">选择年份</span>
+                            <span class="btn-item btn-confirm pull-right">确定</span>
+                        </div>
+                        <div class="wrapper" id="myScroll">
+                            <div class="year-group">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script id="tpl-pc-road-list" type="x-tmpl-mustache">
+        <div class="row year-review">
+            <div class="year-review-left">
+                <div class="year-title">{{year}}</div>
+            </div>
+            <div class="year-review-right">
+                <ul class="month-box">
+                    {{#data}} {{#content}}
+                    <li class="month-detail">
+                        <div class="month-detail-con clearfix">
+                            <p class="month">{{yue}}{{#yue}}月{{/yue}}</p>
+                            <p class="event">{{.}}</p>
+                        </div>
+                    </li>
+                    {{/content}} {{/data}}
+                </ul>
+            </div>
+        </div>
+    </script>
+</body>
+<script src="/Public/js/lib/jquery.min.js?v=16"></script>
+<script src="/Public/js/rem.min.js?v=16"></script>
+<script src="/Public/js/lib/bootstrap.min.js?v=16"></script>
+<script src="/Public/js/lib/snap.svg-min.js?v=16"></script>
+<script src="/Public/js/lib/mustache.min.js?v=16"></script>
+<!-- <script src="/Public/js/scroll.js"></script> -->
+<script src="/Public/js/common.js?v=16"></script>
+<script>
+var width = $(window).width();
+if (width > 768) {
+  window._hmt && window._hmt.push(['_trackEvent', '入口统计','pc端']);
+  var height = $(window).height();
+  $(window).scroll(function() {
+    var top = $(window).scrollTop();
+    if (top > height) {
+      $(".pc-return").show();
+    } else {
+      $(".pc-return").hide();
+    }
+  });
+  $("body").on("click", ".pc-return", function() {
+    $('body,html').animate({
+      scrollTop: 0
+    }, 300);
+  });
+} else {
+  window._hmt && window._hmt.push(['_trackEvent', '入口统计','手机端']);
+  $(".main").on("click", ".return-img", function() {
+    $('body,html').animate({
+      scrollTop: 0
+    }, 300);
+  });
+}
+</script>
+<script type="text/javascript">
+var GV = {
+  ROOT: "/",
+};
+</script>
+
+<script src="/Public/js/roadData.js?v=13"></script>
+<script src="/Public/js/iscroll.js?v=13"></script>
+<script src="/Public/js/mustache.min.js?v=13"></script>
+<script src="/Public/js/baiduRoad.js?v=17"></script>
+<script type="text/javascript">
+var imgRoot = "/Public";
+</script>
+<script id="template-merchant" type="x-tmpl-mustache">
+    // {{#dataGroup}} //
+    <li class="month-detail">
+        //
+        <div class="month-detail-con">
+            //
+            <p class="month">{{month}}</p>
+            // {{#content}} //
+            <p class="event">{{.}}</p>
+            // {{/content}} // </div>
+        <div class="down-more hide">
+            // <img src="/Public/img/down-more.png" alt="" class="down-img"> // <img src="/Public/img/down-more.png" alt="" class="down-img"> // </div>
+        // </li>
+    // {{/dataGroup}}
+</script>
+
+</html>
